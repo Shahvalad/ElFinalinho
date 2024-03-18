@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HlLlydYxpI/nodV4JpcFnr9twlcuFYTEpR8Pfto297Y=",
+  "Hash": "h39cCBs1FCoXOduoG2wkqAwjic034VfTqiH4TBrqWZg=",
   "Source": "Projecto.MVC",
   "BasePath": "_content/Projecto.MVC",
   "Mode": "Default",
@@ -4898,6 +4898,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Images\\Publishers\\download_f022097c.jfif",
+      "SourceId": "Projecto.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\",
+      "BasePath": "_content/Projecto.MVC",
+      "RelativePath": "Images/Publishers/download_f022097c.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Publishers\\download_f022097c.jfif"
     },
     {
       "Identity": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\js\\site.js",

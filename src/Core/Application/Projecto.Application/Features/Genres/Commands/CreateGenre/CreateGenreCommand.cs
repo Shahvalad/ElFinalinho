@@ -3,11 +3,10 @@
 namespace Projecto.Application.Features.Genres.Commands.CreateGenre
 {
 
-    public record CreateGenreCommand(CreateGenreDto GenreDto) : IRequest;
+    public record CreateGenreCommand(CreateGenreDto GenreDto) : IRequest<int>;
 
-    public class CreateGenreCommandHandler : IRequestHandler<CreateGenreCommand>
+    public class CreateGenreCommandHandler : IRequestHandler<CreateGenreCommand, int>
     {
-        
         private readonly IDataContext _context;
         private readonly IMapper _mapper;
         public CreateGenreCommandHandler(IDataContext context, IMapper mapper)
@@ -16,11 +15,13 @@ namespace Projecto.Application.Features.Genres.Commands.CreateGenre
             _mapper = mapper;
         }
 
-        public async Task Handle(CreateGenreCommand request, CancellationToken cancellationToken)
+        public async Task<int> Handle(CreateGenreCommand request, CancellationToken cancellationToken)
         {
             var genre = _mapper.Map<Genre>(request.GenreDto);
             await _context.Genre.AddAsync(genre, cancellationToken);
             await _context.SaveChangesAsync(cancellationToken);
+            return genre.Id;
+
         }
     }
 }

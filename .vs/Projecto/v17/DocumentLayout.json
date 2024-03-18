@@ -3,56 +3,172 @@
   "WorkspaceRootPath": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\profiles\\genreprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\profiles\\genreprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\profiles\\publisherprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\profiles\\publisherprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\publishers\\commands\\createpublisher\\createpublishercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\publishers\\commands\\createpublisher\\createpublishercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\guide.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\guide.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\dtos\\publisher\\createpublisherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\dtos\\publisher\\createpublisherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\dtos\\publisher\\getpublisherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\dtos\\publisher\\getpublisherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\publishers\\queries\\getpublisher\\getpublisherquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\publishers\\queries\\getpublisher\\getpublisherquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\views\\publishers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\views\\publishers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\projecto.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\projecto.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\controllers\\publisherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\controllers\\publisherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\controllers\\genrescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\controllers\\genrescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\views\\genres\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\views\\genres\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\views\\publishers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\views\\publishers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\genres\\commands\\creategenre\\creategenrecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\genres\\commands\\creategenre\\creategenrecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\views\\publishers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\views\\publishers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\common\\behaviours\\validationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\common\\behaviours\\validationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\publishers\\queries\\getpublishers\\getpublishersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\publishers\\queries\\getpublishers\\getpublishersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\publishers\\commands\\editpublisher\\editpublishercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\publishers\\commands\\editpublisher\\editpublishercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\genres\\commands\\creategenre\\creategenrecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\genres\\commands\\creategenre\\creategenrecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\profiles\\genreprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\profiles\\genreprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\exceptions\\genrenotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\exceptions\\genrenotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\genres\\queries\\getgenre\\getgenrequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\genres\\queries\\getgenre\\getgenrequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\common\\models\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\common\\models\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\dtos\\genre\\getgenredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\dtos\\genre\\getgenredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\services\\imageservice\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\services\\imageservice\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\common\\helpers\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\common\\helpers\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02DB3F43-9A84-4275-B431-FB04CFEED8DA}|src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\infrastructure\\projecto.persistence\\projecto.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{02DB3F43-9A84-4275-B431-FB04CFEED8DA}|src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj|solutionrelative:src\\infrastructure\\projecto.persistence\\projecto.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\dtos\\publisher\\updatepublisherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\dtos\\publisher\\updatepublisherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\dtos\\developer\\createdeveloperdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\dtos\\developer\\createdeveloperdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\dtos\\developer\\updatedeveloperdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\dtos\\developer\\updatedeveloperdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02DB3F43-9A84-4275-B431-FB04CFEED8DA}|src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\infrastructure\\projecto.persistence\\data\\configurations\\gamegenreconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02DB3F43-9A84-4275-B431-FB04CFEED8DA}|src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj|solutionrelative:src\\infrastructure\\projecto.persistence\\data\\configurations\\gamegenreconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02DB3F43-9A84-4275-B431-FB04CFEED8DA}|src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\infrastructure\\projecto.persistence\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02DB3F43-9A84-4275-B431-FB04CFEED8DA}|src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj|solutionrelative:src\\infrastructure\\projecto.persistence\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02DB3F43-9A84-4275-B431-FB04CFEED8DA}|src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\infrastructure\\projecto.persistence\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02DB3F43-9A84-4275-B431-FB04CFEED8DA}|src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj|solutionrelative:src\\infrastructure\\projecto.persistence\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\genres\\queries\\getgenres\\getgenresquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\genres\\queries\\getgenres\\getgenresquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\genres\\queries\\getgenre\\getgenrequeryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\genres\\queries\\getgenre\\getgenrequeryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\views\\genres\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\views\\genres\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\genres\\queries\\getgenre\\getgenrequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\genres\\queries\\getgenre\\getgenrequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\genres\\commands\\creategenre\\creategenrecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\genres\\commands\\creategenre\\creategenrecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\guide.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\guide.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\views\\genres\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\views\\genres\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\common\\behaviours\\validationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\common\\behaviours\\validationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\dtos\\developer\\updatedeveloperdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\dtos\\developer\\updatedeveloperdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\genres\\queries\\getgenre\\getgenrequeryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\genres\\queries\\getgenre\\getgenrequeryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\genres\\commands\\editgenre\\editgenrecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,32 +187,12 @@
       "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\genres\\commands\\deletegenre\\deletegenrecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\models\\common\\baseauditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\models\\common\\baseauditableentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02DB3F43-9A84-4275-B431-FB04CFEED8DA}|src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\infrastructure\\projecto.persistence\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02DB3F43-9A84-4275-B431-FB04CFEED8DA}|src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj|solutionrelative:src\\infrastructure\\projecto.persistence\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02DB3F43-9A84-4275-B431-FB04CFEED8DA}|src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\infrastructure\\projecto.persistence\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02DB3F43-9A84-4275-B431-FB04CFEED8DA}|src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj|solutionrelative:src\\infrastructure\\projecto.persistence\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\common\\interfaces\\idatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\common\\interfaces\\idatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02DB3F43-9A84-4275-B431-FB04CFEED8DA}|src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\infrastructure\\projecto.persistence\\data\\configurations\\gamegenreconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02DB3F43-9A84-4275-B431-FB04CFEED8DA}|src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj|solutionrelative:src\\infrastructure\\projecto.persistence\\data\\configurations\\gamegenreconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02DB3F43-9A84-4275-B431-FB04CFEED8DA}|src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\infrastructure\\projecto.persistence\\data\\interceptors\\timestampinterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -111,24 +207,8 @@
       "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\views\\genres\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\views\\genres\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\dtos\\genre\\getgenredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\dtos\\genre\\getgenredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\views\\genres\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\views\\genres\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\views\\genres\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -167,24 +247,8 @@
       "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\common\\models\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\common\\models\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\dtos\\publisher\\updatepublisherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\dtos\\publisher\\updatepublisherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\dtos\\publisher\\createpublisherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\dtos\\publisher\\createpublisherdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\exceptions\\developernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\exceptions\\developernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\exceptions\\genrenotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\exceptions\\genrenotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\exceptions\\publishernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -209,10 +273,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\models\\publisherimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\models\\publisherimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\shahvaladea\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\models\\gameimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -242,33 +302,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 19,
               "Title": "GenreProfile.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Profiles\\GenreProfile.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Profiles\\GenreProfile.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Profiles\\GenreProfile.cs*",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Profiles\\GenreProfile.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Profiles\\GenreProfile.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Profiles\\GenreProfile.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAUwAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T05:29:49.812Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "guide.txt",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\guide.txt",
-              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\guide.txt",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\guide.txt",
-              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\guide.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAB+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-03-18T10:54:41.438Z",
               "EditorCaption": ""
             },
             {
@@ -301,85 +348,202 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CreateDeveloperDto.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Developer\\CreateDeveloperDto.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Dtos\\Developer\\CreateDeveloperDto.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Developer\\CreateDeveloperDto.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Dtos\\Developer\\CreateDeveloperDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "CreatePublisherCommand.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\CreatePublisher\\CreatePublisherCommand.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\CreatePublisher\\CreatePublisherCommand.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\CreatePublisher\\CreatePublisherCommand.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\CreatePublisher\\CreatePublisherCommand.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAwwBoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T06:45:50.952Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UpdateDeveloperDto.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Developer\\UpdateDeveloperDto.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Dtos\\Developer\\UpdateDeveloperDto.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Developer\\UpdateDeveloperDto.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Dtos\\Developer\\UpdateDeveloperDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T06:46:28.837Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ValidationBehavior.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Common\\Behaviours\\ValidationBehavior.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Common\\Behaviours\\ValidationBehavior.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Common\\Behaviours\\ValidationBehavior.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Common\\Behaviours\\ValidationBehavior.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAgwBcAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:05:14.186Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateGenreCommand.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\CreateGenre\\CreateGenreCommand.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\CreateGenre\\CreateGenreCommand.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\CreateGenre\\CreateGenreCommand.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\CreateGenre\\CreateGenreCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:03:54.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateGenreCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\CreateGenre\\CreateGenreCommandValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\CreateGenre\\CreateGenreCommandValidator.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\CreateGenre\\CreateGenreCommandValidator.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\CreateGenre\\CreateGenreCommandValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T07:32:51.487Z",
+              "WhenOpened": "2024-03-18T12:18:17.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Publisher.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\Publisher.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Models\\Publisher.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\Publisher.cs",
+              "RelativeToolTip": "src\\Core\\Domain\\Projecto.Domain\\Models\\Publisher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T05:49:03.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreatePublisherDto.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\CreatePublisherDto.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\CreatePublisherDto.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\CreatePublisherDto.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\CreatePublisherDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T06:47:18.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Publishers\\Create.cshtml",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Publishers\\Create.cshtml",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Publishers\\Create.cshtml",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Publishers\\Create.cshtml",
+              "ViewState": "AQIAABYAAAAAAAAAAAAEwDYAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-18T12:56:50.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PublisherProfile.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Profiles\\PublisherProfile.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Profiles\\PublisherProfile.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Profiles\\PublisherProfile.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Profiles\\PublisherProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAIwA4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T12:02:15.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Projecto.Domain",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj",
+              "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj",
+              "ToolTip": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj",
+              "RelativeToolTip": "src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-18T13:05:11.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetPublisherQuery.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Queries\\GetPublisher\\GetPublisherQuery.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Queries\\GetPublisher\\GetPublisherQuery.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Queries\\GetPublisher\\GetPublisherQuery.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Queries\\GetPublisher\\GetPublisherQuery.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T12:00:14.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetPublisherDto.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\GetPublisherDto.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\GetPublisherDto.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\GetPublisherDto.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\GetPublisherDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T12:00:49.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PublishersController.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\PublishersController.cs",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\PublishersController.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\PublishersController.cs",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\PublishersController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAUwCgAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T12:47:53.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Publishers\\Details.cshtml",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Publishers\\Details.cshtml",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Publishers\\Details.cshtml",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Publishers\\Details.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-18T12:55:34.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Publishers\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Publishers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Publishers\\Index.cshtml",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Publishers\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-18T12:48:18.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GetPublishersQuery.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Queries\\GetPublishers\\GetPublishersQuery.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Queries\\GetPublishers\\GetPublishersQuery.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Queries\\GetPublishers\\GetPublishersQuery.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Queries\\GetPublishers\\GetPublishersQuery.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T12:13:43.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "GenresController.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\GenresController.cs",
               "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\GenresController.cs",
               "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\GenresController.cs",
               "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\GenresController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-13T07:22:03.134Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\DependencyInjection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAlwAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T07:09:38.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\GlobalUsings.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\GlobalUsings.cs",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\GlobalUsings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T07:49:30.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\appsettings.json",
               "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\appsettings.json",
@@ -392,7 +556,306 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
+              "Title": "EditPublisherCommand.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\EditPublisher\\EditPublisherCommand.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\EditPublisher\\EditPublisherCommand.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\EditPublisher\\EditPublisherCommand.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\EditPublisher\\EditPublisherCommand.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwCgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T12:24:24.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GenreNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\GenreNotFoundException.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\GenreNotFoundException.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\GenreNotFoundException.cs",
+              "RelativeToolTip": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\GenreNotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T06:53:53.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CreateGenreCommand.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\CreateGenre\\CreateGenreCommand.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\CreateGenre\\CreateGenreCommand.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\CreateGenre\\CreateGenreCommand.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\CreateGenre\\CreateGenreCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T07:03:54.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Program.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Program.cs",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T06:34:09.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GetGenreDto.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Genre\\GetGenreDto.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Dtos\\Genre\\GetGenreDto.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Genre\\GetGenreDto.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Dtos\\Genre\\GetGenreDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T06:46:44.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IImageService.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Services\\ImageService\\IImageService.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Services\\ImageService\\IImageService.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Services\\ImageService\\IImageService.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Services\\ImageService\\IImageService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T11:35:59.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Result.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Common\\Models\\Result.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Common\\Models\\Result.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Common\\Models\\Result.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Common\\Models\\Result.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T07:27:48.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GetGenreQuery.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenre\\GetGenreQuery.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenre\\GetGenreQuery.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenre\\GetGenreQuery.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenre\\GetGenreQuery.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAIA0wBUAAACBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T07:17:31.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ImageService.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Services\\ImageService.cs",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Services\\ImageService.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Services\\ImageService.cs",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Services\\ImageService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T11:53:32.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Helper.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Common\\Helpers\\Helper.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Common\\Helpers\\Helper.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Common\\Helpers\\Helper.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Common\\Helpers\\Helper.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAswAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T11:29:22.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Projecto.Persistence",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj",
+              "ToolTip": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj",
+              "RelativeToolTip": "src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-18T11:51:54.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UpdatePublisherDto.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\UpdatePublisherDto.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\UpdatePublisherDto.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\UpdatePublisherDto.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\UpdatePublisherDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T06:47:27.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CreateDeveloperDto.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Developer\\CreateDeveloperDto.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Dtos\\Developer\\CreateDeveloperDto.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Developer\\CreateDeveloperDto.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Dtos\\Developer\\CreateDeveloperDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T06:45:50.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "GetGenresQuery.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenres\\GetGenresQuery.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenres\\GetGenresQuery.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenres\\GetGenresQuery.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenres\\GetGenresQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T07:17:44.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Projecto.Persistence\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\DependencyInjection.cs",
+              "RelativeToolTip": "src\\Infrastructure\\Projecto.Persistence\\DependencyInjection.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAlwBYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T05:19:30.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Projecto.Persistence\\Data\\DataContext.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Data\\DataContext.cs",
+              "RelativeToolTip": "src\\Infrastructure\\Projecto.Persistence\\Data\\DataContext.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T05:17:14.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "GameGenreConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Data\\Configurations\\GameGenreConfiguration.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\Projecto.Persistence\\Data\\Configurations\\GameGenreConfiguration.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Data\\Configurations\\GameGenreConfiguration.cs",
+              "RelativeToolTip": "src\\Infrastructure\\Projecto.Persistence\\Data\\Configurations\\GameGenreConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T06:20:24.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\GlobalUsings.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\GlobalUsings.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\GlobalUsings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T07:05:07.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Genres\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Genres\\Index.cshtml",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Genres\\Index.cshtml",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Genres\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-13T07:23:52.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CreateGenreCommandValidator.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\CreateGenre\\CreateGenreCommandValidator.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\CreateGenre\\CreateGenreCommandValidator.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\CreateGenre\\CreateGenreCommandValidator.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\CreateGenre\\CreateGenreCommandValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T07:32:51.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "guide.txt",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\guide.txt",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\guide.txt",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\guide.txt",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\guide.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAB+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-03-18T10:54:41.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ValidationBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Common\\Behaviours\\ValidationBehavior.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Common\\Behaviours\\ValidationBehavior.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Common\\Behaviours\\ValidationBehavior.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Common\\Behaviours\\ValidationBehavior.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAgwBcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T08:05:14.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "UpdateDeveloperDto.cs",
+              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Developer\\UpdateDeveloperDto.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Dtos\\Developer\\UpdateDeveloperDto.cs",
+              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Developer\\UpdateDeveloperDto.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Dtos\\Developer\\UpdateDeveloperDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T06:46:28.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Genres\\Create.cshtml",
               "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Genres\\Create.cshtml",
@@ -405,20 +868,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GetGenresQuery.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenres\\GetGenresQuery.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenres\\GetGenresQuery.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenres\\GetGenresQuery.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenres\\GetGenresQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:17:44.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 41,
               "Title": "GetGenreQueryValidator.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenre\\GetGenreQueryValidator.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenre\\GetGenreQueryValidator.cs",
@@ -431,20 +881,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GetGenreQuery.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenre\\GetGenreQuery.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenre\\GetGenreQuery.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenre\\GetGenreQuery.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetGenre\\GetGenreQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:17:31.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 42,
               "Title": "EditGenreCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\EditGenre\\EditGenreCommandValidator.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\EditGenre\\EditGenreCommandValidator.cs",
@@ -457,7 +894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 43,
               "Title": "EditGenreCommand.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\EditGenre\\EditGenreCommand.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\EditGenre\\EditGenreCommand.cs",
@@ -470,7 +907,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 44,
               "Title": "DeleteGenreCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\DeleteGenre\\DeleteGenreCommandValidator.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\DeleteGenre\\DeleteGenreCommandValidator.cs",
@@ -483,7 +920,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 45,
               "Title": "DeleteGenreCommand.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\DeleteGenre\\DeleteGenreCommand.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Commands\\DeleteGenre\\DeleteGenreCommand.cs",
@@ -496,33 +933,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "GlobalUsings.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\GlobalUsings.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\GlobalUsings.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\GlobalUsings.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\GlobalUsings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:05:07.381Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\DependencyInjection.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\DependencyInjection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAlwBQAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:09:38.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 46,
               "Title": "BaseAuditableEntity.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\Common\\BaseAuditableEntity.cs",
               "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Models\\Common\\BaseAuditableEntity.cs",
@@ -535,33 +946,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Projecto.Persistence\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\DependencyInjection.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Projecto.Persistence\\DependencyInjection.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAlwBMAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T05:19:30.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Data\\DataContext.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Projecto.Persistence\\Data\\DataContext.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Data\\DataContext.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Projecto.Persistence\\Data\\DataContext.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T05:17:14.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 47,
               "Title": "IDataContext.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Common\\Interfaces\\IDataContext.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Common\\Interfaces\\IDataContext.cs",
@@ -574,20 +959,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "GameGenreConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Data\\Configurations\\GameGenreConfiguration.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\Projecto.Persistence\\Data\\Configurations\\GameGenreConfiguration.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Data\\Configurations\\GameGenreConfiguration.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Projecto.Persistence\\Data\\Configurations\\GameGenreConfiguration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T06:20:24.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 48,
               "Title": "TimestampInterceptor.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Data\\Interceptors\\TimestampInterceptor.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Projecto.Persistence\\Data\\Interceptors\\TimestampInterceptor.cs",
@@ -600,7 +972,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 49,
               "Title": "TimestampHelper.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Helpers\\TimestampHelper.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Projecto.Persistence\\Helpers\\TimestampHelper.cs",
@@ -613,7 +985,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 50,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Controllers\\HomeController.cs",
@@ -626,32 +998,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Program.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Program.cs",
-              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAqwBEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T06:34:09.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "GlobalUsings.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\GlobalUsings.cs",
-              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\GlobalUsings.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\GlobalUsings.cs",
-              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\GlobalUsings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T07:49:30.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 51,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Genres\\Delete.cshtml",
               "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Genres\\Delete.cshtml",
@@ -663,31 +1010,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "GetGenreDto.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Genre\\GetGenreDto.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Dtos\\Genre\\GetGenreDto.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Genre\\GetGenreDto.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Dtos\\Genre\\GetGenreDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T06:46:44.541Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Genres\\Index.cshtml",
-              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Genres\\Index.cshtml",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Genres\\Index.cshtml",
-              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Genres\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-13T07:23:52.929Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 53,
               "Title": "UpdateGenreDto.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Genre\\UpdateGenreDto.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Dtos\\Genre\\UpdateGenreDto.cs",
@@ -699,7 +1022,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 52,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Genres\\Edit.cshtml",
               "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Genres\\Edit.cshtml",
@@ -711,7 +1034,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 54,
               "Title": "CreateGenreDto.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Genre\\CreateGenreDto.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Dtos\\Genre\\CreateGenreDto.cs",
@@ -723,7 +1046,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 55,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Genres\\Details.cshtml",
               "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Genres\\Details.cshtml",
@@ -735,7 +1058,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 56,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\Common\\BaseEntity.cs",
               "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Models\\Common\\BaseEntity.cs",
@@ -747,7 +1070,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 57,
               "Title": "BaseImage.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\Common\\BaseImage.cs",
               "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Models\\Common\\BaseImage.cs",
@@ -759,7 +1082,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 58,
               "Title": "Genre.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\Genre.cs",
               "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Models\\Genre.cs",
@@ -771,19 +1094,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 59,
               "Title": "Projecto.MVC.csproj",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj",
               "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj",
-              "ToolTip": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj",
-              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj",
+              "ToolTip": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj*",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj*",
               "ViewState": "AQIAAAEAAAAAAAAAAABBwJ4AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-18T05:48:08.815Z"
+              "WhenOpened": "2024-03-18T05:48:08.815Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 60,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\_ViewImports.cshtml",
@@ -795,43 +1119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Result.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Common\\Models\\Result.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Common\\Models\\Result.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Common\\Models\\Result.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Common\\Models\\Result.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAIBJwA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T07:27:48.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "CreatePublisherDto.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\CreatePublisherDto.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\CreatePublisherDto.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\CreatePublisherDto.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\CreatePublisherDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T06:47:18.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "UpdatePublisherDto.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\UpdatePublisherDto.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\UpdatePublisherDto.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\UpdatePublisherDto.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Dtos\\Publisher\\UpdatePublisherDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T06:47:27.677Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 61,
               "Title": "DeveloperNotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\DeveloperNotFoundException.cs",
               "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\DeveloperNotFoundException.cs",
@@ -843,19 +1131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "GenreNotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\GenreNotFoundException.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\GenreNotFoundException.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\GenreNotFoundException.cs",
-              "RelativeToolTip": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\GenreNotFoundException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T06:53:53.706Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 62,
               "Title": "PublisherNotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\PublisherNotFoundException.cs",
               "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\PublisherNotFoundException.cs",
@@ -867,7 +1143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 64,
               "Title": "UpdateGameDto.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Game\\UpdateGameDto.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Dtos\\Game\\UpdateGameDto.cs",
@@ -879,7 +1155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 63,
               "Title": "CreateGameDto.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Dtos\\Game\\CreateGameDto.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Dtos\\Game\\CreateGameDto.cs",
@@ -891,7 +1167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 65,
               "Title": "guide.txt",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\guide.txt",
               "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\guide.txt",
@@ -904,19 +1180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "Publisher.cs",
-              "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\Publisher.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Models\\Publisher.cs",
-              "ToolTip": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\Publisher.cs",
-              "RelativeToolTip": "src\\Core\\Domain\\Projecto.Domain\\Models\\Publisher.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T05:49:03.944Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 68,
               "Title": "GameImage.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\GameImage.cs",
               "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Models\\GameImage.cs",
@@ -928,7 +1192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 69,
               "Title": "GameGenre.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\GameGenre.cs",
               "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Models\\GameGenre.cs",
@@ -940,7 +1204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 70,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\Game.cs",
               "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Models\\Game.cs",
@@ -952,7 +1216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 67,
               "Title": "PublisherImage.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\PublisherImage.cs",
               "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Models\\PublisherImage.cs",
@@ -964,7 +1228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 71,
               "Title": "DeveloperImage.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\DeveloperImage.cs",
               "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Models\\DeveloperImage.cs",
@@ -976,7 +1240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 66,
               "Title": "Developer.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\Developer.cs",
               "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Models\\Developer.cs",
@@ -988,7 +1252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 72,
               "Title": "DataContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\shahvaladea\\source\\repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Migrations\\DataContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Projecto.Persistence\\Migrations\\DataContextModelSnapshot.cs",

@@ -13,12 +13,14 @@
 
         public async Task<IActionResult> Index(GetGenresQuery query)
         {
-            return View(await _sender.Send(query));
+            var genres = await _sender.Send(query);
+            return View(genres);
         }
 
         public async Task<IActionResult> Details(GetGenreQuery query)
         {
-            return View(await _sender.Send(query));
+            var genre = await _sender.Send(query);
+            return View(genre);
         }
 
         public IActionResult Create()

@@ -1017,6 +1017,10 @@
       "PackagePath": "staticwebassets\\Admin\\assets\\libs\\x-editable\\bootstrap-editable.min.js"
     },
     {
+      "Id": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Images\\Publishers\\download_f022097c.jfif",
+      "PackagePath": "staticwebassets\\Images\\Publishers\\download_f022097c.jfif"
+    },
+    {
       "Id": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

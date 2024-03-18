@@ -7,3 +7,8 @@ global using Projecto.Application.Features.Genres.Commands.DeleteGenre;
 global using Projecto.Application.Features.Genres.Commands.EditGenre;
 global using Projecto.Application.Features.Genres.Queries.GetGenre;
 global using Projecto.Application.Features.Genres.Queries.GetGenres;
+global using Projecto.Application.Features.Publishers.Commands.CreatePublisher;
+global using Projecto.Application.Features.Publishers.Commands.EditPublisher;
+global using Projecto.Application.Features.Publishers.Queries.GetPublisher;
+global using Projecto.Application.Features.Publishers.Queries.GetPublishers;
+global using Projecto.Application.Services.ImageService;

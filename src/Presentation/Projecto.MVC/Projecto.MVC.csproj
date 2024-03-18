@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -167,6 +167,12 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Application\Projecto.Application\Projecto.Application.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Projecto.Persistence\Projecto.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\Games\" />
+    <Folder Include="wwwroot\Images\Developers\" />
+    <Folder Include="wwwroot\Images\Publishers\" />
   </ItemGroup>
 
 </Project>

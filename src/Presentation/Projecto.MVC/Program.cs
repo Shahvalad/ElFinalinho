@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Projecto.Application;
+using Projecto.MVC.Areas.Admin.Services;
 using Projecto.Persistence;
 
 namespace Projecto.MVC
@@ -11,8 +12,11 @@ namespace Projecto.MVC
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+
             builder.Services.AddApplication();
             builder.Services.AddPersistence(builder.Configuration);
+            builder.Services.AddScoped<IImageService, ImageService>();
+
 
             builder.Services.AddControllersWithViews();
 
