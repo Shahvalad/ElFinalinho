@@ -15,11 +15,13 @@ namespace Projecto.MVC.Controllers
 
         public IActionResult Index()
         {
+            //salam
             return View();
         }
 
         public IActionResult Privacy()
         {
+            //salam
             return View();
         }
 

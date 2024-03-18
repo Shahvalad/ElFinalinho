@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kebD+1/uAgTWjH3h7lDfIkwJnJnqFgaYpn5fDcHa1Jxfs148bmP0psS1kYl44QHMekLXMRgMFxU20rfB28Ch5g==",
+  "dgSpecHash": "rtMBNYQtUqJwAPy5MRvin+UmWLKxTot+yoKvytn2GoK/BbFj1P1R7ZDf090RGvOYJxrHqsaftGSTdLCl4s5DLQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\shahvaladea\\Desktop\\ElFinal-master\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj",
+  "projectFilePath": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shahvaladea\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
     "C:\\Users\\shahvaladea\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",

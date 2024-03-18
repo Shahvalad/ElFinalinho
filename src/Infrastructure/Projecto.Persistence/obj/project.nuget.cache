@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0j5PxlXzXITAcawtBE2BLA7LvYkNKaVU9ynC+Eyih0yKqT7/xw94p+WZza/32rytYLsyxZIO55NwJ7haHhOvbg==",
+  "dgSpecHash": "DFlJfJykJlJ50hp3xAznRd4bkFVvNIp/u16J6rSew2Nu1MHZuZtoaiur7daZSRP7DAUQoGrsZ09WJkXW5t9lzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\shahvaladea\\Desktop\\ElFinal-master\\src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj",
+  "projectFilePath": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shahvaladea\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\shahvaladea\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
