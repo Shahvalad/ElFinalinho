@@ -1,0 +1,9 @@
+﻿global using AutoMapper;
+global using MediatR;
+global using Microsoft.AspNetCore.Mvc;
+global using Projecto.Application.Dtos.Genre;
+global using Projecto.Application.Features.Genres.Commands.CreateGenre;
+global using Projecto.Application.Features.Genres.Commands.DeleteGenre;
+global using Projecto.Application.Features.Genres.Commands.EditGenre;
+global using Projecto.Application.Features.Genres.Queries.GetGenre;
+global using Projecto.Application.Features.Genres.Queries.GetGenres;

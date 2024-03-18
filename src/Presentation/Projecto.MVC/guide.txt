@@ -1,0 +1,2 @@
+to add migrations
+ dotnet ef migrations add AddedSeveralTables --startup-project ./Projecto.MVC --project ../Infrastructure/Projecto.Persistence
