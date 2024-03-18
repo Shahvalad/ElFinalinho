@@ -1,8 +1,4 @@
-﻿using MediatR;
-using Microsoft.EntityFrameworkCore;
-using Projecto.Application.Common.Interfaces;
-using Projecto.Application.Dtos.Genre;
-using Projecto.Domain.Exceptions;
+﻿
 
 namespace Projecto.Application.Features.Genres.Commands.EditGenre
 {

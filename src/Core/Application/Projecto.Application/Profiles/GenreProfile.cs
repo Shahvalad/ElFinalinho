@@ -15,6 +15,7 @@ namespace Projecto.Application.Profiles
             CreateMap<Genre, GetGenreDto>();
             CreateMap<Genre, UpdateGenreDto>().ReverseMap();
             CreateMap<GetGenreDto, UpdateGenreDto>();
+            CreateMap<CreateGenreDto, Genre>();
         }
     }
 }

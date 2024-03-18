@@ -60,7 +60,6 @@
 
         public async Task<IActionResult> Delete(GetGenreQuery query)
         {
-            if (query.Id is null) return NotFound();
             return View(await _sender.Send(query));
         }
 
@@ -68,9 +67,7 @@
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int? id)
         {
-            if (id is null) return NotFound();
-            var command = new DeleteGenreCommand(id);
-            await _sender.Send(command);
+            await _sender.Send(new DeleteGenreCommand(id));
             return RedirectToAction(nameof(Index));
         }
     }

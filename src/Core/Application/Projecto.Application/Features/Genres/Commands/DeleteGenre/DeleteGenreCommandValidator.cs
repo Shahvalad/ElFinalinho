@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Projecto.Application.Features.Genres.Commands.DeleteGenre
+﻿namespace Projecto.Application.Features.Genres.Commands.DeleteGenre
 {
     public class DeleteGenreCommandValidator : AbstractValidator<DeleteGenreCommand>
     {

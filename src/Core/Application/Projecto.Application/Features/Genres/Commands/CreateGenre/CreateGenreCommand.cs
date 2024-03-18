@@ -1,4 +1,4 @@
-﻿using Projecto.Domain.Models;
+﻿using Microsoft.AspNetCore.Http;
 
 namespace Projecto.Application.Features.Genres.Commands.CreateGenre
 {

@@ -1,5 +1,4 @@
-﻿using Projecto.Domain.Models;
-
+﻿
 namespace Projecto.Application.Features.Genres.Queries.GetGenre
 {
     public record GetGenreQuery(int? Id, bool IsTracking) : IRequest<GetGenreDto>;
