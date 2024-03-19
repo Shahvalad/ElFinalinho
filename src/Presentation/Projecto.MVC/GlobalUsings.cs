@@ -12,3 +12,5 @@ global using Projecto.Application.Features.Publishers.Commands.EditPublisher;
 global using Projecto.Application.Features.Publishers.Queries.GetPublisher;
 global using Projecto.Application.Features.Publishers.Queries.GetPublishers;
 global using Projecto.Application.Services.ImageService;
+global using Projecto.Application.Dtos.Publisher;
+global using Projecto.Application.Features.Publishers.Commands.DeletePublisher;

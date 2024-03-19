@@ -1,0 +1,95 @@
+﻿@model UpdatePublisherDto
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<style>
+    #imagePreview {
+        display: none;
+        max-width: 100%;
+        height: auto; /* Ensure the aspect ratio is maintained */
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-file-input {
+        cursor: pointer;
+    }
+
+    .custom-file-label {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+</style>
+
+<br />
+
+<div class="container-fluid">
+    <h1>Create</h1>
+
+    <h4>Publisher</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Edit" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Logo" class="control-label">Publisher Logo</label>
+                    <div class="custom-file">
+                        <input asp-for="Logo" type="hidden" />
+                        <input asp-for="Logo" type="file" class="custom-file-input" id="publisherLogoInput" accept="image/*">
+                        <label class="custom-file-label" for="publisherLogoInput">Choose file</label>
+                    </div>
+                    <span asp-validation-for="Logo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <img id="imagePreview" src="#" alt="Image Preview" style="display: none; height: 200px; width: auto; margin-top: 10px; border: 1px solid #ddd; border-radius: 4px; padding: 5px;" />
+        </div>
+    </div>
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelector('.custom-file-input').addEventListener('change', function (e) {
+            var fileName = document.getElementById("publisherLogoInput").files[0].name;
+            var nextSibling = e.target.nextElementSibling
+            nextSibling.innerText = fileName
+        });
+
+        document.querySelector('.custom-file-input').addEventListener('change', function (e) {
+            var fileName = document.getElementById("publisherLogoInput").files[0].name;
+            var nextSibling = e.target.nextElementSibling;
+            nextSibling.innerText = fileName;
+
+            // Image preview
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                document.getElementById('imagePreview').style.display = 'block';
+                document.getElementById('imagePreview').src = e.target.result;
+            }
+            reader.readAsDataURL(this.files[0]);
+        });
+    });
+</script>

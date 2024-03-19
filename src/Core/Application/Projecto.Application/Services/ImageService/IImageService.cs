@@ -10,6 +10,6 @@ namespace Projecto.Application.Services.ImageService
     public interface IImageService
     {
         public Task<string> CreateImageAsync(string folder, IFormFile file);
-        public Task DeleteImage(string folder, string fileName);
+        public Task<bool> DeleteImage(string folder, string fileName);
     }
 }

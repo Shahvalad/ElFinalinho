@@ -17,6 +17,7 @@ namespace Projecto.Application.Features.Publishers.Commands.EditPublisher
         private readonly IImageService _imageService;
         public EditPublicCommandHandler(IDataContext context, IMapper mapper, IImageService imageService)
         {
+
             _context = context;
             _mapper = mapper;
             _imageService = imageService;
@@ -24,21 +25,32 @@ namespace Projecto.Application.Features.Publishers.Commands.EditPublisher
 
         public async Task Handle(EditPublisherCommand request, CancellationToken cancellationToken)
         {
+            if (request.PublisherDto == null)
+            {
+                throw new ArgumentNullException(nameof(request.PublisherDto));
+            }
 
             var publisher = await _context.Publisher.
                 Include(p=>p.Logo).FirstOrDefaultAsync(p=>p.Id == request.Id, cancellationToken)
                             ??throw new PublisherNotFoundException("No publisher with such id!");
-            _mapper.Map(request.PublisherDto, publisher);
-            if (request.PublisherDto.PublisherLogo is not null)
-            {
-                if (publisher.Logo is not null)
-                {
-                    await _imageService.DeleteImage("Publishers", publisher.Logo.FileName);
-                }
 
-                var imageFileName = await _imageService.CreateImageAsync("Publishers", request.PublisherDto.PublisherLogo);
+            if (publisher.Logo is not null)
+            {
+                var deleteResult = await _imageService.DeleteImage("Publishers", publisher.Logo.FileName);
+                if (!deleteResult)
+                {
+                    throw new Exception("Failed to delete existing image.");
+                }
+            }
+            _mapper.Map(request.PublisherDto, publisher);
+
+            if (request.PublisherDto.Logo is not null)
+            {
+                var imageFileName = await _imageService.CreateImageAsync("Publishers", request.PublisherDto.Logo);
                 publisher.Logo = (new PublisherImage() { FileName = imageFileName });
             }
+
+            _context.MarkAsModified(publisher);
             await _context.SaveChangesAsync(cancellationToken);
         }
     }

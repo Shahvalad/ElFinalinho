@@ -19,8 +19,4 @@
     <ProjectReference Include="..\..\Domain\Projecto.Domain\Projecto.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\Publishers\Commands\DeletePublisher\" />
-  </ItemGroup>
-
 </Project>

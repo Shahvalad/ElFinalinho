@@ -19,5 +19,7 @@ namespace Projecto.Application.Common.Interfaces
         DbSet<GameImage> GameImages { get; }
         DbSet<DeveloperImage> DeveloperImages { get; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
+        void MarkAsModified(object entity);
+
     }
 }

@@ -9,7 +9,6 @@ namespace Projecto.Application.Dtos.Publisher
         public string? Description { get; set; }
 
         [Display(Name = "Publisher Logo")]
-        public IFormFile? PublisherLogo { get; set; }
-        public string? PublisherLogoFileName { get; set; }
+        public IFormFile? Logo { get; set; }
     }
 }

@@ -15,7 +15,10 @@ namespace Projecto.Application.Profiles
             CreateMap<Publisher, GetPublisherDto>()
                 .ForMember(dest => dest.Logo, opt => opt.Ignore());
             CreateMap<CreatePublisherDto, Publisher>()
-                .ForMember(dest => dest.Logo, opt => opt.Ignore()); // Ignore the Logo property
+                .ForMember(dest => dest.Logo, opt => opt.Ignore());
+            CreateMap<GetPublisherDto, UpdatePublisherDto>().ReverseMap();
+            CreateMap<UpdatePublisherDto, Publisher>()
+                .ForMember(dest => dest.Logo, opt => opt.Ignore());
         }
     }
 }

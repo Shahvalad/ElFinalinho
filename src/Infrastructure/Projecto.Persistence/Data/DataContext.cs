@@ -33,5 +33,10 @@ namespace Projecto.Persistence.Data
             base.OnModelCreating(modelBuilder);
         }
 
+        public void MarkAsModified(object entity)
+        {
+            Entry(entity).State = EntityState.Modified;
+        }
+
     }
 }

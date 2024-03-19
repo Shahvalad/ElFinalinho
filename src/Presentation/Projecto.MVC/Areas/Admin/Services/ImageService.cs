@@ -22,13 +22,12 @@ namespace Projecto.MVC.Areas.Admin.Services
             return uniqueImageName;
         }
 
-        public async Task DeleteImage(string folder, string fileName)
+        public async Task<bool> DeleteImage(string folder, string fileName)
         {
             string path = Path.Combine(_environment.WebRootPath, "Images", $"{folder}", fileName);
-            if (File.Exists(path))
-            {
-                File.Delete(path);
-            }
+            if (!File.Exists(path)) return false;
+            File.Delete(path);
+            return true;
         }
     }
 }
