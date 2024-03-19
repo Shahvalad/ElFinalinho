@@ -32,13 +32,10 @@
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CreateGenreDto genreDto)
         {
-            if (ModelState.IsValid)
-            {
-                var command = new CreateGenreCommand(genreDto);
-                await _sender.Send(command);
-                return RedirectToAction("Index");
-            }
-            return View(genreDto);
+            if (ModelState.IsValid) return View(genreDto);
+            var command = new CreateGenreCommand(genreDto);
+            await _sender.Send(command);
+            return RedirectToAction("Index");
         }
 
         public async Task<IActionResult> Edit(GetGenreQuery query)
@@ -51,13 +48,10 @@
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id, UpdateGenreDto genreDto)
         {
-            if (ModelState.IsValid)
-            {
-                var command = new EditGenreCommand(id, genreDto);
-                genreDto = await _sender.Send(command);
-                return RedirectToAction(nameof(Index));
-            }
-            return View(genreDto);
+            if (!ModelState.IsValid) return View(genreDto);
+            var command = new EditGenreCommand(id, genreDto);
+            genreDto = await _sender.Send(command);
+            return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> Delete(GetGenreQuery query)
@@ -69,6 +63,7 @@
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int? id)
         {
+            if (id is null) return NotFound();
             await _sender.Send(new DeleteGenreCommand(id));
             return RedirectToAction(nameof(Index));
         }

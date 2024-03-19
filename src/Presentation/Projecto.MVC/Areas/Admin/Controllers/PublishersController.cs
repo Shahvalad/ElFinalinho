@@ -33,13 +33,10 @@ namespace Projecto.MVC.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CreatePublisherDto publisherDto)
         {
-            if (ModelState.IsValid)
-            {
-                var command = new CreatePublisherCommand(publisherDto);
-                await _sender.Send(command);
-                return RedirectToAction("Index");
-            }
-            return View(publisherDto);
+            if (!ModelState.IsValid) return View(publisherDto);
+            var command = new CreatePublisherCommand(publisherDto);
+            await _sender.Send(command);
+            return RedirectToAction("Index");
         }
 
         public async Task<IActionResult> Edit(GetPublisherQuery query)
@@ -52,13 +49,11 @@ namespace Projecto.MVC.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id, UpdatePublisherDto publisherDto)
         {
-            if (ModelState.IsValid)
-            {
-                var command = new EditPublisherCommand(id, publisherDto);
-                await _sender.Send(command);
-                return RedirectToAction(nameof(Index));
-            }
-            return View(publisherDto);
+            if (id is null) return NotFound();
+            if (!ModelState.IsValid) return View(publisherDto);
+            var command = new EditPublisherCommand(id, publisherDto);
+            await _sender.Send(command);
+            return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> Delete(GetPublisherQuery query)
@@ -71,6 +66,7 @@ namespace Projecto.MVC.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int? id)
         {
+            if (id is null) return NotFound();
             var command = new DeletePublisherCommand(id);
             await _sender.Send(command);
             return RedirectToAction(nameof(Index));
