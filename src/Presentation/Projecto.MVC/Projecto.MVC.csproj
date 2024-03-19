@@ -26,6 +26,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Areas\Admin\Views\Developers\Create.cshtml" />
+    <None Include="Areas\Admin\Views\Developers\Delete.cshtml" />
+    <None Include="Areas\Admin\Views\Developers\Details.cshtml" />
+    <None Include="Areas\Admin\Views\Developers\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\Developers\Index.cshtml" />
     <None Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <None Include="wwwroot\Admin\assets\css\app-dark-rtl.min.css.map" />
     <None Include="wwwroot\Admin\assets\css\app-dark.min.css.map" />

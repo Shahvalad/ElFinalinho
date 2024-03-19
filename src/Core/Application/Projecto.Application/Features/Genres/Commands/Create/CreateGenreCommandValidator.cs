@@ -1,4 +1,4 @@
-﻿namespace Projecto.Application.Features.Genres.Commands.CreateGenre
+﻿namespace Projecto.Application.Features.Genres.Commands.Create
 {
     public class CreateGenreCommandValidator : AbstractValidator<CreateGenreCommand>
     {

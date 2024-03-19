@@ -1,4 +1,4 @@
-﻿namespace Projecto.Application.Features.Genres.Queries.GetGenres
+﻿namespace Projecto.Application.Features.Genres.Queries.GetAll
 {
     public record GetGenresQuery() : IRequest<IEnumerable<GetGenreDto>>;
 

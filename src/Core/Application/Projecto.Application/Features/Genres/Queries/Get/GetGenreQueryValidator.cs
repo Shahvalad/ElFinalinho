@@ -1,8 +1,10 @@
-﻿namespace Projecto.Application.Features.Genres.Commands.DeleteGenre
+﻿
+
+namespace Projecto.Application.Features.Genres.Queries.Get
 {
-    public class DeleteGenreCommandValidator : AbstractValidator<DeleteGenreCommand>
+    public class GetGenreQueryValidator : AbstractValidator<GetGenreQuery>
     {
-        public DeleteGenreCommandValidator()
+        public GetGenreQueryValidator()
         {
             RuleFor(x => x.Id)
                 .NotNull()

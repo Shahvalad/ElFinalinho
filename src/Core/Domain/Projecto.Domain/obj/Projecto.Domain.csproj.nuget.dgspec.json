@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj": {}
+    "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj": {
+    "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj",
         "projectName": "Projecto.Domain",
-        "projectPath": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj",
+        "projectPath": "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj",
         "packagesPath": "C:\\Users\\shahvaladea\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\obj\\",
+        "outputPath": "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Domain\\Projecto.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -71,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

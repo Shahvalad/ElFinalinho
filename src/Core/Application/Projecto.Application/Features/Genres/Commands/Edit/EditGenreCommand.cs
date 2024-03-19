@@ -1,6 +1,6 @@
 ﻿
 
-namespace Projecto.Application.Features.Genres.Commands.EditGenre
+namespace Projecto.Application.Features.Genres.Commands.Edit
 {
     public record EditGenreCommand(int? Id, UpdateGenreDto GenreDto) : IRequest<UpdateGenreDto>;
 

@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Projecto.Application.Dtos.Publisher;
-using Projecto.Application.Services.ImageService;
-
-namespace Projecto.Application.Features.Publishers.Commands.EditPublisher
+﻿namespace Projecto.Application.Features.Publishers.Commands.EditPublisher
 {
     public record EditPublisherCommand(int? Id, UpdatePublisherDto PublisherDto) : IRequest;
 

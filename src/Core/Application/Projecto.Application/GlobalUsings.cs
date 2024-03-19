@@ -6,3 +6,6 @@ global using Projecto.Application.Common.Interfaces;
 global using Projecto.Application.Dtos.Genre;
 global using Projecto.Domain.Exceptions;
 global using Projecto.Domain.Models;
+global using Projecto.Application.Dtos.Developer;
+global using Projecto.Application.Services.ImageService;
+global using Projecto.Application.Dtos.Publisher;

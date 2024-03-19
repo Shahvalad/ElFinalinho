@@ -1,6 +1,6 @@
 ﻿
 
-namespace Projecto.Application.Features.Genres.Commands.EditGenre
+namespace Projecto.Application.Features.Genres.Commands.Edit
 {
     public class EditGenreCommandValidator : AbstractValidator<EditGenreCommand>
     {

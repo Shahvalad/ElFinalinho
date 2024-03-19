@@ -1,5 +1,5 @@
 ﻿
-namespace Projecto.Application.Features.Genres.Queries.GetGenre
+namespace Projecto.Application.Features.Genres.Queries.Get
 {
     public record GetGenreQuery(int? Id, bool IsTracking) : IRequest<GetGenreDto>;
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "thaRSNQcLB7lFBRDKVEVw2RVmPDv5Gmu4ViW/LCh38zzP51qnMHtzud0NY1goaeu2N2VuMZ3ztPP47AYRtd7Tw==",
+  "dgSpecHash": "bgif6upmgjfQY/L3oHGoehcwLSWBTzsidGE1PefX+yoBMx3/U62edYpmYs0lYZY7TXnYH0E7se2br/mDf1d2/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\shahvaladea\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj",
+  "projectFilePath": "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shahvaladea\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\shahvaladea\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

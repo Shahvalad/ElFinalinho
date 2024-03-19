@@ -1,4 +1,4 @@
-﻿namespace Projecto.Application.Features.Genres.Commands.DeleteGenre
+﻿namespace Projecto.Application.Features.Genres.Commands.Delete
 {
     public record DeleteGenreCommand(int? Id) : IRequest;
     public class DeleteGenreCommandHandler : IRequestHandler<DeleteGenreCommand>
