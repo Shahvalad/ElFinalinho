@@ -60,7 +60,7 @@ namespace Projecto.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Developer");
+                    b.ToTable("Developers");
                 });
 
             modelBuilder.Entity("Projecto.Domain.Models.DeveloperImage", b =>
@@ -140,7 +140,7 @@ namespace Projecto.Persistence.Migrations
 
                     b.HasIndex("PublisherId");
 
-                    b.ToTable("Game");
+                    b.ToTable("Games");
                 });
 
             modelBuilder.Entity("Projecto.Domain.Models.GameGenre", b =>
@@ -221,7 +221,7 @@ namespace Projecto.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Genre");
+                    b.ToTable("Genres");
                 });
 
             modelBuilder.Entity("Projecto.Domain.Models.Publisher", b =>
@@ -262,7 +262,7 @@ namespace Projecto.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Publisher");
+                    b.ToTable("Publishers");
                 });
 
             modelBuilder.Entity("Projecto.Domain.Models.PublisherImage", b =>

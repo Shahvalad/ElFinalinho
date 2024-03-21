@@ -12,8 +12,8 @@
 
         public async Task Handle(DeleteGenreCommand request, CancellationToken cancellationToken)
         {
-            var genre = await _context.Genre.FirstOrDefaultAsync(m => m.Id == request.Id, cancellationToken) ?? throw new GenreNotFoundException("There is no genre with such id!");
-            _context.Genre.Remove(genre);
+            var genre = await _context.Genres.FirstOrDefaultAsync(m => m.Id == request.Id, cancellationToken) ?? throw new GenreNotFoundException("There is no genre with such id!");
+            _context.Genres.Remove(genre);
             await _context.SaveChangesAsync(cancellationToken);
         }
     }

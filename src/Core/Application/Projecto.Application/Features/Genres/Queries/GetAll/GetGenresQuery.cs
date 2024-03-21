@@ -14,7 +14,7 @@
 
         public async Task<IEnumerable<GetGenreDto>> Handle(GetGenresQuery request, CancellationToken cancellationToken)
         {
-            var genres = await _context.Genre.AsNoTracking().ToListAsync(cancellationToken);
+            var genres = await _context.Genres.AsNoTracking().ToListAsync(cancellationToken);
             return _mapper.Map<IEnumerable<GetGenreDto>>(genres);
         }
     }

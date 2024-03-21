@@ -22,7 +22,7 @@
                 throw new ArgumentNullException(nameof(request.PublisherDto));
             }
 
-            var publisher = await _context.Publisher.
+            var publisher = await _context.Publishers.
                 Include(p=>p.Logo).FirstOrDefaultAsync(p=>p.Id == request.Id, cancellationToken)
                             ??throw new PublisherNotFoundException("No publisher with such id!");
 

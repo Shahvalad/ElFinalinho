@@ -4,11 +4,11 @@
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) {}
 
-        public DbSet<Game> Game { get; set; } = default!;
-        public DbSet<Genre> Genre { get; set; } = default!;
+        public DbSet<Game> Games { get; set; } = default!;
+        public DbSet<Genre> Genres { get; set; } = default!;
         public DbSet<GameGenre> GameGenres { get; set; } = default!;
-        public DbSet<Developer> Developer { get; set; } = default!;
-        public DbSet<Publisher> Publisher { get; set; } = default!;
+        public DbSet<Developer> Developers { get; set; } = default!;
+        public DbSet<Publisher> Publishers { get; set; } = default!;
 
         public DbSet<PublisherImage> PublisherImages { get; set; } = default!;
         public DbSet<GameImage> GameImages { get; set; } = default!;
@@ -26,5 +26,9 @@
             Entry(entity).State = EntityState.Modified;
         }
 
+        public void MarkAsCreated(object entity)
+        {
+            Entry(entity).State = EntityState.Added;
+        }
     }
 }

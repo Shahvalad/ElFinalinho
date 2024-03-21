@@ -1,14 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Http;
 
-namespace Projecto.Application.Dtos.Publisher
+namespace Projecto.Application.Dtos.DeveloperDtos
 {
-    public class CreatePublisherDto
+    public class UpdateDeveloperDto
     {
+        [Required]
         public string Name { get; set; } = null!;
         public string? Description { get; set; }
-
-        [Display(Name = "Publisher Logo")]
         public IFormFile? Logo { get; set; }
     }
 }

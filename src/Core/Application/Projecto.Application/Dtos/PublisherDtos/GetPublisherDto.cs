@@ -1,13 +1,15 @@
-﻿namespace Projecto.Application.Dtos.Genre
+﻿using Microsoft.AspNetCore.Http;
+
+namespace Projecto.Application.Dtos.PublisherDtos
 {
-    public class GetGenreDto
+    public class GetPublisherDto
     {
         public int Id { get; init; }
         public string Name { get; set; } = null!;
+        public IFormFile? Logo { get; set; }
         public string? Description { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public DateTime? DeletedAt { get; set; }
-
     }
 }

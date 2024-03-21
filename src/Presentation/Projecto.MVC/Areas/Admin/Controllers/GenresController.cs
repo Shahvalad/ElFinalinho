@@ -1,4 +1,6 @@
-﻿namespace fin.Areas.Admin.Controllers
+﻿using Projecto.Application.Dtos.GenreDtos;
+
+namespace fin.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class GenresController : Controller

@@ -14,7 +14,7 @@
 
         public async Task<IEnumerable<GetDeveloperDto>> Handle(GetDevelopersQuery request, CancellationToken cancellationToken)
         {
-            var developers = await _context.Developer.AsNoTracking().ToListAsync();
+            var developers = await _context.Developers.AsNoTracking().ToListAsync();
             return _mapper.Map<IEnumerable<GetDeveloperDto>>(developers);
         }
     }

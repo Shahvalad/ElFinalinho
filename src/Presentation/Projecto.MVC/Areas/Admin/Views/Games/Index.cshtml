@@ -1,0 +1,92 @@
+﻿@model IEnumerable<GetGameDto>
+@* //TODO : ADD PAGINATION *@
+<div class="container-fluid">
+    <br />
+    <h1>List of Games</h1>
+    <p>
+        <a class="btn btn-outline-dark" asp-action="Create">Create New</a>
+    </p>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Cover Image</th>
+                    <th>Name</th>
+                    <th>@Html.DisplayNameFor(model => model.Publisher)</th>
+                    <th>@Html.DisplayNameFor(model => model.Developer)</th>
+                    <th>@Html.DisplayNameFor(model => model.Price)</th>
+                    <th>@Html.DisplayNameFor(model => model.IsActive)</th>
+                    <th>@Html.DisplayNameFor(model => model.CreatedAt)</th>
+                    <th>@Html.DisplayNameFor(model => model.UpdatedAt)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @if (item.Images.Any())
+                            {
+                                var coverImage = item.Images.FirstOrDefault(im => im.IsCoverImage == true);
+                                if (coverImage != null)
+                                {
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img src="~/Images/Games/@coverImage.FileName" alt="Cover Image" class="img-fluid rounded" style="max-width: 100px; max-height: 100px;">
+                                    </div>
+                                }
+                                else
+                                {
+                                    <span>No Cover Image</span>
+                                }
+                            }
+                            else
+                            {
+                                <span>No Images</span>
+                            }
+                        </td>
+                        <td>
+                            <strong>@Html.DisplayFor(modelItem => item.Name)</strong>
+                        </td>
+                        <td>
+                            @if (item.Publisher != null)
+                            {
+                                @Html.DisplayFor(modelItem => item.Publisher.Name)
+                            }
+                            else
+                            {
+                                <span>No publisher</span>
+                            }
+                        </td>
+                        <td>@Html.DisplayFor(modelItem => item.Developer.Name)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Price)</td>
+                        <td>@Html.DisplayFor(modelItem => item.IsActive)</td>
+                        <td>@Html.DisplayFor(modelItem => item.CreatedAt)</td>
+                        <td>
+                            @if (item.UpdatedAt != null)
+                            {
+                                @Html.DisplayFor(modelItem => item.UpdatedAt)
+                            }
+                            else
+                            {
+                                <span>Not updated yet</span>
+                            }
+                        </td>
+                        <td>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-cogs"></i> Actions
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                                    <a class="dropdown-item" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                                    <a class="dropdown-item" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

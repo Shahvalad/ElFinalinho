@@ -14,7 +14,7 @@ namespace Projecto.Application.Features.Publishers.Commands.CreatePublisher
                 var imageFileName = await imageService.CreateImageAsync("Publishers", request.PublisherDto.Logo);
                 publisher.Logo = new PublisherImage() { FileName = imageFileName };
             }
-            await context.Publisher.AddAsync(publisher, cancellationToken);
+            await context.Publishers.AddAsync(publisher, cancellationToken);
             await context.SaveChangesAsync(cancellationToken);
             return publisher.Id;
         }

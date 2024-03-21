@@ -16,7 +16,7 @@
         public async Task<GetPublisherDto> Handle(GetPublisherQuery request,
             CancellationToken cancellationToken)
         {
-            var publishers = await _context.Publisher
+            var publishers = await _context.Publishers
                 .Include(p => p.Logo)
                 .Where(p => p.Id == request.Id)
                 .Select(p => _mapper.Map<GetPublisherDto>(p))

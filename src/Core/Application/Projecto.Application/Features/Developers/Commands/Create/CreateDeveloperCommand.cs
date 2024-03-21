@@ -1,4 +1,6 @@
 ﻿
+using Projecto.Application.Dtos.DeveloperDtos;
+
 namespace Projecto.Application.Features.Developers.Commands.Create
 {
     public record CreateDeveloperCommand(CreateDeveloperDto DeveloperDto) : IRequest<int>;
@@ -22,7 +24,7 @@ namespace Projecto.Application.Features.Developers.Commands.Create
                 var image = await _imageService.CreateImageAsync("Developers", request.DeveloperDto.Logo);
                 developer.Logo = new DeveloperImage { FileName = image };
             }
-            await _context.Developer.AddAsync(developer, cancellationToken);
+            await _context.Developers.AddAsync(developer, cancellationToken);
             await _context.SaveChangesAsync(cancellationToken);
             return developer.Id;
         }

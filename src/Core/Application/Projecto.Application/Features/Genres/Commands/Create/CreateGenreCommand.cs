@@ -16,7 +16,7 @@
         public async Task<int> Handle(CreateGenreCommand request, CancellationToken cancellationToken)
         {
             var genre = _mapper.Map<Genre>(request.GenreDto);
-            await _context.Genre.AddAsync(genre, cancellationToken);
+            await _context.Genres.AddAsync(genre, cancellationToken);
             await _context.SaveChangesAsync(cancellationToken);
             return genre.Id;
 

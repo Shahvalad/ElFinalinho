@@ -15,7 +15,7 @@
 
         public async Task Handle(DeleteDeveloperCommand request, CancellationToken cancellationToken)
         {
-            var developer = await _context.Developer.Include(d=>d.Logo).FirstOrDefaultAsync(p=>p.Id == request.Id, cancellationToken) ??
+            var developer = await _context.Developers.Include(d=>d.Logo).FirstOrDefaultAsync(p=>p.Id == request.Id, cancellationToken) ??
                 throw new DeveloperNotFoundException("There is no developer with such id!");
             if(developer.Logo is not null)
             {
@@ -25,7 +25,7 @@
                     throw new Exception("Failed to delete existing image.");
                 }
             }
-            _context.Developer.Remove(developer);
+            _context.Developers.Remove(developer);
             await _context.SaveChangesAsync(cancellationToken);
         }
     }

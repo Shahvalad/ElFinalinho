@@ -15,7 +15,7 @@
 
         public async Task<IEnumerable<GetPublisherDto>> Handle(GetPublishersQuery request, CancellationToken cancellationToken)
         {
-            var publishers = await _context.Publisher.Include(p=>p.Logo).AsNoTracking().ToListAsync(cancellationToken);
+            var publishers = await _context.Publishers.Include(p=>p.Logo).AsNoTracking().ToListAsync(cancellationToken);
             return _mapper.Map<IEnumerable<GetPublisherDto>>(publishers);
         }
     }

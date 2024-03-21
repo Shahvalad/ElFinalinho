@@ -14,7 +14,7 @@
 
         public async Task<UpdateGenreDto> Handle(EditGenreCommand request, CancellationToken cancellationToken)
         {
-            var genre = await _context.Genre.FirstOrDefaultAsync(m => m.Id == request.Id, cancellationToken) ?? throw new GenreNotFoundException("There is no genre with such id!");
+            var genre = await _context.Genres.FirstOrDefaultAsync(m => m.Id == request.Id, cancellationToken) ?? throw new GenreNotFoundException("There is no genre with such id!");
             genre = _mapper.Map(request.GenreDto, genre);
             await _context.SaveChangesAsync(cancellationToken);
             return _mapper.Map<UpdateGenreDto>(genre);

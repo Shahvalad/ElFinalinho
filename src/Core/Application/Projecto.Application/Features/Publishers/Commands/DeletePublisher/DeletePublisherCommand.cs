@@ -15,7 +15,7 @@
 
         public async Task Handle(DeletePublisherCommand request, CancellationToken cancellationToken)
         {
-            var publisher = await _context.Publisher.Include(p=>p.Logo).FirstOrDefaultAsync(p=>p.Id == request.Id, cancellationToken)
+            var publisher = await _context.Publishers.Include(p=>p.Logo).FirstOrDefaultAsync(p=>p.Id == request.Id, cancellationToken)
                             ?? throw new PublisherNotFoundException("No publisher with such id!");
             if (publisher.Logo is not null)
             {
@@ -25,7 +25,7 @@
                     throw new Exception("Failed to delete existing image.");
 ;               }
             }
-            _context.Publisher.Remove(publisher);
+            _context.Publishers.Remove(publisher);
             await _context.SaveChangesAsync(cancellationToken);
         }
     }

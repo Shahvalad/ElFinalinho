@@ -1,7 +1,8 @@
-﻿
+﻿using Projecto.Application.Dtos.PublisherDtos;
+
 namespace Projecto.MVC.Areas.Admin.Controllers
 {
-    [Area("admin")]
+    [Area("Admin")]
     public class PublishersController : Controller
     {
         private readonly ISender _sender;

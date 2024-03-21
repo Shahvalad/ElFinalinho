@@ -1,0 +1,287 @@
+﻿@model CreateGameDto
+
+@{
+    ViewData["Title"] = "Create";
+    string CoverImageName = string.Empty;
+}
+<link rel="stylesheet" href="~/css/GameCreatePage.css" />
+
+<div class="container-fluid">
+    <h3>Create new game</h3>
+    <hr />
+    <div class="row">
+        <div class="col-md-8">
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Price" class="control-label"></label>
+                    <input asp-for="Price" class="form-control" type="number" min="5" step="0.01" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CoverImage" class="control-label">Cover Image</label>
+                    <div class="custom-file">
+                        <input asp-for="CoverImage" type="file" class="custom-file-input" id="coverImageInput" accept="image/*">
+                        <label class="custom-file-label" for="coverImageInput">Choose file</label>
+                    </div>
+                    <span asp-validation-for="CoverImage" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Images" class="control-label">Images</label>
+                    <div class="custom-file">
+                        <input type="hidden" asp-for="Images" id="imagesInputHiddenInput" />
+                        <input asp-for="Images" type="file" class="custom-file-input" id="imagesInput" multiple accept="image/*">
+                        <label class="custom-file-label" for="imagesInput">Choose files</label>
+                    </div>
+                    <span asp-validation-for="Images" class="text-danger"></span>
+                </div>
+                <div id="imagePreviews"></div>
+
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+
+                    <label class="control-label">Genres <a asp-controller="Genres" asp-action="Create"><i class="ti-plus btn"></i></a></label>
+                    <select id="selectedGenres" class="selectpicker form-control" multiple data-live-search="true" name="SelectedGenres" data-dropup-auto="false">
+                        @foreach (var genre in ViewBag.Genres)
+                        {
+                            <option value="@genre.Value">@genre.Text</option>
+                        }
+                    </select>
+                    <span asp-validation-for="SelectedGenres" class="text-danger"></span>
+
+                </div>
+
+                <div id="selectedGenresList">
+                </div>
+
+
+
+                <div class="form-group">
+                    <label asp-for="PublisherId" class="control-label">Publisher <a asp-controller="Publishers" asp-action="Create"><i class="ti-plus btn"></i></a></label>
+                    <select asp-for="PublisherId" class="form-control" asp-items="ViewBag.PublisherId">
+                        <option value="">Select Publisher</option>
+                    </select>
+                    <span asp-validation-for="PublisherId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="DeveloperId" class="control-label">Developer <a asp-controller="Developers" asp-action="Create"><i class="ti-plus btn"></i></a></label>
+                    <select asp-for="DeveloperId" class="form-control" asp-items="ViewBag.DeveloperId">
+                        <option value="">Select Developer</option>
+                    </select>
+                    <span asp-validation-for="DeveloperId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input checked class="form-check-input" asp-for="IsActive" /> @Html.DisplayNameFor(model => model.IsActive)
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                    <a class="btn btn-secondary" asp-action="Index">Back to List</a>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <h3>Preview</h3>
+            <div class="card preview-card" style="width: 18rem;">
+                <img id="previewImage" class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                <div class="card-body">
+                    <h5 id="previewName" class="card-title">
+                        Name
+                    </h5>
+                    <span id="previewPrice" class="card-text price">Price</span>
+                    <p id="previewDescription" class="card-text">Some quick example text...</p>
+                    <a href="#" class="btn btn-primary">Purchase</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+    </div>
+</div>
+
+<!-- Add these links to your HTML -->
+@section ScriptForGameCreating {
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.5.3/dist/umd/popper.min.js" integrity="sha384-pzjw8L+ua7eG2LZ+f+2dgtkt3qYXq/DlIzswT9pDQEdiQ2EEFg/hB6OQUENhLmbl" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Set the default label for the cover image input
+            $(".custom-file-label[for='coverImageInput']").html('Choose file');
+
+            // Update the label to display the chosen file name when a new cover image is selected
+            $("#coverImageInput").on("change", function () {
+                updatePreviewImage(this, 'previewImage', 'coverImageInput');
+            });
+
+            // Set the default label for the images input
+            $(".custom-file-label[for='imagesInput']").html('Choose files');
+
+            // Update the label to display the chosen file names when new images are selected
+            $("#imagesInput").on("change", function () {
+                updateImagesPreview(this, 'imagePreviews');
+            });
+
+            // Initialize Bootstrap Selectpicker
+            $('#selectedGenres').selectpicker();
+
+            $('#imagePreviews').on('click', '.remove-button', function () {
+                removeImage(this);
+            });
+
+            // Update preview for name, price, and description
+            updatePreview();
+        });
+
+        // Function to update the preview image
+        function updatePreviewImage(inputElement, previewElementId, inputElementId) {
+            var previewImage = document.getElementById(previewElementId);
+            var fileName = inputElement.files.length > 0 ? inputElement.files[0].name : 'Choose file';
+
+            previewImage.src = URL.createObjectURL(inputElement.files[0]);
+            var label = document.querySelector('.custom-file-label[for="' + inputElementId + '"]');
+            label.innerHTML = fileName;
+
+            // Clear the value of the hidden input
+            $("#" + inputElementId + "HiddenInput").val('');
+        }
+        var imageUrls = new Map();
+        // Function to update the images preview
+        function updateImagesPreview(inputElement, previewElementId) {
+            var imagePreviews = document.getElementById(previewElementId);
+            imagePreviews.innerHTML = ''; // Clear any existing content
+
+            var images = inputElement.files;
+
+            if (images.length > 0) {
+                // Display additional information or thumbnails for all selected images
+                for (var i = 0; i < images.length; i++) {
+                    // Create an image element for each selected image
+                    var img = document.createElement('img');
+                    img.className = 'img-thumbnail';
+                    img.src = URL.createObjectURL(images[i]);
+
+                    // Create a remove button for each image
+                    var removeButton = document.createElement('button');
+                    removeButton.className = 'btn btn-danger btn-sm remove-button';
+                    removeButton.innerHTML = 'Remove';
+                    removeButton.addEventListener('click', function () {
+                        removeImage(this);
+                    });
+                    imageUrls.set(images[i].name, img.src);
+                    // Create a container for the image and remove button
+                    var container = document.createElement('div');
+                    container.className = 'image-container position-relative';
+                    container.appendChild(img);
+                    container.appendChild(removeButton);
+
+                    // Append the container to the image previews
+                    imagePreviews.appendChild(container);
+                }
+            }
+            updateHiddenInput(inputElement, 'imagesInput');
+        }
+
+        // Function to remove an image from the previews
+        function removeImage(button) {
+            var container = button.parentNode;
+            container.parentNode.removeChild(container);
+
+            // Get the name of the image being removed
+            var imageName = container.querySelector('img').src;
+
+            // Remove the corresponding file from the input
+            var inputElement = document.getElementById('imagesInput');
+            var files = inputElement.files;
+
+            // Create a new FileList object
+            var newFileList = new DataTransfer();
+
+            // Iterate through the files and add only those that do not match the removed image
+            for (var i = 0; i < files.length; i++) {
+                if (imageUrls.get(files[i].name) !== imageName) {
+                    newFileList.items.add(files[i]);
+                }
+            }
+
+            // Update the input files
+            inputElement.files = newFileList.files;
+
+            // Update the hidden input to reflect the removed image
+            updateHiddenInput();
+        }
+
+        function updateImagesLabel(inputElement, labelElementId) {
+            var fileName = '';
+            for (var i = 0; i < inputElement.files.length; i++) {
+                fileName += inputElement.files[i].name + ', ';
+            }
+            fileName = fileName.replace(/,\s*$/, '');
+
+            var label = document.querySelector('.custom-file-label[for="' + labelElementId + '"]');
+            label.innerHTML = fileName || 'Choose files';
+        }
+
+        function updateHiddenInput() {
+            var inputElement = document.getElementById('imagesInput');
+            var hiddenInputId = 'imagesInputHiddenInput';
+            var hiddenInput = document.getElementById(hiddenInputId);
+
+            // Get all image containers
+            var imageContainers = document.querySelectorAll('#imagePreviews .image-container');
+
+            // Create an array to store the selected image names
+            var imageNames = [];
+
+            // Iterate through image containers and add the image names to the array
+            imageContainers.forEach(function (container) {
+                var imageName = container.querySelector('img').src;
+                imageNames.push(imageName);
+            });
+
+            // Update the hidden input value with the selected image names
+            hiddenInput.value = imageNames.join(',');
+
+            // Update the label to display the chosen file names
+            updateImagesLabel(inputElement, 'imagesInput');
+        }
+
+        // Function to update the preview for name, price, and description
+        function updatePreview() {
+            var name = $('#Name').val() || 'Name';
+            var price = $('#Price').val() || 'Price';
+            var description = $('#Description').val() || 'Some quick example text...';
+
+            var formattedPrice = '$' + price;
+
+            $('#previewName').text(name);
+            $('#previewPrice').html('<span class="price-styling">' + formattedPrice + '</span>');
+            $('#previewDescription').text(description);
+        }
+
+        // Attach input event listeners for name, price, and description
+        $('#Name').on('input', updatePreview);
+        $('#Price').on('input', updatePreview);
+        $('#Description').on('input', updatePreview);
+    </script>
+}

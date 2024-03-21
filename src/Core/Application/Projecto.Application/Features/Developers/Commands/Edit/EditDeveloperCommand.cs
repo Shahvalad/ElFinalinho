@@ -14,7 +14,7 @@
         }
         public async Task Handle(EditDeveloperCommand request, CancellationToken cancellationToken)
         {
-            var developer = await _context.Developer.FirstOrDefaultAsync(m => m.Id == request.Id, cancellationToken) 
+            var developer = await _context.Developers.FirstOrDefaultAsync(m => m.Id == request.Id, cancellationToken) 
                 ?? throw new DeveloperNotFoundException("There is no developer with such id!");
             developer = _mapper.Map(request.DeveloperDto, developer);
             if(request.DeveloperDto.Logo is not null)

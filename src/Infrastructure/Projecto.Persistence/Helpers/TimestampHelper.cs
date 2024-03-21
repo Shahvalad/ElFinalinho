@@ -8,13 +8,18 @@
             {
                 var entity = entityEntry.Entity;
 
-                _ = entityEntry.State switch
+                switch (entityEntry.State)
                 {
-                    EntityState.Added => entity.CreatedAt = DateTime.UtcNow,
-                    EntityState.Modified => entity.UpdatedAt = DateTime.UtcNow,
-                    EntityState.Deleted => entity.DeletedAt = DateTime.UtcNow,
-                    _ => throw new ArgumentOutOfRangeException(nameof(entityEntry.State))
-                };
+                    case EntityState.Added:
+                        entity.CreatedAt = DateTime.UtcNow;
+                        break;
+                    case EntityState.Modified:
+                        entity.UpdatedAt = DateTime.UtcNow;
+                        break;
+                    case EntityState.Deleted:
+                        entity.DeletedAt = DateTime.UtcNow;
+                        break;
+                }
             }
         }
     }

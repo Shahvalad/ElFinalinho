@@ -1,7 +1,6 @@
 ﻿global using AutoMapper;
 global using MediatR;
 global using Microsoft.AspNetCore.Mvc;
-global using Projecto.Application.Dtos.Genre;
 global using Projecto.Application.Features.Genres.Commands.Create;
 global using Projecto.Application.Features.Genres.Commands.Delete;
 global using Projecto.Application.Features.Genres.Commands.Edit;
@@ -12,9 +11,7 @@ global using Projecto.Application.Features.Publishers.Commands.EditPublisher;
 global using Projecto.Application.Features.Publishers.Queries.GetPublisher;
 global using Projecto.Application.Features.Publishers.Queries.GetPublishers;
 global using Projecto.Application.Services.ImageService;
-global using Projecto.Application.Dtos.Publisher;
 global using Projecto.Application.Features.Publishers.Commands.DeletePublisher;
-global using Projecto.Application.Dtos.Developer;
 global using Projecto.Application.Features.Developers.Commands.Create;
 global using Projecto.Application.Features.Developers.Commands.Delete;
 global using Projecto.Application.Features.Developers.Commands.Edit;

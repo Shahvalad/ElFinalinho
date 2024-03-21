@@ -1,4 +1,4 @@
-﻿namespace Projecto.Application.Dtos.Genre
+﻿namespace Projecto.Application.Dtos.GenreDtos
 {
     public class CreateGenreDto
     {

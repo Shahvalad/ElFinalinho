@@ -1313,3 +1313,10 @@ C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC
 C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\obj\Debug\net8.0\Projecto.MVC.pdb
 C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\obj\Debug\net8.0\Projecto.MVC.genruntimeconfig.cache
 C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\obj\Debug\net8.0\ref\Projecto.MVC.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\System.Web.Mvc.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\System.Web.Razor.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\System.Web.Helpers.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\System.Web.WebPages.Deployment.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\System.Web.WebPages.Razor.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\System.Web.WebPages.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\Microsoft.Web.Infrastructure.dll
