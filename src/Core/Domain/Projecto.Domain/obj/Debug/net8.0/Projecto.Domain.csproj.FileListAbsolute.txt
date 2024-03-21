@@ -48,3 +48,16 @@ C:\Users\shahvaladea\Desktop\New folder\src\Core\Domain\Projecto.Domain\obj\Debu
 C:\Users\shahvaladea\Desktop\New folder\src\Core\Domain\Projecto.Domain\obj\Debug\net8.0\refint\Projecto.Domain.dll
 C:\Users\shahvaladea\Desktop\New folder\src\Core\Domain\Projecto.Domain\obj\Debug\net8.0\Projecto.Domain.pdb
 C:\Users\shahvaladea\Desktop\New folder\src\Core\Domain\Projecto.Domain\obj\Debug\net8.0\ref\Projecto.Domain.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Core\Domain\Projecto.Domain\bin\Debug\net8.0\Projecto.Domain.deps.json
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Core\Domain\Projecto.Domain\bin\Debug\net8.0\Projecto.Domain.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Core\Domain\Projecto.Domain\bin\Debug\net8.0\Projecto.Domain.pdb
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Core\Domain\Projecto.Domain\obj\Debug\net8.0\Projecto.Domain.csproj.AssemblyReference.cache
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Core\Domain\Projecto.Domain\obj\Debug\net8.0\Projecto.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Core\Domain\Projecto.Domain\obj\Debug\net8.0\Projecto.Domain.AssemblyInfoInputs.cache
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Core\Domain\Projecto.Domain\obj\Debug\net8.0\Projecto.Domain.AssemblyInfo.cs
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Core\Domain\Projecto.Domain\obj\Debug\net8.0\Projecto.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Core\Domain\Projecto.Domain\obj\Debug\net8.0\Projecto.Domain.sourcelink.json
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Core\Domain\Projecto.Domain\obj\Debug\net8.0\Projecto.Domain.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Core\Domain\Projecto.Domain\obj\Debug\net8.0\refint\Projecto.Domain.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Core\Domain\Projecto.Domain\obj\Debug\net8.0\Projecto.Domain.pdb
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Core\Domain\Projecto.Domain\obj\Debug\net8.0\ref\Projecto.Domain.dll

@@ -1,11 +1,4 @@
-﻿using Projecto.Application.Dtos.Developer;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Projecto.Application.Profiles
+﻿namespace Projecto.Application.Profiles
 {
     class DeveloperProfile : Profile
     {

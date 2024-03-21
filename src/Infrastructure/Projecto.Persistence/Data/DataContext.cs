@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Projecto.Application.Common.Interfaces;
-using Projecto.Domain.Models;
-using Projecto.Domain.Models.Common;
-using Projecto.Persistence.Data.Configurations;
-
-namespace Projecto.Persistence.Data
+﻿namespace Projecto.Persistence.Data
 {
     public class DataContext : DbContext, IDataContext
     {

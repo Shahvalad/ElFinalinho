@@ -1,13 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
-using Microsoft.EntityFrameworkCore;
-using Projecto.Domain.Models.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Projecto.Persistence.Helpers
+﻿namespace Projecto.Persistence.Helpers
 {
     public static class TimestampHelper
     {

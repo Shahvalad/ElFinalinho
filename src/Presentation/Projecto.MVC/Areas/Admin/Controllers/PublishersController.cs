@@ -12,9 +12,9 @@ namespace Projecto.MVC.Areas.Admin.Controllers
             _mapper = mapper;
         }
 
-        public async Task<IActionResult> Index(GetPublishersQuery query)
+        public async Task<IActionResult> Index()
         {
-            var publishers = await _sender.Send(query);
+            var publishers = await _sender.Send(new GetPublishersQuery());
             return View(publishers);
         }
 

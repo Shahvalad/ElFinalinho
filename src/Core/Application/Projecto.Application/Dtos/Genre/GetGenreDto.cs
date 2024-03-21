@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Projecto.Application.Dtos.Genre
+﻿namespace Projecto.Application.Dtos.Genre
 {
     public class GetGenreDto
     {

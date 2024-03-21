@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Projecto.Domain.Models;
-
-namespace Projecto.Application.Common.Interfaces
+﻿namespace Projecto.Application.Common.Interfaces
 {
     public interface IDataContext
     {

@@ -17,7 +17,7 @@
                 .WithMessage("Description must not exceed 500 characters");
 
             RuleFor(x => x.PublisherDto.Logo)
-                .Must(x => x?.Length < Math.Pow(2, 20) * 2)
+                .Must(x => x?.Length < Math.Pow(2, 20) * 2 || x is null)
                 .WithMessage("Logo must not exceed 2MB.");
         }
     }

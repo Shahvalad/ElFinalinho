@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Diagnostics;
-using Projecto.Domain.Models.Common;
-using static Projecto.Persistence.Helpers.TimestampHelper;
+﻿using static Projecto.Persistence.Helpers.TimestampHelper;
 
 namespace Projecto.Persistence.Data.Interceptors
 {

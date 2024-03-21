@@ -1,8 +1,8 @@
-﻿namespace Projecto.Application.Features.Genres.Queries.Get
+﻿namespace Projecto.Application.Features.Publishers.Queries.GetPublisher
 {
-    public class GetGenreQueryValidator : AbstractValidator<GetGenreQuery>
+    public class GetPublisherQueryValidator : AbstractValidator<GetPublisherQuery>
     {
-        public GetGenreQueryValidator()
+        public GetPublisherQueryValidator()
         {
             RuleFor(x => x.Id)
                 .NotNull()

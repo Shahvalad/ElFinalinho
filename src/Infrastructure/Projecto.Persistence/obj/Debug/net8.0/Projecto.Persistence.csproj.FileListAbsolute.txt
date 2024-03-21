@@ -66,3 +66,21 @@ C:\Users\shahvaladea\Desktop\New folder\src\Infrastructure\Projecto.Persistence\
 C:\Users\shahvaladea\Desktop\New folder\src\Infrastructure\Projecto.Persistence\obj\Debug\net8.0\refint\Projecto.Persistence.dll
 C:\Users\shahvaladea\Desktop\New folder\src\Infrastructure\Projecto.Persistence\obj\Debug\net8.0\Projecto.Persistence.pdb
 C:\Users\shahvaladea\Desktop\New folder\src\Infrastructure\Projecto.Persistence\obj\Debug\net8.0\ref\Projecto.Persistence.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\bin\Debug\net8.0\Projecto.Persistence.deps.json
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\bin\Debug\net8.0\Projecto.Persistence.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\bin\Debug\net8.0\Projecto.Persistence.pdb
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\bin\Debug\net8.0\Projecto.Application.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\bin\Debug\net8.0\Projecto.Domain.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\bin\Debug\net8.0\Projecto.Application.pdb
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\bin\Debug\net8.0\Projecto.Domain.pdb
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\obj\Debug\net8.0\Projecto.Persistence.csproj.AssemblyReference.cache
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\obj\Debug\net8.0\Projecto.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\obj\Debug\net8.0\Projecto.Persistence.AssemblyInfoInputs.cache
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\obj\Debug\net8.0\Projecto.Persistence.AssemblyInfo.cs
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\obj\Debug\net8.0\Projecto.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\obj\Debug\net8.0\Projecto.Persistence.sourcelink.json
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\obj\Debug\net8.0\Projecto.0C719994.Up2Date
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\obj\Debug\net8.0\Projecto.Persistence.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\obj\Debug\net8.0\refint\Projecto.Persistence.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\obj\Debug\net8.0\Projecto.Persistence.pdb
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Infrastructure\Projecto.Persistence\obj\Debug\net8.0\ref\Projecto.Persistence.dll

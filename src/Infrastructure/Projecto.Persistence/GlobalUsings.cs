@@ -1,0 +1,12 @@
+﻿global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Projecto.Domain.Models;
+global using Projecto.Application.Common.Interfaces;
+global using System.Reflection;
+global using Microsoft.EntityFrameworkCore.ChangeTracking;
+global using Projecto.Domain.Models.Common;
+global using Microsoft.EntityFrameworkCore.Diagnostics;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Projecto.Persistence.Data;
+global using Projecto.Persistence.Data.Interceptors;

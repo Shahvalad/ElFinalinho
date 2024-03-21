@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj": {}
+    "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj": {
+    "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj",
         "projectName": "Projecto.Application",
-        "projectPath": "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj",
-        "packagesPath": "C:\\Users\\shahvaladea\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Application\\Projecto.Application\\obj\\",
+        "projectPath": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj",
+        "packagesPath": "C:\\Users\\Шахвалад\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\shahvaladea\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Шахвалад\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj": {
-                "projectPath": "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj"
+              "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj": {
+                "projectPath": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj"
               }
             }
           }
@@ -98,21 +94,17 @@
         }
       }
     },
-    "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj": {
+    "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj",
         "projectName": "Projecto.Domain",
-        "projectPath": "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj",
-        "packagesPath": "C:\\Users\\shahvaladea\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Domain\\Projecto.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj",
+        "packagesPath": "C:\\Users\\Шахвалад\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\shahvaladea\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Шахвалад\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -168,21 +160,17 @@
         }
       }
     },
-    "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj": {
+    "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj",
         "projectName": "Projecto.Persistence",
-        "projectPath": "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj",
-        "packagesPath": "C:\\Users\\shahvaladea\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Infrastructure\\Projecto.Persistence\\obj\\",
+        "projectPath": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Шахвалад\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\shahvaladea\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Шахвалад\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -196,11 +184,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj": {
-                "projectPath": "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj"
+              "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj": {
+                "projectPath": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj"
               },
-              "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj": {
-                "projectPath": "C:\\Users\\shahvaladea\\Desktop\\New folder\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj"
+              "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj": {
+                "projectPath": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj"
               }
             }
           }

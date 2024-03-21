@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
-using Projecto.Domain.Models;
-
-namespace Projecto.Application.Profiles
+﻿namespace Projecto.Application.Profiles
 {
     public class GenreProfile : Profile
     {

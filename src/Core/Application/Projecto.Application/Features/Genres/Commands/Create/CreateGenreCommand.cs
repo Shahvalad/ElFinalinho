@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-
-namespace Projecto.Application.Features.Genres.Commands.Create
+﻿namespace Projecto.Application.Features.Genres.Commands.Create
 {
 
     public record CreateGenreCommand(CreateGenreDto GenreDto) : IRequest<int>;

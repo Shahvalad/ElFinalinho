@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Projecto.Application.Features.Developers.Commands.Delete
+﻿namespace Projecto.Application.Features.Developers.Commands.Delete
 {
     public class DeleteDeveloperCommandValidator : AbstractValidator<DeleteDeveloperCommand>
     {

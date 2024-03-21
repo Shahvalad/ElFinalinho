@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-
-namespace Projecto.Application.Features.Publishers.Commands.DeletePublisher
+﻿namespace Projecto.Application.Features.Publishers.Commands.DeletePublisher
 {
     public record DeletePublisherCommand(int? Id) : IRequest;
 

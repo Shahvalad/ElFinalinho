@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Diagnostics;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Projecto.Application.Common.Interfaces;
-using Projecto.Persistence.Data;
-using Projecto.Persistence.Data.Interceptors;
-
-namespace Projecto.Persistence
+﻿namespace Projecto.Persistence
 {
     public static class DependencyInjection
     {

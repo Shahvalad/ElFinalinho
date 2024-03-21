@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Projecto.Application.Features.Developers.Commands.Create
+﻿namespace Projecto.Application.Features.Developers.Commands.Create
 {
     public class CreateDeveloperCommandValidator : AbstractValidator<CreateDeveloperCommand>
     {
@@ -23,7 +17,7 @@ namespace Projecto.Application.Features.Developers.Commands.Create
                 .WithMessage("Description must not exceed 500 characters.");
 
             RuleFor(x => x.DeveloperDto.Logo)
-                .Must(x => x?.Length < Math.Pow(2,20) * 2)
+                .Must(x => x?.Length < Math.Pow(2,20) * 2 || x is null)
                 .WithMessage("Logo must not exceed 2MB.");
         }
     }

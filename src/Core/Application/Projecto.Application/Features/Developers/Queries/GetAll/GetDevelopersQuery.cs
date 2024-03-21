@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Projecto.Application.Features.Developers.Queries.GetAll
+﻿namespace Projecto.Application.Features.Developers.Queries.GetAll
 {
     public record GetDevelopersQuery : IRequest<IEnumerable<GetDeveloperDto>>;
     public class GetDevelopersQueryHandler : IRequestHandler<GetDevelopersQuery, IEnumerable<GetDeveloperDto>>

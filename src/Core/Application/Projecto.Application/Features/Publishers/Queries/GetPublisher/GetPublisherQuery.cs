@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Projecto.Application.Dtos.Publisher;
-
-namespace Projecto.Application.Features.Publishers.Queries.GetPublisher
+﻿namespace Projecto.Application.Features.Publishers.Queries.GetPublisher
 {
     public record GetPublisherQuery(int? Id) : IRequest<GetPublisherDto>;
 
