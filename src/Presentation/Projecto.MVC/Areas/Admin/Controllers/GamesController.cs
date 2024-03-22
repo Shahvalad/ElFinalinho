@@ -134,5 +134,10 @@ namespace Projecto.MVC.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public async Task<IActionResult> RemoveImage(string fileName)
+        {
+           var id = await _sender.Send(new DeleteGameImageCommand(fileName));
+           return RedirectToAction("Edit", new { id });
+        }
     }
 }

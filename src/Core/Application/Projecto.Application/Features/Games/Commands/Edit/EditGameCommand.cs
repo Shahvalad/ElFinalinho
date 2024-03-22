@@ -1,13 +1,4 @@
-﻿using Projecto.Application.Dtos.GameDtos;
-using Projecto.Application.Features.Games.Queries.Get;
-using Projecto.Application.Services.ImageService;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Projecto.Application.Features.Games.Commands.Edit
+﻿namespace Projecto.Application.Features.Games.Commands.Edit
 {
     public record EditGameCommand(int? Id, UpdateGameDto UpdateGameDto) : IRequest;
     public class EditGameCommandHandler : IRequestHandler<EditGameCommand>
@@ -90,19 +81,17 @@ namespace Projecto.Application.Features.Games.Commands.Edit
 
         private async Task<Game> GetGameByIdAsync(int? id)
         {
-            if (id is not null)
+            if (id is null) return new Game();
+            var game = await _context.Games
+                .Include(g => g.Developer)
+                .Include(g => g.Publisher)
+                .Include(g => g.Images)
+                .Include(g => g.GameGenres)
+                .ThenInclude(gg => gg.Genre)
+                .SingleOrDefaultAsync(m => m.Id == id);
+            if (game is not null)
             {
-                var game = await _context.Games
-                    .Include(g => g.Developer)
-                    .Include(g => g.Publisher)
-                    .Include(g => g.Images)
-                    .Include(g => g.GameGenres)
-                    .ThenInclude(gg => gg.Genre)
-                    .SingleOrDefaultAsync(m => m.Id == id);
-                if (game is not null)
-                {
-                    return game;
-                }
+                return game;
             }
             return new Game();
         }

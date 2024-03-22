@@ -1,6 +1,4 @@
-﻿using Projecto.Application.Dtos.GameDtos;
-
-namespace Projecto.Application.Features.Games.Commands.Create
+﻿namespace Projecto.Application.Features.Games.Commands.Create
 {
     public record CreateGameCommand(CreateGameDto CreateGameDto) : IRequest<int>;
     public class CreateGameHandler : IRequestHandler<CreateGameCommand, int>

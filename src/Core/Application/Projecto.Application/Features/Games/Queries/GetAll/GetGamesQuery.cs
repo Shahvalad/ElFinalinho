@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-
-namespace Projecto.Application.Features.Games.Queries.GetAll
+﻿namespace Projecto.Application.Features.Games.Queries.GetAll
 {
     public record GetGamesQuery : IRequest<IEnumerable<GetGameDto>>;
     public class GetGamesQueryHandler : IRequestHandler<GetGamesQuery, IEnumerable<GetGameDto>>

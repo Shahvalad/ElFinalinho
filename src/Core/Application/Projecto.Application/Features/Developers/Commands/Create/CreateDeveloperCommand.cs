@@ -1,7 +1,4 @@
-﻿
-using Projecto.Application.Dtos.DeveloperDtos;
-
-namespace Projecto.Application.Features.Developers.Commands.Create
+﻿namespace Projecto.Application.Features.Developers.Commands.Create
 {
     public record CreateDeveloperCommand(CreateDeveloperDto DeveloperDto) : IRequest<int>;
     public class CreateDeveloperCommandHandler : IRequestHandler<CreateDeveloperCommand, int>

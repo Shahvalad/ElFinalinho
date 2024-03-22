@@ -1017,6 +1017,14 @@
       "PackagePath": "staticwebassets\\Admin\\assets\\libs\\x-editable\\bootstrap-editable.min.js"
     },
     {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\css\\GameCreatePage.css",
+      "PackagePath": "staticwebassets\\css\\GameCreatePage.css"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\css\\GameEditPage.css",
+      "PackagePath": "staticwebassets\\css\\GameEditPage.css"
+    },
+    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -1037,24 +1045,16 @@
       "PackagePath": "staticwebassets\\images\\developers\\text.txt"
     },
     {
-      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\3_3efd4d6f.PNG",
-      "PackagePath": "staticwebassets\\images\\games\\3_3efd4d6f.PNG"
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Activision.svg_e51d783c.png",
+      "PackagePath": "staticwebassets\\images\\games\\Activision.svg_e51d783c.png"
     },
     {
-      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\3_8274460e.PNG",
-      "PackagePath": "staticwebassets\\images\\games\\3_8274460e.PNG"
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\god of war 1_05c729fd.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\god of war 1_05c729fd.jpg"
     },
     {
-      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\5_0c3d95d1.PNG",
-      "PackagePath": "staticwebassets\\images\\games\\5_0c3d95d1.PNG"
-    },
-    {
-      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\5_b0e2c8ea.PNG",
-      "PackagePath": "staticwebassets\\images\\games\\5_b0e2c8ea.PNG"
-    },
-    {
-      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\5_d22d4034.PNG",
-      "PackagePath": "staticwebassets\\images\\games\\5_d22d4034.PNG"
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\god of war 1_6dcead32.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\god of war 1_6dcead32.jpg"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\test.txt",

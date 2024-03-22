@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Projecto.Application.Features.Games.Commands.Delete
+﻿namespace Projecto.Application.Features.Games.Commands.Delete
 {
     public record DeleteGameCommand(int? Id) : IRequest;
     public class DeleteGameCommandHandler : IRequestHandler<DeleteGameCommand>
