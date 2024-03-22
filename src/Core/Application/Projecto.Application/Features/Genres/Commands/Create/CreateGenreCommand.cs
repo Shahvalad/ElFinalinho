@@ -19,7 +19,6 @@
             await _context.Genres.AddAsync(genre, cancellationToken);
             await _context.SaveChangesAsync(cancellationToken);
             return genre.Id;
-
         }
     }
 }

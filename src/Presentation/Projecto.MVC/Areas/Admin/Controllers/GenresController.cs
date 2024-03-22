@@ -34,7 +34,7 @@ namespace fin.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CreateGenreDto genreDto)
         {
-            if (ModelState.IsValid) return View(genreDto);
+            if (!ModelState.IsValid) return View(genreDto);
             var command = new CreateGenreCommand(genreDto);
             await _sender.Send(command);
             return RedirectToAction("Index");

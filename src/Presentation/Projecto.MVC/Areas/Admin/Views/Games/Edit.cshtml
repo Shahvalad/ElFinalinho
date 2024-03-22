@@ -1,0 +1,286 @@
+﻿@model UpdateGameDto
+@{
+    ViewData["Title"] = "Edit";
+    string CoverImageName = Model.CoverImageFileName;
+}
+
+<link rel="stylesheet" href="~/css/GameEditPage.css" />
+<div class="container-fluid">
+    <h3 class="mb-4">Edit Game</h3>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-8">
+            <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label">Name</label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Price" class="control-label">Price</label>
+                    <input asp-for="Price" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CoverImage" class="control-label">Cover Image</label>
+                    <div class="custom-file">
+                        <input asp-for="CoverImage" type="hidden" id="coverImageHiddenInput" />
+                        <input asp-for="CoverImage" type="file" class="custom-file-input" id="coverImageInput" accept="image/*" name="CoverImage">
+                        <label class="custom-file-label" for="coverImageInput">Choose file</label>
+                    </div>
+                    <span asp-validation-for="CoverImage" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Images" class="control-label">Images</label>
+                    <div class="custom-file">
+                        <input asp-for="Images" type="hidden" id="imagesHiddenInput" />
+                        <input asp-for="Images" class="custom-file-input" id="imagesInput" multiple accept="image/*" name="Images">
+                        <label class="custom-file-label" for="imagesInput">Choose files</label>
+                    </div>
+                    <span asp-validation-for="Images" class="text-danger"></span>
+                </div>
+                <div id="imagePreviewContainer"></div>
+
+                <div class="mt-4">
+                    <div class="image-preview-grid">
+                        @foreach (var image in Model.ImageFileNames)
+                        {
+                            <div class="image-preview-item" style="display: inline-block;">
+                                <img src="~/Images/Games/@image" alt="@image" class="img-thumbnail custom-image" />
+                                <a asp-action="RemoveImage" asp-route-fileName="@image" class="btn btn-danger btn-sm">Remove</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label">Description</label>
+                    <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Genres <a asp-controller="Genres" asp-action="Create"><i class="ti-plus btn"></i></a></label>
+                    <select id="selectedGenres" class="selectpicker form-control" multiple data-live-search="true" name="SelectedGenres" data-dropup-auto="false">
+                        @foreach (var genre in ViewBag.Genres)
+                        {
+                            <option value="@genre.Value">@genre.Text</option>
+                        }
+                    </select>
+                    <span asp-validation-for="SelectedGenres" class="text-danger"></span>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label asp-for="PublisherId" class="control-label">Publisher <a asp-controller="Publishers" asp-action="Create"><i class="ti-plus btn"></i></a> </label>
+                    <select asp-for="PublisherId" class="form-control" asp-items="ViewBag.PublisherId"></select>
+                    <span asp-validation-for="PublisherId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="DeveloperId" class="control-label">Developer <a asp-controller="Developers" asp-action="Create"><i class="ti-plus btn"></i></a> </label>
+                    <select asp-for="DeveloperId" class="form-control" asp-items="ViewBag.DeveloperId"></select>
+                    <span asp-validation-for="DeveloperId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group form-check">
+                    <input checked class="form-check-input" asp-for="IsActive" />
+                    <label class="form-check-label" asp-for="IsActive">@Html.DisplayNameFor(model => model.IsActive)</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Update" class="btn btn-primary" />
+                    <a class="btn btn-secondary" asp-action="Index">Back to List</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-4">
+            <h3>Preview</h3>
+            <div class="card" style="width: 18rem;">
+                <img id="previewImage" class="card-img-top" src="~/Images/Games/@CoverImageName" alt="Card image cap">
+                <div class="card-body">
+                    <h5 id="previewName" class="card-title">Name</h5>
+                    <span id="previewPrice" class="card-text price">Price</span>
+                    <p id="previewDescription" class="card-text">Some quick example text...</p>
+                    <a href="#" class="btn btn-primary">Purchase</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section ScriptForGameUpdating {
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script>
+        var CoverImageName = "@Html.Encode(Model.CoverImageFileName)";
+        $(document).ready(function () {
+            console.log("test");
+            $("#coverImageHiddenInput").val(CoverImageName);
+
+            var defaultImagePath = "@Url.Content("~/Images/Games/")" + (CoverImageName ? CoverImageName : "default-image.jpg");
+            var defaultImageFileName = defaultImagePath.split("/").pop();
+
+            // Set the initial preview image and label
+            $("#previewImage").attr("src", defaultImagePath);
+            $(".custom-file-label[for='coverImageInput']").html(defaultImageFileName);
+
+            // Change event handler for cover image input
+            $("#coverImageInput").on("change", function (e) {
+                var previewImage = document.getElementById('previewImage');
+
+                if (e.target.files.length > 0) {
+                    // New cover image selected
+                    var fileName = e.target.files[0].name;
+                    previewImage.src = URL.createObjectURL(e.target.files[0]);
+                    $(".custom-file-label[for='coverImageInput']").html(fileName);
+                    $("#coverImageHiddenInput").val(''); // Clear the hidden input for existing cover image
+                } else {
+                    // No new cover image selected, retain the existing one
+                    previewImage.src = defaultImagePath;
+                    $(".custom-file-label[for='coverImageInput']").html(defaultImageFileName);
+                    $("#coverImageHiddenInput").val(CoverImageName); // Retain the existing cover image information
+                }
+            });
+
+            $('#selectedGenres').selectpicker();
+
+            function setSelectedGenres() {
+                var selectedGenres = @Html.Raw(Json.Serialize(Model.SelectedGenres));
+
+                $('#selectedGenres').selectpicker('destroy');
+                $('#selectedGenres').selectpicker('val', selectedGenres);
+                $('#selectedGenres').selectpicker();
+            }
+
+            $("#imagesInput").on("change", updateImagePreview);
+
+            function updateImagePreview() {
+                var previewContainer = document.getElementById('imagePreviewContainer');
+                previewContainer.innerHTML = ''; // Clear previous preview
+
+                var imagesInput = document.getElementById('imagesInput');
+                var hiddenImagesInput = document.getElementById('imagesHiddenInput');
+
+                hiddenImagesInput.value = ''; // Clear previous image data
+
+                for (var i = 0; i < imagesInput.files.length; i++) {
+                    var file = imagesInput.files[i];
+                    var reader = new FileReader();
+
+                    reader.onload = (function (currentFile) {
+                        return function (event) {
+                            var image = document.createElement('img');
+                            image.src = event.target.result;
+                            image.classList.add('img-thumbnail', 'custom-image');
+
+                            var deleteButton = document.createElement('button');
+                            deleteButton.classList.add('btn', 'btn-danger', 'btn-sm');
+                            deleteButton.textContent = 'Remove';
+                            deleteButton.addEventListener('click', function () {
+                                var previewItem = deleteButton.parentNode; // Get the parent preview item
+                                previewContainer.removeChild(previewItem); // Remove the preview item from the container
+
+                                // Ensure the file input reflects the correct files after removal
+                                imagesInput.value = null;
+
+                                // Now, update the hidden input for each added image
+                                updateHiddenImagesInput();
+                            });
+
+                            var previewItem = document.createElement('div');
+                            previewItem.classList.add('image-preview-item');
+                            previewItem.style.display = 'inline-block';
+                            previewItem.appendChild(image);
+                            previewItem.appendChild(deleteButton);
+
+                            previewContainer.appendChild(previewItem);
+                        };
+                    })(file);
+
+                    reader.readAsDataURL(file);
+                }
+
+                // Initialize the event listener for new delete buttons (if any)
+                initializeDeleteButtons();
+            }
+
+            function initializeDeleteButtons() {
+                var deleteButtons = document.querySelectorAll('.image-preview-item button');
+
+                deleteButtons.forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        var previewItem = button.parentNode; // Get the parent preview item
+                        previewItem.parentNode.removeChild(previewItem); // Remove the preview item from the container
+
+                        // Update the hidden input when removing an image
+                        updateHiddenImagesInput();
+                    });
+                });
+            }
+            document.addEventListener('DOMContentLoaded', function () {
+                initializeDeleteButtons();
+                updateImagePreview(); // Initial preview for existing images
+            });
+
+            function updateHiddenImagesInput() {
+                const hiddenImagesInput = document.getElementById('imagesHiddenInput');
+                const previewContainer = document.getElementById('imagePreviewContainer');
+
+                // Get the names of the images that are currently being displayed
+                const displayedImageNames = Array.from(previewContainer.children).map(img => img.src);
+
+                // Update the hiddenImagesInput value
+                hiddenImagesInput.value = JSON.stringify(displayedImageNames);
+            }
+
+            $(".remove-image").click(function () {
+                var filename = $(this).data("filename");
+
+                $.ajax({
+                    url: '@Url.Action("RemoveImage", "Games")',
+                    type: 'POST',
+                    data: { fileName: filename },
+                    success: function (result) {
+                        // Handle success - remove image from preview, etc.
+                    },
+                    error: function (xhr, status, error) {
+                        // Handle error
+                    }
+                });
+            });
+
+
+            // Other functions...
+
+            function updatePreview() {
+                var name = $('#Name').val() || Model.Name;
+                var price = $('#Price').val() || Model.Price;
+                var description = $('#Description').val() || Model.Description;
+
+                var formattedPrice = '$' + (price || 'Price');
+
+                $('#previewName').text(name || 'Name');
+                $('#previewPrice').html('<span class="price-styling">' + formattedPrice + '</span>');
+                $('#previewDescription').text(description || 'Some quick example text...');
+            }
+
+            $('#Name').on('input', updatePreview);
+            $('#Price').on('input', updatePreview);
+            $('#Description').on('input', updatePreview);
+
+            setSelectedGenres();
+            updatePreview();
+        });
+    </script>
+}

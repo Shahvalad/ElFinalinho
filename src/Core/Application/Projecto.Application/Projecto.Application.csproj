@@ -20,10 +20,4 @@
     <ProjectReference Include="..\..\Domain\Projecto.Domain\Projecto.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\Games\Commands\Delete\" />
-    <Folder Include="Features\Games\Commands\Edit\" />
-    <Folder Include="Features\Games\Queries\Get\" />
-  </ItemGroup>
-
 </Project>

@@ -13,6 +13,7 @@ namespace Projecto.Application.Dtos.GameDtos
         public string Name { get; set; } = null!;
         public decimal Price { get; set; }
         public List<GameImage>? Images { get; set; }
+        public List<GameGenre> GameGenres { get; set; } = new List<GameGenre>();
         public Publisher? Publisher { get; set; }
         public Developer Developer { get; set; } = null!;
         public string? Description { get; set; }
