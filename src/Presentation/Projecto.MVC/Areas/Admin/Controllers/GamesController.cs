@@ -1,16 +1,4 @@
-﻿
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.EntityFrameworkCore;
-using Projecto.Application.Dtos.GameDtos;
-using Projecto.Application.Features.Games.Commands.Create;
-using Projecto.Application.Features.Games.Commands.Delete;
-using Projecto.Application.Features.Games.Commands.Edit;
-using Projecto.Application.Features.Games.Queries.Get;
-using Projecto.Application.Features.Games.Queries.GetAll;
-using Projecto.Domain.Models;
-
-namespace Projecto.MVC.Areas.Admin.Controllers
+﻿namespace Projecto.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class GamesController : Controller

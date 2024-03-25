@@ -11,9 +11,9 @@ namespace Projecto.Domain.Models
 
         [Range(5, double.MaxValue, ErrorMessage = "Price must be greater than or equal to 5.")]
         public decimal Price { get; set; }
-
         public string? Description { get; set; }
-       
+        public int ViewCount { get; set; }
+        public int PurchaseCount { get; set; }
         public List<GameImage> Images { get; set; } = new List<GameImage>();
 
         //Navigation Properties 

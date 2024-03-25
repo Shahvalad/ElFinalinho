@@ -1,7 +1,4 @@
-﻿
-using Projecto.Application.Dtos.DeveloperDtos;
-
-namespace Projecto.MVC.Areas.Admin.Controllers
+﻿namespace Projecto.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class DevelopersController : Controller

@@ -3,16 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\views\\developers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\views\\developers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\controllers\\publisherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\controllers\\publisherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\controllers\\genrescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\controllers\\genrescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\controllers\\developerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\controllers\\developerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\views\\games\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\views\\games\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\views\\games\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\views\\games\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\presentation\\projecto.mvc\\areas\\admin\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86F87A52-14CC-4F14-832D-377FF03768C1}|src\\Presentation\\Projecto.MVC\\Projecto.MVC.csproj|solutionrelative:src\\presentation\\projecto.mvc\\areas\\admin\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\games\\commands\\edit\\edtgamecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,7 +138,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,20 +162,166 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\Game.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Models\\Game.cs",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\Game.cs",
+              "RelativeToolTip": "src\\Core\\Domain\\Projecto.Domain\\Models\\Game.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T08:19:03.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-23T11:39:09.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAOQAAAAAAAAAAAAAAPkAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-23T11:32:44.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-23T11:37:48.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T08:15:49.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T08:15:45.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Developers\\Create.cshtml",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Developers\\Create.cshtml",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Developers\\Create.cshtml",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Developers\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-23T08:15:43.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ImageService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Services\\ImageService.cs",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Services\\ImageService.cs",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Services\\ImageService.cs",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Services\\ImageService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T08:15:39.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\GlobalUsings.cs",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\GlobalUsings.cs",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\GlobalUsings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T08:15:10.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PublishersController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\PublishersController.cs",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\PublishersController.cs",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\PublishersController.cs",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\PublishersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T08:14:19.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GenresController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\GenresController.cs",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\GenresController.cs",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\GenresController.cs",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\GenresController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T08:14:18.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DevelopersController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\DevelopersController.cs",
+              "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\DevelopersController.cs",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\DevelopersController.cs",
+              "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\DevelopersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-23T08:14:14.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Games\\Edit.cshtml",
               "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Games\\Edit.cshtml",
               "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Games\\Edit.cshtml",
               "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Games\\Edit.cshtml",
-              "ViewState": "AQIAAAABAAAAAAAAAADwvxkBAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-22T09:20:50.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T09:20:50.822Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 14,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Games\\Create.cshtml",
               "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Games\\Create.cshtml",
@@ -135,12 +329,11 @@
               "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Views\\Games\\Create.cshtml",
               "ViewState": "AQIAAPcAAAAAAAAAAADwvx4BAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-22T09:19:32.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T09:19:32.005Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "GamesController.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\GamesController.cs",
               "RelativeDocumentMoniker": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\GamesController.cs",
@@ -148,12 +341,11 @@
               "RelativeToolTip": "src\\Presentation\\Projecto.MVC\\Areas\\Admin\\Controllers\\GamesController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T09:19:18.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T09:19:18.61Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 19,
               "Title": "EditDeveloperCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Edit\\EditDeveloperCommandValidator.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Edit\\EditDeveloperCommandValidator.cs",
@@ -161,12 +353,11 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Edit\\EditDeveloperCommandValidator.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T09:16:12.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T09:16:12.739Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 20,
               "Title": "EditDeveloperCommand.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Edit\\EditDeveloperCommand.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Edit\\EditDeveloperCommand.cs",
@@ -174,12 +365,11 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Edit\\EditDeveloperCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T09:16:12.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T09:16:12.22Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 21,
               "Title": "DeleteDeveloperCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Delete\\DeleteDeveloperCommandValidator.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Delete\\DeleteDeveloperCommandValidator.cs",
@@ -187,12 +377,11 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Delete\\DeleteDeveloperCommandValidator.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T09:16:10.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T09:16:10.21Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "CreateGameCommand.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Create\\CreateGameCommand.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Create\\CreateGameCommand.cs",
@@ -200,12 +389,11 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Create\\CreateGameCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T08:58:50.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T08:58:50.394Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
               "Title": "CreateGameCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Create\\CreateGameCommandValidator.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Create\\CreateGameCommandValidator.cs",
@@ -213,12 +401,11 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Create\\CreateGameCommandValidator.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T08:57:22.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T08:57:22.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "EditGameCommand.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Edit\\EditGameCommand.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Edit\\EditGameCommand.cs",
@@ -226,12 +413,11 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Edit\\EditGameCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T09:14:28.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T09:14:28.877Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "EdtGameCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Edit\\EdtGameCommandValidator.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Edit\\EdtGameCommandValidator.cs",
@@ -239,12 +425,11 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Edit\\EdtGameCommandValidator.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T09:12:25.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T09:12:25.81Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 22,
               "Title": "DeleteDeveloperCommand.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Delete\\DeleteDeveloperCommand.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Delete\\DeleteDeveloperCommand.cs",
@@ -252,12 +437,11 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Delete\\DeleteDeveloperCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T09:16:09.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T09:16:09.574Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 25,
               "Title": "DeleteGameImageCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Delete\\DeleteGameImageCommandValidator.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Delete\\DeleteGameImageCommandValidator.cs",
@@ -265,12 +449,11 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Delete\\DeleteGameImageCommandValidator.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T09:11:02.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T09:11:02.162Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 26,
               "Title": "DeleteGameImageCommand.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Delete\\DeleteGameImageCommand.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Delete\\DeleteGameImageCommand.cs",
@@ -278,12 +461,11 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Delete\\DeleteGameImageCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T08:57:08.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T08:57:08.392Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 24,
               "Title": "CreateDeveloperCommand.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Create\\CreateDeveloperCommand.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Create\\CreateDeveloperCommand.cs",
@@ -291,12 +473,11 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Create\\CreateDeveloperCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T08:58:33.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T08:58:33.916Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 23,
               "Title": "CreateDeveloperCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Create\\CreateDeveloperCommandValidator.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Create\\CreateDeveloperCommandValidator.cs",
@@ -304,12 +485,11 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Create\\CreateDeveloperCommandValidator.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T08:58:35.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T08:58:35.424Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 27,
               "Title": "DeleteGameCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Delete\\DeleteGameCommandValidator.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Delete\\DeleteGameCommandValidator.cs",
@@ -317,12 +497,11 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Delete\\DeleteGameCommandValidator.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T09:08:03.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T09:08:03.364Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 28,
               "Title": "DeleteGameCommand.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Delete\\DeleteGameCommand.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Delete\\DeleteGameCommand.cs",
@@ -330,12 +509,11 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Delete\\DeleteGameCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T08:57:12.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T08:57:12.002Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 29,
               "Title": "GetGamesQuery.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetAll\\GetGamesQuery.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetAll\\GetGamesQuery.cs",
@@ -343,12 +521,11 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetAll\\GetGamesQuery.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T09:15:34.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T09:15:34.826Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 30,
               "Title": "GetGameQueryValidator.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\Get\\GetGameQueryValidator.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\Get\\GetGameQueryValidator.cs",
@@ -356,12 +533,11 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\Get\\GetGameQueryValidator.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T09:14:52.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T09:14:52.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 31,
               "Title": "GetGameQuery.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\Get\\GetGameQuery.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\Get\\GetGameQuery.cs",
@@ -369,8 +545,7 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\Get\\GetGameQuery.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T09:14:43.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T09:14:43.179Z"
             }
           ]
         }

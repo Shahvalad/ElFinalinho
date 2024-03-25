@@ -1017,6 +1017,662 @@
       "PackagePath": "staticwebassets\\Admin\\assets\\libs\\x-editable\\bootstrap-editable.min.js"
     },
     {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\css\\libs.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\libs.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\css\\maps\\main.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\maps\\main.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\css\\showcase.css",
+      "PackagePath": "staticwebassets\\assets\\css\\showcase.css"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\SegoeUI-Bold.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\SegoeUI-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\SegoeUI-Bold.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\SegoeUI-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\SegoeUI-BoldItalic.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\SegoeUI-BoldItalic.woff"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\SegoeUI-BoldItalic.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\SegoeUI-BoldItalic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\SegoeUI-Italic.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\SegoeUI-Italic.woff"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\SegoeUI-Italic.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\SegoeUI-Italic.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\SegoeUI-Light.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\SegoeUI-Light.woff"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\SegoeUI-Light.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\SegoeUI-Light.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\SegoeUI-SemiBold.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\SegoeUI-SemiBold.woff"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\SegoeUI-SemiBold.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\SegoeUI-SemiBold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\SegoeUI.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\SegoeUI.woff"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\SegoeUI.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\SegoeUI.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\icons.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icons.eot"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\icons.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icons.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\icons.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\icons.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\fonts\\icons.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\Badge 1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Badge 1.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\Badge 2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Badge 2.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\Badge 3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Badge 3.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\acheivement-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\acheivement-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\acheivement-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\acheivement-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\acheivement-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\acheivement-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\acheivement-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\acheivement-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\acheivement-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\acheivement-5.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\activities-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\activities-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\activities-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\activities-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\activity-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\activity-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\activity-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\activity-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\badge-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\badge-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\badge-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\badge-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\badge-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\badge-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\bg-first-screen.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-first-screen.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\c0.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\c0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\c1.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\c1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\c2.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\c2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\c3.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\c3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\c4.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\c4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\c5.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\c5.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\community-item-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\community-item-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\community-item-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\community-item-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\community-item-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\community-item-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\community-item-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\community-item-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\community-item-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\community-item-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\cv.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\cv.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\game-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\game-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\game-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\game-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\game-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\game-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\game-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\game-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\game-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\game-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\game-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\game-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\game-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\game-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\game-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\game-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\game-profile-card.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\game-profile-card.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\hunt-showdown.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hunt-showdown.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\mac.png",
+      "PackagePath": "staticwebassets\\assets\\img\\mac.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\market-item-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\market-item-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\market-item-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\market-item-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\market-item-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\market-item-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\market-item-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\market-item-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\profile.png",
+      "PackagePath": "staticwebassets\\assets\\img\\profile.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\pubg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\pubg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\recommend-slide-img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\recommend-slide-img.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\recommend-slide-logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\recommend-slide-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\streem-item-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\streem-item-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\streem-item-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\streem-item-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\streem-item-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\streem-item-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\streem-item-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\streem-item-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\streem-item-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\streem-item-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\streem-item-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\streem-item-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\streem-item-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\streem-item-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\streem-item-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\streem-item-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\streem-item-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\streem-item-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\streem-item-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\streem-item-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\streem-item-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\streem-item-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\streem-item-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\streem-item-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\stronghold.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\stronghold.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\add-square.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\add-square.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\apple.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\apple.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\arrow-circle-left.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\arrow-circle-left.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\arrow-circle-right.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\arrow-circle-right.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\attach-circle.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\attach-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\call.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\call.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\chats.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\chats.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\clipboard-text.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\clipboard-text.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\close-circle.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\close-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\community.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\community.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\edit.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\edit.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\emoji-happy.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\emoji-happy.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\eye.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\eye.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\favourites.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\favourites.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\friends.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\friends.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\gallery.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\gallery.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\help.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\help.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\home.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\home.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\info-circle.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\info-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\market.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\market.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\menu.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\menu.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\message.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\message.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\microphone.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\microphone.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\more.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\more.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\notification.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\notification.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\play-circle.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\play-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\profile.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\profile.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\report.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\report.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\search.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\search.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\shopping-cart.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\shopping-cart.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\star.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\star.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\store.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\store.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\streams.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\streams.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\tick-circle.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\tick-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\trash.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\trash.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\video-circle.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\video-circle.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\wallet.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\wallet.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\svgico\\windows.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\svgico\\windows.svg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\total-war.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\total-war.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\trending.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\trending.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\user-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\user-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\user-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\user-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\user-list-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user-list-1.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\user-list-10.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user-list-10.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\user-list-11.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user-list-11.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\user-list-12.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user-list-12.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\user-list-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user-list-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\user-list-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user-list-3.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\user-list-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user-list-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\user-list-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user-list-5.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\user-list-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user-list-6.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\user-list-7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user-list-7.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\user-list-8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user-list-8.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\img\\user-list-9.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user-list-9.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\js\\libs.js",
+      "PackagePath": "staticwebassets\\assets\\js\\libs.js"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\preview\\01_log-In.jpg",
+      "PackagePath": "staticwebassets\\assets\\preview\\01_log-In.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\preview\\02_register.jpg",
+      "PackagePath": "staticwebassets\\assets\\preview\\02_register.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\preview\\03_home.jpg",
+      "PackagePath": "staticwebassets\\assets\\preview\\03_home.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\preview\\04_profile.jpg",
+      "PackagePath": "staticwebassets\\assets\\preview\\04_profile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\preview\\05_favourites.jpg",
+      "PackagePath": "staticwebassets\\assets\\preview\\05_favourites.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\preview\\06_chats.jpg",
+      "PackagePath": "staticwebassets\\assets\\preview\\06_chats.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\preview\\07_friends.jpg",
+      "PackagePath": "staticwebassets\\assets\\preview\\07_friends.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\preview\\08_wallet.jpg",
+      "PackagePath": "staticwebassets\\assets\\preview\\08_wallet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\preview\\09_games-store.jpg",
+      "PackagePath": "staticwebassets\\assets\\preview\\09_games-store.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\preview\\10_game-profile.jpg",
+      "PackagePath": "staticwebassets\\assets\\preview\\10_game-profile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\preview\\11_market.jpg",
+      "PackagePath": "staticwebassets\\assets\\preview\\11_market.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\preview\\12_streams.jpg",
+      "PackagePath": "staticwebassets\\assets\\preview\\12_streams.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\preview\\13_community.jpg",
+      "PackagePath": "staticwebassets\\assets\\preview\\13_community.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\preview\\14_report.jpg",
+      "PackagePath": "staticwebassets\\assets\\preview\\14_report.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\preview\\15_help.jpg",
+      "PackagePath": "staticwebassets\\assets\\preview\\15_help.jpg"
+    },
+    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\css\\GameCreatePage.css",
       "PackagePath": "staticwebassets\\css\\GameCreatePage.css"
     },
@@ -1047,6 +1703,10 @@
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Activision.svg_e51d783c.png",
       "PackagePath": "staticwebassets\\images\\games\\Activision.svg_e51d783c.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Dark Souls Remastered_11415c1b.PNG",
+      "PackagePath": "staticwebassets\\images\\games\\Dark Souls Remastered_11415c1b.PNG"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\god of war 1_05c729fd.jpg",
