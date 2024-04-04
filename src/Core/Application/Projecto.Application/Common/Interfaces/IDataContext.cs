@@ -10,9 +10,10 @@
         DbSet<PublisherImage> PublisherImages { get; }
         DbSet<GameImage> GameImages { get; }
         DbSet<DeveloperImage> DeveloperImages { get; }
+        DbSet<UserGame> UserGames { get; }
+        DbSet<GameKey> GameKeys { get; }
+        DbSet<AppUserProfilePicture> AppUserProfilePictures { get; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
-        void MarkAsModified(object entity);
-        void MarkAsCreated(object entity);
 
     }
 }

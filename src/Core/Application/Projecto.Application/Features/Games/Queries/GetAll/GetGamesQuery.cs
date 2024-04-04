@@ -19,6 +19,8 @@
                     Include(g => g.Developer).
                     Include(g => g.Publisher).
                     Include(g => g.Images).
+                    Include(g => g.GameGenres).
+                    ThenInclude(gg => gg.Genre).
                 ToListAsync();
 
             var getGameDtos = _mapper.Map<IEnumerable<GetGameDto>>(games);

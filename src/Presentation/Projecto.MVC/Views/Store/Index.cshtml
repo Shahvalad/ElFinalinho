@@ -1,0 +1,124 @@
+﻿@model List<GetGameDto>
+@{
+    int count = 0;
+    string genres = string.Empty;
+}
+<main class="page-main">
+    <div class="widjet --filters">
+        <div class="widjet__head">
+            <h3 class="uk-text-lead">Games Store</h3>
+        </div>
+        <div class="widjet__body">
+            <div class="uk-grid uk-child-width-1-6@xl uk-child-width-1-3@l uk-child-width-1-2@s uk-flex-middle uk-grid-small" data-uk-grid="">
+                <div class="uk-width-1-1 uk-first-column">
+                    <div class="search">
+                        <div class="search__input">
+                            <i class="ico_search"></i>
+                            <input id="searchInput" type="search" name="searchTerm" placeholder="Search">
+                        </div>
+                    </div>
+                    <div id="searchResults"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-grid uk-child-width-1-6@xl uk-child-width-1-3@l uk-child-width-1-2@s uk-flex-middle uk-grid-small" data-uk-grid="">
+        @if (Model.Any())
+        {
+            @foreach (var game in Model)
+            {
+                var genresList = game.GameGenres.Select(g => g.Genre.Name).ToList();
+                if (genresList.Count() != 0)
+                {
+                    genres = genresList.Aggregate((a, b) => a + ", " + b);
+                }
+                else
+                {
+                    genres = "No genres";
+                }
+                @if (count % 2 == 0)
+                {
+                    <div class="uk-first-column">
+                        <div class="game-card">
+                            <div class="game-card__box">
+                                <div class="game-card__media"><a asp-action="Details" asp-route-id="@game.Id"><img src="~/Images/Games/@game.Images.Where(g=>g.IsCoverImage).Select(g=>g.FileName).FirstOrDefault()" alt="@game.Name"></a></div>
+                                <div class="game-card__info">
+                                    <a class="game-card__title" href="~/10_game-profile.html"> @game.Name</a>
+                                    <div class="game-card__genre">@genres</div>
+                                    <div class="game-card__rating-and-price">
+                                        <div class="game-card__rating"><span>4.8</span><i class="ico_star"></i></div>
+                                        <div class="game-card__price"><span>$@game.Price </span></div>
+                                    </div>
+                                    <div class="game-card__bottom">
+                                        <div class="game-card__platform"><i class="ico_windows"></i><i class="ico_apple"></i></div>
+                                        <div class="game-card__users">
+                                            <ul class="users-list">
+                                                <li><img src="~/assets/img/user-1.png" alt="user"></li>
+                                                <li><img src="~/assets/img/user-2.png" alt="user"></li>
+                                                <li><img src="~/assets/img/user-3.png" alt="user"></li>
+                                                <li><img src="~/assets/img/user-4.png" alt="user"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div>
+                        <div class="game-card">
+                            <div class="game-card__box">
+                                <div class="game-card__media"><a asp-action="Details" asp-route-id="@game.Id"><img src="~/Images/Games/@game.Images.Where(g=>g.IsCoverImage).Select(g=>g.FileName).FirstOrDefault()" alt="@game.Name"></a></div>
+                                <div class="game-card__info">
+                                    <a class="game-card__title" href="~/10_game-profile.html"> @game.Name</a>
+                                    <div class="game-card__genre">@genres</div>
+                                    <div class="game-card__rating-and-price">
+                                        <div class="game-card__rating"><span>4.8</span><i class="ico_star"></i></div>
+                                        <div class="game-card__price"><span>$@game.Price </span></div>
+                                    </div>
+                                    <div class="game-card__bottom">
+                                        <div class="game-card__platform"><i class="ico_windows"></i><i class="ico_apple"></i></div>
+                                        <div class="game-card__users">
+                                            <ul class="users-list">
+                                                <li><img src="~/assets/img/user-1.png" alt="user"></li>
+                                                <li><img src="~/assets/img/user-2.png" alt="user"></li>
+                                                <li><img src="~/assets/img/user-3.png" alt="user"></li>
+                                                <li><img src="~/assets/img/user-4.png" alt="user"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                count++;
+            }
+        }
+    </div>
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#searchInput').on('input', function () {
+            var searchTerm = $(this).val();
+            if (searchTerm) {
+                $.ajax({
+                    url: '@Url.Action("Search", "Store")',
+                    data: { searchTerm: searchTerm },
+                    success: function (data) {
+                        $('#searchResults').html(data);
+                    }
+                });
+            } else {
+                $('#searchResults').empty();
+            }
+        });
+    });
+</script>
+
+
+            
+        

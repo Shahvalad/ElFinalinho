@@ -25,3 +25,6 @@ global using Projecto.Application.Features.Games.Commands.Delete;
 global using Projecto.Application.Features.Games.Commands.Edit;
 global using Projecto.Application.Features.Games.Queries.Get;
 global using Projecto.Application.Features.Games.Queries.GetAll;
+global using Microsoft.AspNetCore.Identity;
+global using Projecto.Domain.Models;
+global using Projecto.MVC.ViewModels;

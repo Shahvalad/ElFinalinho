@@ -1017,6 +1017,38 @@
       "PackagePath": "staticwebassets\\Admin\\assets\\libs\\x-editable\\bootstrap-editable.min.js"
     },
     {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Uploads\\1c0551be-b153-4fbb-bcb0-abb694b6b240.xlsx",
+      "PackagePath": "staticwebassets\\Uploads\\1c0551be-b153-4fbb-bcb0-abb694b6b240.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Uploads\\406ef74c-33ed-4230-a198-eb436a307664.xlsx",
+      "PackagePath": "staticwebassets\\Uploads\\406ef74c-33ed-4230-a198-eb436a307664.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Uploads\\4eca4612-7d7f-4088-ad5b-3aeec70e8c76.xlsx",
+      "PackagePath": "staticwebassets\\Uploads\\4eca4612-7d7f-4088-ad5b-3aeec70e8c76.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Uploads\\582f020f-960d-49ff-850b-9c29f1a4f5df.xlsx",
+      "PackagePath": "staticwebassets\\Uploads\\582f020f-960d-49ff-850b-9c29f1a4f5df.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Uploads\\Keys.xlsx",
+      "PackagePath": "staticwebassets\\Uploads\\Keys.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Uploads\\a01e27cf-dc7c-4b29-9169-72e4050aad3e.xlsx",
+      "PackagePath": "staticwebassets\\Uploads\\a01e27cf-dc7c-4b29-9169-72e4050aad3e.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Uploads\\abb83ceb-a885-4056-99c3-8960adb03397.xlsx",
+      "PackagePath": "staticwebassets\\Uploads\\abb83ceb-a885-4056-99c3-8960adb03397.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Uploads\\cff668f7-6504-49e5-9561-4880484b04e9.xlsx",
+      "PackagePath": "staticwebassets\\Uploads\\cff668f7-6504-49e5-9561-4880484b04e9.xlsx"
+    },
+    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\assets\\css\\libs.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\libs.min.css"
     },
@@ -1681,6 +1713,10 @@
       "PackagePath": "staticwebassets\\css\\GameEditPage.css"
     },
     {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\css\\LayoutCustomCSS.css",
+      "PackagePath": "staticwebassets\\css\\LayoutCustomCSS.css"
+    },
+    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -1705,24 +1741,68 @@
       "PackagePath": "staticwebassets\\images\\games\\Activision.svg_e51d783c.png"
     },
     {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Dark Souls Remastered_017f3ee3.PNG",
+      "PackagePath": "staticwebassets\\images\\games\\Dark Souls Remastered_017f3ee3.PNG"
+    },
+    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Dark Souls Remastered_11415c1b.PNG",
       "PackagePath": "staticwebassets\\images\\games\\Dark Souls Remastered_11415c1b.PNG"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Dark Souls Remastered_4c236c32.PNG",
+      "PackagePath": "staticwebassets\\images\\games\\Dark Souls Remastered_4c236c32.PNG"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Dark Souls Remastered_715d538e.PNG",
+      "PackagePath": "staticwebassets\\images\\games\\Dark Souls Remastered_715d538e.PNG"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Dark Souls Remastered_d5a60c55.PNG",
+      "PackagePath": "staticwebassets\\images\\games\\Dark Souls Remastered_d5a60c55.PNG"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\NET20Roadmap_3255700f.png",
+      "PackagePath": "staticwebassets\\images\\games\\NET20Roadmap_3255700f.png"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\god of war 1_05c729fd.jpg",
       "PackagePath": "staticwebassets\\images\\games\\god of war 1_05c729fd.jpg"
     },
     {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\god of war 1_1103629b.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\god of war 1_1103629b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\god of war 1_3fdf934e.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\god of war 1_3fdf934e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\god of war 1_6b6c6396.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\god of war 1_6b6c6396.jpg"
+    },
+    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\god of war 1_6dcead32.jpg",
       "PackagePath": "staticwebassets\\images\\games\\god of war 1_6dcead32.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\god of war 1_a9d25aac.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\god of war 1_a9d25aac.jpg"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\test.txt",
       "PackagePath": "staticwebassets\\images\\games\\test.txt"
     },
     {
-      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\publishers\\Activision.svg_d869fe28.png",
-      "PackagePath": "staticwebassets\\images\\publishers\\Activision.svg_d869fe28.png"
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\publishers\\Activision.svg_bb23f01a.png",
+      "PackagePath": "staticwebassets\\images\\publishers\\Activision.svg_bb23f01a.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\publishers\\Dark Souls Remastered_1f8b259f.PNG",
+      "PackagePath": "staticwebassets\\images\\publishers\\Dark Souls Remastered_1f8b259f.PNG"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\publishers\\god of war 1_e66c9d94.jpg",
+      "PackagePath": "staticwebassets\\images\\publishers\\god of war 1_e66c9d94.jpg"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\publishers\\text.txt",

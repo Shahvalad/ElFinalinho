@@ -76,6 +76,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.3, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[43.21.0, )"
             }
           },
           "imports": [
@@ -142,8 +146,76 @@
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
               "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Infrastructure\\Projecto.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Infrastructure\\Projecto.Infrastructure.csproj",
+        "projectName": "Projecto.Infrastructure",
+        "projectPath": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Infrastructure\\Projecto.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Шахвалад\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Шахвалад\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj": {
+                "projectPath": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -212,6 +284,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.3, )"
@@ -268,6 +348,9 @@
               "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj": {
                 "projectPath": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj"
               },
+              "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Infrastructure\\Projecto.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Infrastructure\\Projecto.Infrastructure.csproj"
+              },
               "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj": {
                 "projectPath": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Infrastructure\\Projecto.Persistence\\Projecto.Persistence.csproj"
               }
@@ -289,6 +372,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.2.0, )"
@@ -301,7 +388,11 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.2, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[43.21.0, )"
             }
           },
           "imports": [

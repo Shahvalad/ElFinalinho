@@ -1,14 +1,12 @@
-using Projecto.MVC.Models;
-using System.Diagnostics;
-
+using Microsoft.AspNetCore.Authorization;
 namespace Projecto.MVC.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
-
     }
 }

@@ -1,0 +1,67 @@
+﻿@model IEnumerable<GetGameDto>
+
+<style>
+    .search-results-dropdown {
+        position: absolute;
+        width: 100%;
+        max-height: 200px;
+        overflow-y: auto;
+        background: white;
+        border: 1px solid #ccc;
+        z-index: 1000;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .search-result-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .search-result-item:hover {
+        background: #f9f9f9;
+    }
+
+    .search-result-image {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .search-result-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .search-result-title {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .search-result-genres {
+        margin: 0;
+        font-size: 14px;
+        color: #888;
+    }
+</style>
+
+<ul class="search-results-dropdown">
+    @foreach (var game in Model)
+    {
+        <a asp-action="Details" asp-route-id="@game.Id">
+        <li class="search-result-item">
+                <img src="~/Images/Games/@game.Images.Where(g=>g.IsCoverImage).Select(g=>g.FileName).FirstOrDefault()" alt="@game.Name" class="search-result-image" />
+                <div class="search-result-info">
+                    <h3 class="search-result-title">@game.Name</h3>
+                    <p class="search-result-genres">@string.Join(", ", game.GameGenres.Select(g => g.Genre.Name))</p>
+                </div>
+        </li>
+        </a>
+
+    }
+</ul>

@@ -1,7 +1,4 @@
-﻿
-using Projecto.Domain.Models.Common;
-
-namespace Projecto.Domain.Models
+﻿namespace Projecto.Domain.Models
 {
     public class DeveloperImage : BaseImage
     {

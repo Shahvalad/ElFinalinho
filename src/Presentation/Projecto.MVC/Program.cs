@@ -1,8 +1,8 @@
-using Microsoft.AspNetCore.Builder;
 using Projecto.Application;
+using Projecto.Infrastructure;
 using Projecto.MVC.Areas.Admin.Services;
 using Projecto.Persistence;
-
+using Stripe;
 namespace Projecto.MVC
 {
     public class Program
@@ -15,6 +15,7 @@ namespace Projecto.MVC
 
             builder.Services.AddApplication();
             builder.Services.AddPersistence(builder.Configuration);
+            builder.Services.AddInfrastructure(builder.Configuration);
             builder.Services.AddScoped<IImageService, ImageService>();
 
 
@@ -34,6 +35,7 @@ namespace Projecto.MVC
             app.UseStaticFiles();
 
             app.UseRouting();
+
 
             app.UseAuthorization();
 

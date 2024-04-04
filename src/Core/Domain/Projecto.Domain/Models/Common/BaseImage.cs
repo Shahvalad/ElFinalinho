@@ -8,7 +8,6 @@ namespace Projecto.Domain.Models.Common
     {
         public int Id { get; set; }
         public string FileName { get; set; } = null!;
-        public bool IsCoverImage { get; set; } = false;
 
         [NotMapped]
         [Display(Name = "Image File")]

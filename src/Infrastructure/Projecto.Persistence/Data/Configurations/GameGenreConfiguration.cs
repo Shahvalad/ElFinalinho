@@ -1,6 +1,6 @@
 ﻿namespace Projecto.Persistence.Data.Configurations
 {
-    internal class GameGenreConfiguration : IEntityTypeConfiguration<GameGenre>
+    public class GameGenreConfiguration : IEntityTypeConfiguration<GameGenre>
     {
         public void Configure(EntityTypeBuilder<GameGenre> builder)
         {

@@ -26,7 +26,6 @@
                 var image = await _imageService.CreateImageAsync("Developers", request.DeveloperDto.Logo);
                 developer.Logo = new DeveloperImage { FileName = image };
             }
-            _context.MarkAsModified(developer);
             await _context.SaveChangesAsync(cancellationToken);
         }
     }

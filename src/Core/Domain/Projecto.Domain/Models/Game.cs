@@ -1,9 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using Projecto.Domain.Models.Common;
-
-namespace Projecto.Domain.Models
+﻿namespace Projecto.Domain.Models
 {
+    //TODO : Add Relase date for game!
     public class Game : BaseAuditableEntity
     {
         [Required]
@@ -14,7 +11,9 @@ namespace Projecto.Domain.Models
         public string? Description { get; set; }
         public int ViewCount { get; set; }
         public int PurchaseCount { get; set; }
+        public int StockCount { get; set; }
         public List<GameImage> Images { get; set; } = new List<GameImage>();
+        public List<GameKey> GameKeys { get; set; } = new List<GameKey>();
 
         //Navigation Properties 
         public int? PublisherId { get; set; }
@@ -23,6 +22,8 @@ namespace Projecto.Domain.Models
         public Developer Developer { get; set; } = null!;
 
         public List<GameGenre> GameGenres { get; set; } = new List<GameGenre>();
+
+        public List<UserGame> UserGames { get; set; } = new List<UserGame>();
 
     }
 }

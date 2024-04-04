@@ -211,16 +211,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
     <PackageReference Include="MediatR" Version="12.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+    <PackageReference Include="Stripe.net" Version="43.21.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Application\Projecto.Application\Projecto.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Projecto.Infrastructure\Projecto.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Projecto.Persistence\Projecto.Persistence.csproj" />
   </ItemGroup>
 
@@ -228,6 +231,7 @@
     <Folder Include="wwwroot\Images\Games\" />
     <Folder Include="wwwroot\Images\Developers\" />
     <Folder Include="wwwroot\Images\Publishers\" />
+    <Folder Include="wwwroot\Uploads\" />
   </ItemGroup>
 
 </Project>

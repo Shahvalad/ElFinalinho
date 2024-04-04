@@ -25,7 +25,8 @@
 
             RuleFor(x => x.CreateGameDto.Price)
                 .NotEmpty().WithMessage("Price is required!")
-                .GreaterThan(0).WithMessage("Price must be greater than zero!");
+                .GreaterThanOrEqualTo(1).WithMessage("Price must be at least 1 USD!");
+
             RuleFor(x => x.CreateGameDto.DeveloperId)
                 .NotEmpty().WithMessage("Game cannot be created without developer!")
                 .GreaterThan(0).WithMessage("DeveloperId must be positive number!");

@@ -40,7 +40,7 @@
 
             game.Developer = await _context.Developers.FirstOrDefaultAsync(g=>g.Id == request.CreateGameDto.DeveloperId) ?? 
                 throw new GameNotFoundException("There is no game with such id!");
-
+            game.StockCount = game.GameKeys.Count();
             await _context.Games.AddAsync(game);
             await _context.SaveChangesAsync(cancellationToken);
             return game.Id;

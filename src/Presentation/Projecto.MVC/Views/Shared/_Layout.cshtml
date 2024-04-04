@@ -3,7 +3,6 @@
 }
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>TeamHost - Join now and play mighty games!</title>
@@ -13,12 +12,14 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="format-detection" content="telephone=no">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/libs.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="~/assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="~/assets/css/libs.min.css">
+    <link rel="stylesheet" href="~/assets/css/main.css">
+    <link rel="stylesheet" href="~/css/LayoutCustomCSS.css" />
+    <link rel="preconnect" href="~/https://fonts.googleapis.com">
+    <link rel="preconnect" href="~/https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body class="page-home">
@@ -32,7 +33,7 @@
             <div class="page-header__inner">
                 <div class="page-header__sidebar">
                     <div class="page-header__menu-btn"><button class="menu-btn ico_menu is-active"></button></div>
-                    <div class="page-header__logo"><img src="assets/img/logo.png" alt="logo"><span class="page-header__logo_text">TEAMHOST</span></div>
+                    <div class="page-header__logo"><img src="~/assets/img/logo.png" alt="logo"><span class="page-header__logo_text">TEAMHOST</span></div>
                 </div>
                 <div class="page-header__content">
                     <div class="page-header__search">
@@ -41,7 +42,19 @@
                             <div class="search__btn"><button type="button"><i class="ico_microphone"></i></button></div>
                         </div>
                     </div>
-                    <div class="page-header__action"><a class="action-btn" href="#!"><i class="ico_message"></i><span></span></a><a class="action-btn" href="#!"><i class="ico_notification"></i><span></span></a><a class="profile" href="#!"><img src="assets/img/profile.png" alt="profile"></a></div>
+                    <div class="page-header__action">
+                        <a class="action-btn" href="~/#!"><i class="ico_message"></i><span></span></a><a class="action-btn" href="~/#!"><i class="ico_notification"></i><span></span></a>
+                        <div class="profile">
+                            <div class="dropdown">
+                                <img src="~/assets/img/profile.png" alt="profile" class="profile-img" onclick="toggleDropdown()">
+                                <div class="dropdown-content" id="dropdownContent">
+                                    <a asp-controller="Profile" asp-action="Index">Profile</a>
+                                    <a href="~/08_wallet.html">Wallet</a>
+                                    <a href="~/Account/Logout">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -49,21 +62,21 @@
             <aside class="sidebar is-show" id="sidebar">
                 <div class="sidebar-box">
                     <ul class="uk-nav">
-                        <li class="uk-active"><a href="03_home.html"><i class="ico_home"></i><span>Home</span></a></li>
+                        <li class="uk-active"><a href="~/03_home.html"><i class="ico_home"></i><span>Home</span></a></li>
                         <li class="uk-nav-header">Account</li>
-                        <li><a href="04_profile.html"><i class="ico_profile"></i><span>Profile</span></a></li>
-                        <li><a href="05_favourites.html"><i class="ico_favourites"></i><span>Favourites</span><span class="count">15</span></a></li>
-                        <li><a href="06_chats.html"><i class="ico_chats"></i><span>Chats</span></a></li>
-                        <li><a href="07_friends.html"><i class="ico_friends"></i><span>Friends</span></a></li>
-                        <li><a href="08_wallet.html"><i class="ico_wallet"></i><span>Wallet</span></a></li>
+                        <li><a asp-controller="Profile" asp-action="Index"><i class="ico_profile"></i><span>Profile</span></a></li>
+                        <li><a href="~/05_favourites.html"><i class="ico_favourites"></i><span>Favourites</span><span class="count">15</span></a></li>
+                        <li><a href="~/06_chats.html"><i class="ico_chats"></i><span>Chats</span></a></li>
+                        <li><a href="~/07_friends.html"><i class="ico_friends"></i><span>Friends</span></a></li>
+                        <li><a asp-controller="Wallet" asp-action="Index"><i class="ico_wallet"></i><span>Wallet</span></a></li>
                         <li class="uk-nav-header">Main</li>
-                        <li><a href="09_games-store.html"><i class="ico_store"></i><span>Store</span></a></li>
-                        <li><a href="11_market.html"><i class="ico_market"></i><span>Market</span></a></li>
-                        <li><a href="12_streams.html"><i class="ico_streams"></i><span>Streams</span></a></li>
-                        <li><a href="13_community.html"><i class="ico_community"></i><span>Community</span></a></li>
+                        <li><a asp-controller="Store" asp-action="Index"><i class="ico_store"></i><span>Store</span></a></li>
+                        <li><a href="~/11_market.html"><i class="ico_market"></i><span>Market</span></a></li>
+                        <li><a href="~/12_streams.html"><i class="ico_streams"></i><span>Streams</span></a></li>
+                        <li><a href="~/13_community.html"><i class="ico_community"></i><span>Community</span></a></li>
                         <li class="uk-nav-header">Support</li>
-                        <li><a href="#modal-report" data-uk-toggle><i class="ico_report"></i><span>Report</span></a></li>
-                        <li><a href="#modal-help" data-uk-toggle><i class="ico_help"></i><span>Help</span></a></li>
+                        <li><a href="~/#modal-report" data-uk-toggle><i class="ico_report"></i><span>Report</span></a></li>
+                        <li><a href="~/#modal-help" data-uk-toggle><i class="ico_help"></i><span>Help</span></a></li>
                     </ul>
                 </div>
             </aside>
@@ -114,21 +127,38 @@
                 <div class="uk-margin-small-left uk-margin-small-bottom uk-margin-medium-top">
                     <h4>Popular Q&A</h4>
                     <ul>
-                        <li><img src="assets/img/svgico/clipboard-text.svg" alt="icon"><span>How to Upload Your Developed Game</span></li>
-                        <li><img src="assets/img/svgico/clipboard-text.svg" alt="icon"><span>How to Go Live Stream</span></li>
-                        <li><img src="assets/img/svgico/clipboard-text.svg" alt="icon"><span>Get in touch with the Creator Support Team</span></li>
+                        <li><img src="~/assets/img/svgico/clipboard-text.svg" alt="icon"><span>How to Upload Your Developed Game</span></li>
+                        <li><img src="~/assets/img/svgico/clipboard-text.svg" alt="icon"><span>How to Go Live Stream</span></li>
+                        <li><img src="~/assets/img/svgico/clipboard-text.svg" alt="icon"><span>Get in touch with the Creator Support Team</span></li>
                     </ul>
                     <ul>
-                        <li><a href="#!">browse all articles</a></li>
-                        <li><a href="#!">Send Feedback</a></li>
+                        <li><a href="~/#!">browse all articles</a></li>
+                        <li><a href="~/#!">Send Feedback</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
+    <script src="~/assets/js/libs.js"></script>
+    <script src="~/assets/js/main.js"></script>
+    <script>
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            dropdownContent.classList.toggle("show");
+        }
 
-    <script src="assets/js/libs.js"></script>
-    <script src="assets/js/main.js"></script>
+        window.onclick = function (event) {
+            if (!event.target.matches('.profile-img')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
