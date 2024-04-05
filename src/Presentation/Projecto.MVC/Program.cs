@@ -17,10 +17,7 @@ namespace Projecto.MVC
             builder.Services.AddPersistence(builder.Configuration);
             builder.Services.AddInfrastructure(builder.Configuration);
             builder.Services.AddScoped<IImageService, ImageService>();
-
-
-            builder.Services.AddControllersWithViews();
-
+            builder.Services.ConfigureServices();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -33,6 +30,8 @@ namespace Projecto.MVC
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseSession();
 
             app.UseRouting();
 

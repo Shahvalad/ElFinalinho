@@ -8,6 +8,6 @@ namespace Projecto.Application.Services.KeyService
 {
     public interface IKeyService
     {
-        string AssignKeyToUser(string username);
+        Task<string> AssignKeyToUser(string username, int gameId);
     }
 }

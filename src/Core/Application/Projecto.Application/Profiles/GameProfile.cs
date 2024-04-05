@@ -14,6 +14,10 @@ namespace Projecto.Application.Profiles
                 .ForMember(dest => dest.Images, GetGameDto => GetGameDto.MapFrom(src => src.Images.Select(x => x.ImageFile)));
             CreateMap<GetGameDto, UpdateGameDto>()
                 .ForMember(dest=>dest.Images, opt=>opt.Ignore());
+            CreateMap<GetGameDto, Game>()
+               .ForMember(dest => dest.Images, opt => opt.Ignore())
+               .ForMember(dest => dest.Developer, opt => opt.Ignore())
+               .ForMember(dest => dest.GameGenres, opt => opt.Ignore());
         }
     }
 }

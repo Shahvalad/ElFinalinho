@@ -73,10 +73,10 @@ namespace Projecto.MVC.Areas.Admin.Controllers
             ViewData["PublisherId"] = new SelectList(await _sender.Send(new GetPublishersQuery()), "Id", "Name");
             ViewBag.Genres = new SelectList(await _sender.Send(new GetGenresQuery()), "Id", "Name");
             var updateGameDto = _mapper.Map<UpdateGameDto>(game);
-            updateGameDto.Images = game.Images.Select(i=>i.ImageFile).ToList();
+            updateGameDto.Images = game.Images?.Select(i=>i.ImageFile).ToList();
             updateGameDto.ImageFileNames = game.Images.Where(im => im.IsCoverImage == false).Select(i => i.FileName).ToList();
-            updateGameDto.CoverImage = game.Images.FirstOrDefault(i => i.IsCoverImage)?.ImageFile;
-            updateGameDto.CoverImageFileName = game.Images.FirstOrDefault(i => i.IsCoverImage)?.FileName;
+            updateGameDto.CoverImage = game.Images?.FirstOrDefault(i => i.IsCoverImage)?.ImageFile;
+            updateGameDto.CoverImageFileName = game.Images?.FirstOrDefault(i => i.IsCoverImage)?.FileName;
             updateGameDto.SelectedGenres = game.GameGenres.Select(gg => gg.GenreId).ToList();
             return View(updateGameDto);
         }
@@ -148,6 +148,20 @@ namespace Projecto.MVC.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddKeys(int? id, string keys, IFormFile? file)
         {
+            if(file is not null)
+            {
+                keys = await ReadFromExcelAsync(file);
+            }
+            var keyList = keys.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None).ToList();
+            keyList = keyList.Where(key => !String.IsNullOrEmpty(key)).ToList();
+            var command = new AddKeysCommand(id, keyList);
+            await _sender.Send(command);
+            return RedirectToAction(nameof(Index));
+        }
+
+        private async Task<string> ReadFromExcelAsync(IFormFile? file)
+        {
+            string result = string.Empty;
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
             if (file != null && file.Length > 0)
             {
@@ -170,7 +184,7 @@ namespace Projecto.MVC.Areas.Admin.Controllers
                                 {
                                     if (!String.IsNullOrEmpty(reader.GetString(i)))
                                     {
-                                        keys += reader.GetString(i) + "\r\n";
+                                        result += reader.GetString(i) + "\r\n";
                                     }
                                 }
                             }
@@ -179,14 +193,7 @@ namespace Projecto.MVC.Areas.Admin.Controllers
                     }
                 }
             }
-            var keyList = keys.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None).ToList();
-            keyList = keyList.Where(key => !String.IsNullOrEmpty(key)).ToList();
-            var command = new AddKeysCommand(id, keyList);
-            await _sender.Send(command);
-            return RedirectToAction(nameof(Index));
+            return result;
         }
-
-       
-
     }
 }

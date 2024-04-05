@@ -1,0 +1,39 @@
+﻿@model Cart
+
+@{
+    ViewData["Title"] = "Shopping Cart";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center" style="color: #5a6268;">@ViewData["Title"]</h2>
+
+    <table class="table table-bordered table-hover">
+        <thead class="thead-light">
+            <tr>
+                <th style="background-color: #f8f9fa;">Product</th>
+                <th style="background-color: #f8f9fa;">Quantity</th>
+                <th style="background-color: #f8f9fa;">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.CartItems)
+            {
+                <tr>
+                    <td>@item.Game.Name</td>
+                    <td>@item.Quantity <a asp-action="RemoveFromCart" asp-route-GameId="@item.Game.Id">-</a></td>
+                    <td>@item.Game.Price.ToString("C")</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" class="text-right"><strong>Total</strong></td>
+                <td><strong>@Model.TotalPrice</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="d-flex justify-content-end">
+        <a class="btn btn-primary btn-lg" asp-controller="CheckOut" asp-action="CheckOutFromCart">Proceed to Checkout</a>
+    </div>
+</div>

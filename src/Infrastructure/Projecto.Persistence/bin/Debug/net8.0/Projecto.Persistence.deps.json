@@ -1031,6 +1031,7 @@
           "FluentValidation.DependencyInjectionExtensions": "11.9.0",
           "MediatR": "12.2.0",
           "Microsoft.AspNet.Mvc": "5.3.0",
+          "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
           "Microsoft.AspNetCore.Http.Features": "2.2.0",
           "Microsoft.EntityFrameworkCore": "8.0.3",
           "Projecto.Domain": "1.0.0",

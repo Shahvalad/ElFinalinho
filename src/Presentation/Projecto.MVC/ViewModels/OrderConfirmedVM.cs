@@ -4,6 +4,6 @@
     {
         public string OrderId { get; set; }
         public long? AmountPaid { get; set; }
-        public string Key { get; set; }
+        public List<GameKey> GameKeys { get; set; }
     }
 }

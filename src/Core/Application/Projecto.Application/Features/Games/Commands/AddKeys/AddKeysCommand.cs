@@ -13,6 +13,7 @@
             var game = await _context.Games.FindAsync(request.id)??throw new GameNotFoundException("No game with such id!");
             foreach (var key in request.Keys)
             {
+                if (game.GameKeys.Any(k => k.Value == key)) continue;
                 game.GameKeys.Add(new GameKey { Value = key });
             }
             game.StockCount = game.StockCount + request.Keys.Count;

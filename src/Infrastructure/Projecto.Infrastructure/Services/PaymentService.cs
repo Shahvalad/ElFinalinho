@@ -8,8 +8,13 @@ namespace Projecto.Infrastructure.Services
 {
     public class PaymentService : IPaymentService
     {
-        public Session CreateStripeSession(GetGameDto game, string successUrl, string cancelUrl)
+        public Session CreateStripeSession(List<CartItem> CartItems, string successUrl, string cancelUrl)
         {
+            if (CartItems == null || !CartItems.Any())
+            {
+                throw new ArgumentException("Games list cannot be null or empty.", nameof(CartItems));
+            }
+
             var options = new SessionCreateOptions
             {
                 SuccessUrl = successUrl,
@@ -18,20 +23,24 @@ namespace Projecto.Infrastructure.Services
                 Mode = "payment"
             };
 
-            var sessionItem = new SessionLineItemOptions
+            foreach (var cartItem in CartItems)
             {
-                PriceData = new SessionLineItemPriceDataOptions
+                
+                var sessionItem = new SessionLineItemOptions
                 {
-                    Currency = "usd",
-                    ProductData = new SessionLineItemPriceDataProductDataOptions
+                    PriceData = new SessionLineItemPriceDataOptions
                     {
-                        Name = game.Name
+                        Currency = "usd",
+                        ProductData = new SessionLineItemPriceDataProductDataOptions
+                        {
+                            Name = cartItem.Game.Name
+                        },
+                        UnitAmount = (long)(cartItem.Game.Price * 100)
                     },
-                    UnitAmount = (long)(game.Price * 100)
-                },
-                Quantity = 1
-            };
-            options.LineItems.Add(sessionItem);
+                    Quantity = cartItem.Quantity
+                };
+                options.LineItems.Add(sessionItem);
+            }
 
             var service = new SessionService();
             return service.Create(options);
