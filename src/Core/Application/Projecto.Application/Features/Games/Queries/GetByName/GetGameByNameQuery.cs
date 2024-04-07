@@ -34,6 +34,9 @@ namespace Projecto.Application.Features.Games.Queries.GetByName
             foreach (var dto in getGameDtos)
             {
                 dto.Images = games.FirstOrDefault(g => g.Id == dto.Id)?.Images.Select(i => new GameImage() { FileName = i.FileName, IsCoverImage = i.IsCoverImage }).ToList();
+                if (games.FirstOrDefault(g => g.Id == dto.Id).StockCount > 0)
+                    dto.InStock = true;
+                dto.CoverImageFileName = games.FirstOrDefault(g => g.Id == dto.Id).Images.FirstOrDefault(i => i.IsCoverImage).FileName;
             }
             return getGameDtos;
         }

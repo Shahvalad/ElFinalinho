@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using Projecto.Application.Features.Carts.Commands.AddToCart;
+﻿using Projecto.Application.Features.Carts.Commands.AddToCart;
 using Projecto.Application.Features.Carts.Commands.RemoveFromCart;
 
 namespace Projecto.MVC.Controllers

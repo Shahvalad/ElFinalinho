@@ -19,15 +19,33 @@ namespace Projecto.Application.Features.Profile.Queries
         public async Task<GetProfileDto> Handle(GetProfileQuery request, CancellationToken cancellationToken)
         {
             var user = await _userManager.GetUserAsync(request.User);
+            var userGames = await _context.UserGames
+                .Where(g => g.UserId == user.Id)
+                .Include(g => g.Game)
+                .Include(g => g.Game.Images)
+                .ToListAsync();
+
+            List<GetGameDto> games = new();
+            games = userGames.Select(g => new GetGameDto
+            {
+                Id = g.Game.Id,
+                Name = g.Game.Name,
+                Description = g.Game.Description,
+                Developer = g.Game.Developer,
+                Publisher = g.Game.Publisher,
+                StockCount = g.Game.StockCount,
+                Images = g.Game.Images.Select(i => new GameImage() { FileName = i.FileName, IsCoverImage = i.IsCoverImage }).ToList(),
+                InStock = g.Game.StockCount > 0,
+                CoverImageFileName = g.Game.Images.FirstOrDefault(i => i.IsCoverImage).FileName
+            }).ToList();
+
             return new GetProfileDto(
                 user.FirstName,
                 user.LastName,
                 user.Bio,
                 user.Email,
                 user.MemberSince,
-                await _context.UserGames
-                    .Where(g => g.UserId == user.Id)
-                    .Select(g => g.Game).ToListAsync());
+                games);
         }
     }
 }

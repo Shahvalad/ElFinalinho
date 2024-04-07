@@ -5,5 +5,5 @@
                                 string Bio,
                                 string Email,
                                 DateTime RegistrationDate,
-                                List<Game> Games);
+                                List<GetGameDto> Games);
 }

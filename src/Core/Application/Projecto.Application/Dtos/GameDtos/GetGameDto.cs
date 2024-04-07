@@ -11,7 +11,10 @@ namespace Projecto.Application.Dtos.GameDtos
     {
         public int Id { get; init; }
         public string Name { get; set; } = null!;
+        public string CoverImageFileName { get; set; } = null!;
+        public int StockCount { get; set; }
         public decimal Price { get; set; }
+        public bool InStock { get; set; }
         public List<GameImage>? Images { get; set; }
         public List<GameGenre> GameGenres { get; set; } = new List<GameGenre>();
         public Publisher? Publisher { get; set; }

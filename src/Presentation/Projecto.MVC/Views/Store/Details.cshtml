@@ -1,6 +1,8 @@
 ﻿@model GetGameDto
 @{
     int count = 0;
+    int maxQuantity = Model.InStock ? Model.StockCount : 0;
+
 }
 
 <main class="page-main">
@@ -88,8 +90,23 @@
                 </ul>
             </div>
             <div class="game-profile-price">
-                <a asp-controller="CheckOut" asp-action="CheckOut" asp-route-id="@Model.Id"><div class="game-profile-price__value">$@Model.Price USD</div><button class="uk-button uk-button-danger uk-width-1-1" type="button"><span class="ico_shopping-cart"></span><span>Buy Now</span></button><button class="uk-button uk-button-primary uk-width-1-1" type="button"><span class="ico_add-square"></span><span>Add to Favourites</span></button></a>
-                <a asp-controller="Cart" asp-action="AddToCart" asp-route-GameId="@Model.Id" class="btn btn-info">Add to cart</a>
+                <div class="game-profile-price__value">$@Model.Price USD</div>
+                <a asp-controller="Cart" asp-action="AddToCart" asp-route-GameId="@Model.Id">
+                    <input type="number" min="1" max="@maxQuantity" value="1" id="quantityInput">
+                    <button class="uk-button uk-button-danger uk-width-1-1" type="button" @(Model.InStock ? "" : "disabled")>
+                        <span class="ico_shopping-cart"></span><span>Add to cart</span>
+                    </button>
+                </a>
+                <a asp-controller="CheckOut" asp-action="CheckOut" asp-route-id="@Model.Id">
+                    <button class="uk-button uk-button-danger uk-width-1-1" type="button" @(Model.InStock ? "" : "disabled")>
+                        <span class="ico_shopping-cart"></span><span>Buy Now</span>
+                    </button>
+                </a>
+                <a asp-controller="Store" asp-action="Index">
+                <button class="uk-button uk-button-primary uk-width-1-1" type="button">
+                    <span class="ico_add-square"></span><span>Add to Favourites</span>
+                </button>
+                </a>
             </div>
         </div>
     </div>

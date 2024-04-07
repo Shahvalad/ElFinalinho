@@ -20,6 +20,7 @@
     <link rel="preconnect" href="~/https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body class="page-home">
@@ -45,7 +46,9 @@
                     <div class="page-header__action">
                         <a class="action-btn" href="~/#!"><i class="ico_message"></i><span></span></a>
                         <a class="action-btn" href="~/#!"><i class="ico_notification"></i><span></span></a>
-                        <a asp-controller="Cart" asp-action="Index" class="action-btn"><i class="ico_basket"></i><span></span></a> <!-- New basket icon -->
+                        <a asp-controller="Cart" asp-action="Index" class="action-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>                        
                         <div class="profile">
                             <div class="dropdown">
                                 <img src="~/assets/img/profile.png" alt="profile" class="profile-img" onclick="toggleDropdown()">

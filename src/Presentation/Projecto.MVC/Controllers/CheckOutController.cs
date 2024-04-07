@@ -1,12 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Newtonsoft.Json;
-using Projecto.Application.Services.KeyService;
-using Projecto.Application.Services.PaymentService;
-using Projecto.Infrastructure.Services;
-using Stripe.Checkout;
-using System.Text;
-
-namespace Projecto.MVC.Controllers
+﻿namespace Projecto.MVC.Controllers
 {
     [Authorize]
     public class CheckOutController : Controller
@@ -87,7 +79,7 @@ namespace Projecto.MVC.Controllers
 
         public IActionResult OrderCancelled()
         {
-            return View();
+            return RedirectToAction("Index", "Store");
         }
 
         public async Task<IActionResult> OrderConfirmed()
@@ -120,10 +112,5 @@ namespace Projecto.MVC.Controllers
 
             return View(orderConfirmedVM);
         }
-       
-
-       
-
-        
     }
 }

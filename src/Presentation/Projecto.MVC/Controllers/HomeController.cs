@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Authorization;
 namespace Projecto.MVC.Controllers
 {
     [Authorize]

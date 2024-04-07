@@ -1,9 +1,6 @@
-﻿using Humanizer;
-using Microsoft.EntityFrameworkCore;
-using Projecto.Application.Dtos.ProfileDtos;
+﻿using Projecto.Application.Dtos.ProfileDtos;
 using Projecto.Application.Features.Profile.Commands.Edit;
 using Projecto.Application.Features.Profile.Queries;
-using Projecto.Persistence.Data;
 
 namespace Projecto.MVC.Controllers
 {

@@ -3,7 +3,11 @@
 @{
     ViewData["Title"] = "Shopping Cart";
 }
-
+<style>
+    .margin-left {
+        margin-left: 5px;
+    }
+</style>
 <div class="container mt-5">
     <h2 class="mb-4 text-center" style="color: #5a6268;">@ViewData["Title"]</h2>
 
@@ -20,7 +24,14 @@
             {
                 <tr>
                     <td>@item.Game.Name</td>
-                    <td>@item.Quantity <a asp-action="RemoveFromCart" asp-route-GameId="@item.Game.Id">-</a></td>
+                    <td>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <a class="btn btn-outline-secondary" asp-action="RemoveFromCart" asp-route-GameId="@item.Game.Id">-</a>
+                            </div>
+                            <input type="text" class="form-control text-center" readonly value="@item.Quantity">
+                        </div>
+                    </td>
                     <td>@item.Game.Price.ToString("C")</td>
                 </tr>
             }
