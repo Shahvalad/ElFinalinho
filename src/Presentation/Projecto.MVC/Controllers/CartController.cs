@@ -22,13 +22,13 @@ namespace Projecto.MVC.Controllers
             return View(CurrentCart);
         }
 
-        public async Task<IActionResult> AddToCart(int GameId)
+        public async Task<IActionResult> AddToCart(int GameId, int quantity)
         {
             var currentCartItemsJson = HttpContext.Session.GetString("Cart");
             var currentCartItems = currentCartItemsJson != null
                 ? JsonConvert.DeserializeObject<List<CartItem>>(currentCartItemsJson)
                 : new List<CartItem>();
-            var command = new AddToCartCommand { GameId = GameId, CurrentCart = new Cart { CartItems = currentCartItems } };
+            var command = new AddToCartCommand { GameId = GameId, CurrentCart = new Cart { CartItems = currentCartItems }, Quantity = quantity};
             await _sender.Send(command);
             HttpContext.Session.SetString("Cart", JsonConvert.SerializeObject(command.CurrentCart.CartItems));
             return RedirectToAction("Index","Store");

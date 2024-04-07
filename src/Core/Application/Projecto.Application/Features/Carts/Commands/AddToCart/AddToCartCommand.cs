@@ -11,6 +11,7 @@ namespace Projecto.Application.Features.Carts.Commands.AddToCart
     {
         public int GameId { get; set; }
         public Cart CurrentCart { get; set; }
+        public int Quantity { get; set; }
     }
     public class AddToCartCommandHandler : IRequestHandler<AddToCartCommand>
     {
@@ -26,13 +27,25 @@ namespace Projecto.Application.Features.Carts.Commands.AddToCart
             {
                 request.CurrentCart = new Cart();
             }
-            if(request.CurrentCart.CartItems.Any(x => x.Game.Id == game.Id))
+           
+            if (request.CurrentCart.CartItems.Any(x => x.Game.Id == game.Id))
             {
-                request.CurrentCart.CartItems.First(x => x.Game.Id == game.Id).Quantity++;
+                if (game.StockCount < request.CurrentCart.CartItems.First(x => x.Game.Id == game.Id).Quantity + request.Quantity)
+                {
+                    request.CurrentCart.CartItems.First(x => x.Game.Id == game.Id).Quantity = game.StockCount;
+                }
+                else
+                {
+                    request.CurrentCart.CartItems.First(x => x.Game.Id == game.Id).Quantity++;
+                }
             }
             else
             {
-                request.CurrentCart.CartItems.Add(new CartItem { Game = game, Quantity = 1 });
+                if (game.StockCount < request.Quantity)
+                {
+                    throw new Exception("Not enough stock!");
+                }
+                request.CurrentCart.CartItems.Add(new CartItem { Game = game, Quantity = request.Quantity });
             }
 
         }

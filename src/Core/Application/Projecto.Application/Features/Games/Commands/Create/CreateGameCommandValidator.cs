@@ -21,7 +21,10 @@
                 .WithMessage("Name is required!")
                 .NotNull()
                 .WithMessage("Name is required!")
-                .MaximumLength(25);
+                .MaximumLength(25)
+                .WithMessage("Name must be at least 25 character long!")
+                .MinimumLength(1)
+                .WithMessage("Name must be at least 1 character long!");
 
             RuleFor(x => x.CreateGameDto.Price)
                 .NotEmpty().WithMessage("Price is required!")

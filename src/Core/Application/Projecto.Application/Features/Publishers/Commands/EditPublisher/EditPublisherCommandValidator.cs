@@ -15,8 +15,8 @@
                 .WithMessage("Name is required.")
                 .NotNull()
                 .WithMessage("Name is required.")
-                .MaximumLength(100)
-                .WithMessage("Name must not exceed 100 characters.");
+                .MaximumLength(50)
+                .WithMessage("Name must not exceed 50 characters.");
 
             RuleFor(x => x.PublisherDto.Description)
                 .MaximumLength(500)

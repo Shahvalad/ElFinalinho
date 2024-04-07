@@ -15,6 +15,7 @@ namespace Projecto.Application.Dtos.GameDtos
         public int StockCount { get; set; }
         public decimal Price { get; set; }
         public bool InStock { get; set; }
+        public bool IsFavourite { get; set; }
         public List<GameImage>? Images { get; set; }
         public List<GameGenre> GameGenres { get; set; } = new List<GameGenre>();
         public Publisher? Publisher { get; set; }

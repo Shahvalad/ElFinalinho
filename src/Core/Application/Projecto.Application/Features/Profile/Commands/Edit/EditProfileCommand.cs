@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Projecto.Application.Features.Profile.Commands.Edit
 {
-    public record EditProfileCommand(ClaimsPrincipal User, EditProfileDto EditProfileDto) : IRequest;
+    public record EditProfileCommand(ClaimsPrincipal? User, EditProfileDto? EditProfileDto) : IRequest;
     public class EditProfileCommandHandler : IRequestHandler<EditProfileCommand>
     {
         private readonly UserManager<AppUser> _userManager;

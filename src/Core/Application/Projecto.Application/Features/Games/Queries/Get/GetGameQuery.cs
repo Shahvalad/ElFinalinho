@@ -19,6 +19,8 @@
                 .Include(g => g.Developer)
                 .Include(g => g.Publisher)
                 .Include(g => g.Images)
+                .Include(g=>g.UserFavouriteGames)
+                    .ThenInclude(ufg=>ufg.User)
                 .Include(g=>g.GameGenres)
                     .ThenInclude(gg=>gg.Genre)
                 .FirstOrDefaultAsync(g => g.Id == request.Id)??throw new GameNotFoundException("There is no game with such id!");

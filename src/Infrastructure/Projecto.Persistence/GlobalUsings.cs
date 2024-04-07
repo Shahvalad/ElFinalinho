@@ -11,3 +11,5 @@ global using Microsoft.Extensions.DependencyInjection;
 global using Projecto.Persistence.Data;
 global using Projecto.Persistence.Data.Interceptors;
 global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+global using Projecto.Domain;
+

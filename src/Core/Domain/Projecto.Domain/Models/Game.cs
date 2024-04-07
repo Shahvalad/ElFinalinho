@@ -24,6 +24,7 @@
         public List<GameGenre> GameGenres { get; set; } = new List<GameGenre>();
 
         public List<UserGame> UserGames { get; set; } = new List<UserGame>();
+        public List<UserFavouriteGame> UserFavouriteGames { get; set; } = new List<UserFavouriteGame>();
 
     }
 }

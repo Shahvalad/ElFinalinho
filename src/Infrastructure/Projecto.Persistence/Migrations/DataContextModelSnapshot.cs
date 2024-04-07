@@ -577,6 +577,21 @@ namespace Projecto.Persistence.Migrations
                     b.ToTable("UserGames");
                 });
 
+            modelBuilder.Entity("Projecto.Domain.UserFavouriteGame", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("GameId")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserId", "GameId");
+
+                    b.HasIndex("GameId");
+
+                    b.ToTable("UserFavouriteGames");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -738,9 +753,30 @@ namespace Projecto.Persistence.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Projecto.Domain.UserFavouriteGame", b =>
+                {
+                    b.HasOne("Projecto.Domain.Models.Game", "Game")
+                        .WithMany("UserFavouriteGames")
+                        .HasForeignKey("GameId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Projecto.Domain.Models.AppUser", "User")
+                        .WithMany("UserFavouriteGames")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Game");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Projecto.Domain.Models.AppUser", b =>
                 {
                     b.Navigation("ProfilePicture");
+
+                    b.Navigation("UserFavouriteGames");
 
                     b.Navigation("UserGames");
                 });
@@ -759,6 +795,8 @@ namespace Projecto.Persistence.Migrations
                     b.Navigation("GameKeys");
 
                     b.Navigation("Images");
+
+                    b.Navigation("UserFavouriteGames");
 
                     b.Navigation("UserGames");
                 });

@@ -41,9 +41,9 @@
                     <div class="uk-first-column">
                         <div class="game-card">
                             <div class="game-card__box">
-                                <div class="game-card__media"><a asp-action="Details" asp-route-id="@game.Id"><img src="~/Images/Games/@game.Images.Where(g=>g.IsCoverImage).Select(g=>g.FileName).FirstOrDefault()" alt="@game.Name"></a></div>
+                                <div class="game-card__media"><a asp-action="Details" asp-route-id="@game.Id"><img src="~/Images/Games/@game.CoverImageFileName" alt="@game.Name"></a></div>
                                 <div class="game-card__info">
-                                    <a class="game-card__title" href="~/10_game-profile.html"> @game.Name</a>
+                                    <a class="game-card__title" asp-action="Details" asp-route-id="@game.Id"> @game.Name</a>
                                     <div class="game-card__genre">@genres</div>
                                     <div class="game-card__rating-and-price">
                                         <div class="game-card__rating"><span>4.8</span><i class="ico_star"></i></div>
@@ -70,9 +70,9 @@
                     <div>
                         <div class="game-card">
                             <div class="game-card__box">
-                                <div class="game-card__media"><a asp-action="Details" asp-route-id="@game.Id"><img src="~/Images/Games/@game.Images.Where(g=>g.IsCoverImage).Select(g=>g.FileName).FirstOrDefault()" alt="@game.Name"></a></div>
+                                <div class="game-card__media"><a asp-action="Details" asp-route-id="@game.Id"><img src="~/Images/Games/@game.CoverImageFileName" alt="@game.Name"></a></div>
                                 <div class="game-card__info">
-                                    <a class="game-card__title" href="~/10_game-profile.html"> @game.Name</a>
+                                    <a class="game-card__title" asp-action="Details" asp-route-id="@game.Id"> @game.Name</a>
                                     <div class="game-card__genre">@genres</div>
                                     <div class="game-card__rating-and-price">
                                         <div class="game-card__rating"><span>4.8</span><i class="ico_star"></i></div>

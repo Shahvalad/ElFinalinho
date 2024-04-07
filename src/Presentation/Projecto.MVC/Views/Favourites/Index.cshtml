@@ -1,0 +1,52 @@
+﻿@model IEnumerable<GetGameDto>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<main class="page-main">
+@*     @foreach(var game in Model)
+    {
+        <div class="game-card__box">
+            <div class="game-card__media">
+                <a asp-controller="Store" asp-action="Details" asp-route-id="@game.Id">
+                <img src="~/images/games/@game.CoverImageFileName" alt="@game.Name">
+                </a>
+            </div>
+            <div class="game-card__info">
+                <a class="game-card__title" href="10_game-profile.html"> @game.Name</a>
+                <div class="game-card__rating-and-price">
+                    <div class="game-card__price"><span>$ @game.Price</span></div>
+                </div>
+                <div class="game-card__bottom">
+                    <div class="game-card__platform"><i class="ico_windows"></i><i class="ico_apple"></i></div>
+                </div>
+            </div>
+            <div class="game-card__more"><a asp-controller="Store" asp-action="Details" asp-route-id="@game.Id"><i class="ico_more"></i></a></div>
+        </div>
+    } *@
+
+    <div class="widjet --activity">
+        <div class="widjet__head">
+            <h3 class="uk-text-lead">Favourite Games</h3><a href="~/#!">View All</a>
+        </div>
+        @foreach (var game in Model)
+        {
+            <div class="widjet__body">
+                <div class="widjet-game">
+                    <div class="widjet-game__media">
+                        <a asp-controller="Store" asp-action="Details" asp-route-id="@game.Id">
+                            <img style="width: 100px; height: auto;" src="~/Images/Games/@game.CoverImageFileName" alt="image">
+                        </a>
+                    </div>
+                    <div class="widjet-game__info">
+                        <a class="widjet-game__title" asp-controller="Store" asp-action="Details" asp-route-id="@game.Id"> @game.Name</a>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</main>
+

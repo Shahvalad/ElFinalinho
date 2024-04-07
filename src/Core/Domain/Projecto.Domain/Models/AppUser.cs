@@ -17,6 +17,7 @@ namespace Projecto.Domain.Models
         
         // Navigation properties
         public List<UserGame> UserGames { get; set; } = new List<UserGame>();
+        public List<UserFavouriteGame> UserFavouriteGames { get; set; } = new List<UserFavouriteGame>();
         public AppUserProfilePicture? ProfilePicture { get; set; }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace Projecto.Application.Common.Interfaces
+﻿using Projecto.Domain;
+
+namespace Projecto.Application.Common.Interfaces
 {
     public interface IDataContext
     {
@@ -13,6 +15,7 @@
         DbSet<UserGame> UserGames { get; }
         DbSet<GameKey> GameKeys { get; }
         DbSet<AppUserProfilePicture> AppUserProfilePictures { get; }
+        DbSet<UserFavouriteGame> UserFavouriteGames { get; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 
     }
