@@ -22,33 +22,45 @@ namespace Projecto.Application.Features.Carts.Commands.AddToCart
         }
         public async Task Handle(AddToCartCommand request, CancellationToken cancellationToken)
         {
-            var game = await _context.Games.FindAsync(request.GameId)??throw new GameNotFoundException("No game with such id!");
-            if(request.CurrentCart == null)
+            var game = await _context.Games.FindAsync(request.GameId) ?? throw new GameNotFoundException("No game with such id!");
+            if (request.CurrentCart == null)
             {
                 request.CurrentCart = new Cart();
             }
-           
-            if (request.CurrentCart.CartItems.Any(x => x.Game.Id == game.Id))
+
+            var cartItem = FindCartItem(request.CurrentCart, game.Id);
+
+            if (cartItem != null)
             {
-                if (game.StockCount < request.CurrentCart.CartItems.First(x => x.Game.Id == game.Id).Quantity + request.Quantity)
-                {
-                    request.CurrentCart.CartItems.First(x => x.Game.Id == game.Id).Quantity = game.StockCount;
-                }
-                else
-                {
-                    request.CurrentCart.CartItems.First(x => x.Game.Id == game.Id).Quantity++;
-                }
+                UpdateCartItemQuantity(game, cartItem, request.Quantity);
             }
             else
             {
-                if (game.StockCount < request.Quantity)
-                {
-                    throw new Exception("Not enough stock!");
-                }
-                request.CurrentCart.CartItems.Add(new CartItem { Game = game, Quantity = request.Quantity });
+                AddNewCartItem(game, request.CurrentCart, request.Quantity);
             }
-
         }
-       
+        private CartItem FindCartItem(Cart cart, int gameId)
+        {
+            return cart.CartItems.SingleOrDefault(x => x.Game.Id == gameId);
+        }
+        private void UpdateCartItemQuantity(Game game, CartItem cartItem, int quantity)
+        {
+            if (game.StockCount < cartItem.Quantity + quantity)
+            {
+                cartItem.Quantity = game.StockCount;
+            }
+            else
+            {
+                cartItem.Quantity++;
+            }
+        }
+        private void AddNewCartItem(Game game, Cart cart, int quantity)
+        {
+            if (game.StockCount < quantity)
+            {
+                throw new InsufficientStockException("Not enough stock!");
+            }
+            cart.CartItems.Add(new CartItem { Game = game, Quantity = quantity });
+        }
     }
 }

@@ -16,16 +16,14 @@ namespace Projecto.Application.Features.Carts.Commands.RemoveFromCart
     {
         public Task Handle(RemoveFromCartCommand request, CancellationToken cancellationToken)
         {
-            if(request.CurrentCart == null)
+            if (request.CurrentCart == null)
             {
-                throw new Exception("Cart is empty.");
+                throw new CartNotFoundException("Cart is empty.");
             }
-            var cartItem = request.CurrentCart.CartItems.FirstOrDefault(x => x.Game.Id == request.GameId);
-            if(cartItem == null)
-            {
-                throw new Exception("No such item in cart.");
-            }
-            if(cartItem.Quantity == 1)
+            var cartItem = request.CurrentCart.CartItems.SingleOrDefault(x => x.Game.Id == request.GameId) 
+                ?? throw new CartItemNotFoundException("No such item in cart.");
+
+            if (cartItem.Quantity == 1)
             {
                 request.CurrentCart.CartItems.Remove(cartItem);
             }

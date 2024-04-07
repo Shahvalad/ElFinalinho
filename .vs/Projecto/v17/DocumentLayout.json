@@ -3,100 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\games\\queries\\getgamewithuserfavouritestatus\\getgamewithuserfavouritestatusvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\games\\queries\\getgamewithuserfavouritestatus\\getgamewithuserfavouritestatusvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\developers\\commands\\create\\createdevelopercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\developers\\commands\\create\\createdevelopercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\games\\commands\\removefromfavourites\\removefromfavouritescommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\games\\commands\\removefromfavourites\\removefromfavouritescommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\games\\commands\\create\\creategamecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\games\\commands\\create\\creategamecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\developers\\commands\\delete\\deletedevelopercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\developers\\commands\\delete\\deletedevelopercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\developers\\commands\\delete\\deletedevelopercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\developers\\commands\\delete\\deletedevelopercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\developers\\commands\\create\\createdevelopercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\developers\\commands\\create\\createdevelopercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\publishers\\queries\\getpublishers\\getpublishersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\publishers\\queries\\getpublishers\\getpublishersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\publishers\\queries\\getpublisher\\getpublisherqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\publishers\\queries\\getpublisher\\getpublisherqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\publishers\\commands\\editpublisher\\editpublishercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\publishers\\commands\\editpublisher\\editpublishercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\publishers\\commands\\deletepublisher\\deletepublishercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\publishers\\commands\\deletepublisher\\deletepublishercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\publishers\\commands\\createpublisher\\createpublishercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\publishers\\commands\\createpublisher\\createpublishercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\publishers\\commands\\createpublisher\\createpublishercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\publishers\\commands\\createpublisher\\createpublishercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\profile\\queries\\getprofilequeryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\profile\\queries\\getprofilequeryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\profile\\queries\\getprofilequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\profile\\queries\\getprofilequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\profile\\commands\\edit\\editprofilecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\profile\\commands\\edit\\editprofilecommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\profile\\commands\\edit\\editprofilecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\profile\\commands\\edit\\editprofilecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\genres\\queries\\getall\\getgenresquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\genres\\queries\\getall\\getgenresquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\carts\\commands\\removefromcart\\removefromcartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\carts\\commands\\removefromcart\\removefromcartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\carts\\commands\\removefromcart\\removefromcartcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\carts\\commands\\removefromcart\\removefromcartcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\carts\\commands\\addtocart\\addtocartcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\carts\\commands\\addtocart\\addtocartcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\exceptions\\cartnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\exceptions\\cartnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\exceptions\\cartitemnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\exceptions\\cartitemnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\carts\\commands\\addtocart\\addtocartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\carts\\commands\\addtocart\\addtocartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\games\\queries\\getbyname\\getgamebynamequeryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\games\\queries\\getbyname\\getgamebynamequeryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\games\\queries\\getbyname\\getgamebynamequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\games\\queries\\getbyname\\getgamebynamequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\games\\queries\\getfavourites\\getfavouritegamesqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\games\\queries\\getfavourites\\getfavouritegamesqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\exceptions\\insufficientstockexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\exceptions\\insufficientstockexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\games\\commands\\removefromfavourites\\removefromfavouritescommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -110,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 27,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -134,319 +62,84 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreateGameCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Create\\CreateGameCommandValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Create\\CreateGameCommandValidator.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Create\\CreateGameCommandValidator.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\Create\\CreateGameCommandValidator.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAgwCEAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:21:31.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DeleteDeveloperCommand.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Delete\\DeleteDeveloperCommand.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Delete\\DeleteDeveloperCommand.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Delete\\DeleteDeveloperCommand.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Delete\\DeleteDeveloperCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:21:24.255Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DeleteDeveloperCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Delete\\DeleteDeveloperCommandValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Delete\\DeleteDeveloperCommandValidator.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Delete\\DeleteDeveloperCommandValidator.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Delete\\DeleteDeveloperCommandValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:21:23.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateDeveloperCommand.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Create\\CreateDeveloperCommand.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Create\\CreateDeveloperCommand.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Create\\CreateDeveloperCommand.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Create\\CreateDeveloperCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:21:19.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CreateDeveloperCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Create\\CreateDeveloperCommandValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Create\\CreateDeveloperCommandValidator.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Create\\CreateDeveloperCommandValidator.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Developers\\Commands\\Create\\CreateDeveloperCommandValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:21:17.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GetPublishersQuery.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Queries\\GetPublishers\\GetPublishersQuery.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Queries\\GetPublishers\\GetPublishersQuery.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Queries\\GetPublishers\\GetPublishersQuery.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Queries\\GetPublishers\\GetPublishersQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:21:06.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GetPublisherQueryValidator.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Queries\\GetPublisher\\GetPublisherQueryValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Queries\\GetPublisher\\GetPublisherQueryValidator.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Queries\\GetPublisher\\GetPublisherQueryValidator.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Queries\\GetPublisher\\GetPublisherQueryValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:21:02.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EditPublisherCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\EditPublisher\\EditPublisherCommandValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\EditPublisher\\EditPublisherCommandValidator.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\EditPublisher\\EditPublisherCommandValidator.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\EditPublisher\\EditPublisherCommandValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:20:51.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DeletePublisherCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\DeletePublisher\\DeletePublisherCommandValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\DeletePublisher\\DeletePublisherCommandValidator.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\DeletePublisher\\DeletePublisherCommandValidator.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\DeletePublisher\\DeletePublisherCommandValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:20:46.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreatePublisherCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\CreatePublisher\\CreatePublisherCommandValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\CreatePublisher\\CreatePublisherCommandValidator.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\CreatePublisher\\CreatePublisherCommandValidator.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\CreatePublisher\\CreatePublisherCommandValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:20:32.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CreatePublisherCommand.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\CreatePublisher\\CreatePublisherCommand.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\CreatePublisher\\CreatePublisherCommand.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\CreatePublisher\\CreatePublisherCommand.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Publishers\\Commands\\CreatePublisher\\CreatePublisherCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:20:31.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GetProfileQueryValidator.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Profile\\Queries\\GetProfileQueryValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Profile\\Queries\\GetProfileQueryValidator.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Profile\\Queries\\GetProfileQueryValidator.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Profile\\Queries\\GetProfileQueryValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:20:03.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "GetProfileQuery.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Profile\\Queries\\GetProfileQuery.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Profile\\Queries\\GetProfileQuery.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Profile\\Queries\\GetProfileQuery.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Profile\\Queries\\GetProfileQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:19:52.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EditProfileCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Profile\\Commands\\Edit\\EditProfileCommandValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Profile\\Commands\\Edit\\EditProfileCommandValidator.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Profile\\Commands\\Edit\\EditProfileCommandValidator.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Profile\\Commands\\Edit\\EditProfileCommandValidator.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAcwBIAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:15:10.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EditProfileCommand.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Profile\\Commands\\Edit\\EditProfileCommand.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Profile\\Commands\\Edit\\EditProfileCommand.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Profile\\Commands\\Edit\\EditProfileCommand.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Profile\\Commands\\Edit\\EditProfileCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:14:45.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "GetGenresQuery.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetAll\\GetGenresQuery.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetAll\\GetGenresQuery.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetAll\\GetGenresQuery.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Genres\\Queries\\GetAll\\GetGenresQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:14:40.513Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "RemoveFromCartCommandValidator.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\RemoveFromCart\\RemoveFromCartCommandValidator.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\RemoveFromCart\\RemoveFromCartCommandValidator.cs",
               "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\RemoveFromCart\\RemoveFromCartCommandValidator.cs",
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\RemoveFromCart\\RemoveFromCartCommandValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:13:47.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AddToCartCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\AddToCart\\AddToCartCommandValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\AddToCart\\AddToCartCommandValidator.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\AddToCart\\AddToCartCommandValidator.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\AddToCart\\AddToCartCommandValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:12:26.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AddToCartCommand.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\AddToCart\\AddToCartCommand.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\AddToCart\\AddToCartCommand.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\AddToCart\\AddToCartCommand.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\AddToCart\\AddToCartCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:12:13.312Z",
+              "WhenOpened": "2024-04-07T22:40:08.837Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "GetGameByNameQueryValidator.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetByName\\GetGameByNameQueryValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetByName\\GetGameByNameQueryValidator.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetByName\\GetGameByNameQueryValidator.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetByName\\GetGameByNameQueryValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAlAAAA",
+              "DocumentIndex": 3,
+              "Title": "CartItemNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\CartItemNotFoundException.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\CartItemNotFoundException.cs",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\CartItemNotFoundException.cs",
+              "RelativeToolTip": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\CartItemNotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:11:23.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "GetGameByNameQuery.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetByName\\GetGameByNameQuery.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetByName\\GetGameByNameQuery.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetByName\\GetGameByNameQuery.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetByName\\GetGameByNameQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:11:10.478Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "GetFavouriteGamesQueryValidator.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetFavourites\\GetFavouriteGamesQueryValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetFavourites\\GetFavouriteGamesQueryValidator.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetFavourites\\GetFavouriteGamesQueryValidator.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetFavourites\\GetFavouriteGamesQueryValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:10:46.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GetGameWithUserFavouriteStatusValidator.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetGameWithUserFavouriteStatus\\GetGameWithUserFavouriteStatusValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetGameWithUserFavouriteStatus\\GetGameWithUserFavouriteStatusValidator.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetGameWithUserFavouriteStatus\\GetGameWithUserFavouriteStatusValidator.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Queries\\GetGameWithUserFavouriteStatus\\GetGameWithUserFavouriteStatusValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:09:49.984Z",
+              "WhenOpened": "2024-04-07T22:37:41.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RemoveFromFavouritesCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\RemoveFromFavourites\\RemoveFromFavouritesCommandValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\RemoveFromFavourites\\RemoveFromFavouritesCommandValidator.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\RemoveFromFavourites\\RemoveFromFavouritesCommandValidator.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\RemoveFromFavourites\\RemoveFromFavouritesCommandValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAfAAAA",
+              "Title": "CartNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\CartNotFoundException.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\CartNotFoundException.cs",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\CartNotFoundException.cs",
+              "RelativeToolTip": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\CartNotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:08:40.391Z",
+              "WhenOpened": "2024-04-07T22:35:09.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 0,
+              "Title": "RemoveFromCartCommand.cs",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\RemoveFromCart\\RemoveFromCartCommand.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\RemoveFromCart\\RemoveFromCartCommand.cs",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\RemoveFromCart\\RemoveFromCartCommand.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\RemoveFromCart\\RemoveFromCartCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T22:14:02.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InsufficientStockException.cs",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\InsufficientStockException.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\InsufficientStockException.cs",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\InsufficientStockException.cs",
+              "RelativeToolTip": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\InsufficientStockException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T22:30:51.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddToCartCommand.cs",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\AddToCart\\AddToCartCommand.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\AddToCart\\AddToCartCommand.cs",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\AddToCart\\AddToCartCommand.cs",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\AddToCart\\AddToCartCommand.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAiwDkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T22:26:43.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "RemoveFromFavouritesCommand.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\RemoveFromFavourites\\RemoveFromFavouritesCommand.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\RemoveFromFavourites\\RemoveFromFavouritesCommand.cs",
@@ -454,8 +147,7 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\RemoveFromFavourites\\RemoveFromFavouritesCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:08:21.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T22:08:21.085Z"
             }
           ]
         }
