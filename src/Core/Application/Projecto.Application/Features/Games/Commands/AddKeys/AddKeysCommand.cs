@@ -10,7 +10,8 @@
         }
         public async Task Handle(AddKeysCommand request, CancellationToken cancellationToken)
         {
-            var game = await _context.Games.Include(g=>g.GameKeys).FirstOrDefaultAsync(g=>g.Id == request.Id)??throw new GameNotFoundException("No game with such id!");
+            var game = await _context.Games.Include(g=>g.GameKeys).FirstOrDefaultAsync(g=>g.Id == request.Id)
+                ??throw new GameNotFoundException("No game with such id!");
 
             foreach (var key in request.Keys)
             {

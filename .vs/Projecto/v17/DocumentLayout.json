@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\carts\\commands\\removefromcart\\removefromcartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\carts\\commands\\removefromcart\\removefromcartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\models\\developerimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\models\\developerimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\carts\\commands\\removefromcart\\removefromcartcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\carts\\commands\\removefromcart\\removefromcartcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\models\\common\\baseimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\models\\common\\baseimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\exceptions\\cartnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\exceptions\\cartnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\exceptions\\cartitemnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\exceptions\\cartitemnotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\carts\\commands\\addtocart\\addtocartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\carts\\commands\\addtocart\\addtocartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\exceptions\\insufficientstockexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\exceptions\\insufficientstockexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\domain\\projecto.domain\\exceptions\\imagedeletionexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D98A72-E56D-4AD5-9C35-13E4636A9C86}|src\\Core\\Domain\\Projecto.Domain\\Projecto.Domain.csproj|solutionrelative:src\\core\\domain\\projecto.domain\\exceptions\\imagedeletionexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\games\\commands\\removefromfavourites\\removefromfavouritescommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\games\\commands\\removefromfavourites\\removefromfavouritescommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|c:\\users\\\u0448\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\elfinalinho\\src\\core\\application\\projecto.application\\features\\carts\\commands\\addtocart\\addtocartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F717AC7-D0DC-4F1A-9B35-4F1FF56AE21B}|src\\Core\\Application\\Projecto.Application\\Projecto.Application.csproj|solutionrelative:src\\core\\application\\projecto.application\\features\\carts\\commands\\addtocart\\addtocartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,67 +54,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RemoveFromCartCommandValidator.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\RemoveFromCart\\RemoveFromCartCommandValidator.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\RemoveFromCart\\RemoveFromCartCommandValidator.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\RemoveFromCart\\RemoveFromCartCommandValidator.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\RemoveFromCart\\RemoveFromCartCommandValidator.cs",
+              "DocumentIndex": 0,
+              "Title": "DeveloperImage.cs",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\DeveloperImage.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Models\\DeveloperImage.cs",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\DeveloperImage.cs*",
+              "RelativeToolTip": "src\\Core\\Domain\\Projecto.Domain\\Models\\DeveloperImage.cs*",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:40:08.837Z",
+              "WhenOpened": "2024-04-08T10:51:20.528Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CartItemNotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\CartItemNotFoundException.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\CartItemNotFoundException.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\CartItemNotFoundException.cs",
-              "RelativeToolTip": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\CartItemNotFoundException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABHAAAA",
+              "DocumentIndex": 1,
+              "Title": "BaseImage.cs",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\Common\\BaseImage.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Models\\Common\\BaseImage.cs",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Models\\Common\\BaseImage.cs",
+              "RelativeToolTip": "src\\Core\\Domain\\Projecto.Domain\\Models\\Common\\BaseImage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:37:41.809Z",
+              "WhenOpened": "2024-04-08T10:51:17.677Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CartNotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\CartNotFoundException.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\CartNotFoundException.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\CartNotFoundException.cs",
-              "RelativeToolTip": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\CartNotFoundException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA8AAAA",
+              "Title": "ImageDeletionException.cs",
+              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\ImageDeletionException.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\ImageDeletionException.cs",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\ImageDeletionException.cs",
+              "RelativeToolTip": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\ImageDeletionException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:35:09.713Z",
+              "WhenOpened": "2024-04-08T10:50:19.782Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RemoveFromCartCommand.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\RemoveFromCart\\RemoveFromCartCommand.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\RemoveFromCart\\RemoveFromCartCommand.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\RemoveFromCart\\RemoveFromCartCommand.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\RemoveFromCart\\RemoveFromCartCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:14:02.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InsufficientStockException.cs",
-              "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\InsufficientStockException.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\InsufficientStockException.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Domain\\Projecto.Domain\\Exceptions\\InsufficientStockException.cs",
-              "RelativeToolTip": "src\\Core\\Domain\\Projecto.Domain\\Exceptions\\InsufficientStockException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:30:51.821Z"
             },
             {
               "$type": "Document",
@@ -134,20 +101,20 @@
               "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Carts\\Commands\\AddToCart\\AddToCartCommand.cs",
               "ViewState": "AQIAACUAAAAAAAAAAAAiwDkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:26:43.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-07T22:26:43.429Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "RemoveFromFavouritesCommand.cs",
               "DocumentMoniker": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\RemoveFromFavourites\\RemoveFromFavouritesCommand.cs",
               "RelativeDocumentMoniker": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\RemoveFromFavourites\\RemoveFromFavouritesCommand.cs",
-              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\RemoveFromFavourites\\RemoveFromFavouritesCommand.cs",
-              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\RemoveFromFavourites\\RemoveFromFavouritesCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ToolTip": "C:\\Users\\\u0428\u0430\u0445\u0432\u0430\u043B\u0430\u0434\\source\\repos\\ElFinalinho\\src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\RemoveFromFavourites\\RemoveFromFavouritesCommand.cs*",
+              "RelativeToolTip": "src\\Core\\Application\\Projecto.Application\\Features\\Games\\Commands\\RemoveFromFavourites\\RemoveFromFavouritesCommand.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T22:08:21.085Z"
+              "WhenOpened": "2024-04-07T22:08:21.085Z",
+              "EditorCaption": ""
             }
           ]
         }

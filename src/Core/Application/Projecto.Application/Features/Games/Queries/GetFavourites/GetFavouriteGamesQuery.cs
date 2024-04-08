@@ -12,37 +12,49 @@ namespace Projecto.Application.Features.Games.Queries.GetFavourites
     {
         private readonly IDataContext _context;
         private readonly UserManager<AppUser> _userManager;
+        private readonly IMapper _mapper;
 
-        public GetFavouriteGamesQueryHandler(IDataContext context, UserManager<AppUser> userManager)
+        public GetFavouriteGamesQueryHandler(IDataContext context, UserManager<AppUser> userManager, IMapper mapper)
         {
             _context = context;
             _userManager = userManager;
+            _mapper = mapper;
         }
 
         public async Task<IEnumerable<GetGameDto>> Handle(GetFavouriteGamesQuery request, CancellationToken cancellationToken)
         {
-            var user = await _userManager.FindByIdAsync(request.UserId);
+            var user = await GetUser(request.UserId);
             if (user == null)
             {
-                throw new Exception("User not found");
+                return Enumerable.Empty<GetGameDto>();
             }
-            var userFavouriteGames = await _context.UserFavouriteGames
+            var userFavouriteGames = await GetUserFavouriteGames(user.Id);
+            var gameDtos = _mapper.Map<IEnumerable<GetGameDto>>(userFavouriteGames);
+
+            foreach (var gameDto in gameDtos)
+            {
+                gameDto.CoverImageFileName = _context.Games
+                    .Include(g => g.Images)
+                    .FirstOrDefault(g => g.Id == gameDto.Id)
+                    ?.Images.FirstOrDefault(i => i.IsCoverImage)?.FileName;
+            }
+            return gameDtos;
+
+        }
+
+        private async Task<AppUser> GetUser(string userId)
+        {
+            return await _userManager.FindByIdAsync(userId);
+        }
+
+        private async Task<IEnumerable<Game>> GetUserFavouriteGames(string userId)
+        {
+            return await _context.UserFavouriteGames
                    .Include(ufg => ufg.Game)
                    .ThenInclude(g => g.Images)
-                   .Where(ufg => ufg.UserId == user.Id)
-                   .ToListAsync(); 
-            var games = new List<GetGameDto>();
-            games.AddRange(userFavouriteGames.Select(x => new GetGameDto
-            {
-                Id = x.GameId,
-                Name = x.Game.Name,
-                Description = x.Game.Description,
-                Publisher = x.Game.Publisher,
-                Developer = x.Game.Developer,
-                Price=x.Game.Price,
-                CoverImageFileName = x.Game.Images.FirstOrDefault(x => x.IsCoverImage).FileName
-            }));
-            return games;
+                   .Where(ufg => ufg.UserId == userId)
+                   .Select(ufg => ufg.Game)
+                   .ToListAsync();
         }
     }
 }
