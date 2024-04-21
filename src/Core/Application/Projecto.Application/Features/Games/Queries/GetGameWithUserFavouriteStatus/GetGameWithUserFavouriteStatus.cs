@@ -29,13 +29,16 @@ namespace Projecto.Application.Features.Games.Queries.GetGameWithUserFavouriteSt
                     .ThenInclude(ufg => ufg.User)
                 .Include(g => g.GameGenres)
                     .ThenInclude(gg => gg.Genre)
-                    .FirstOrDefaultAsync(g=>g.Id==request.Id)??throw new GameNotFoundException("There is no game with such id!");
+                .Include(g=>g.Reviews)
+                    .ThenInclude(r=>r.User)
+                    .FirstOrDefaultAsync(g=>g.Id==request.Id, cancellationToken)??throw new GameNotFoundException("There is no game with such id!");
 
             var gameDto = _mapper.Map<GetGameDto>(game);
             gameDto.Images = game.Images.Select(i => new GameImage() { FileName = i.FileName, IsCoverImage = i.IsCoverImage }).ToList();
             if (game.StockCount > 0)
                 gameDto.InStock = true;
-            gameDto.CoverImageFileName = game.Images.FirstOrDefault(i => i.IsCoverImage).FileName;
+            gameDto.Reviews = game.Reviews.OrderByDescending(r => r.CreatedAt).ToList();
+            gameDto.CoverImageFileName = game.Images.FirstOrDefault(i => i.IsCoverImage)!.FileName;
             gameDto.IsFavourite = game.UserFavouriteGames.Any(ufg => ufg.UserId == request.UserId);
             return gameDto;
         }

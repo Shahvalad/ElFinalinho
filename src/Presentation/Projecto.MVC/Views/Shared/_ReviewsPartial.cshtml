@@ -1,0 +1,26 @@
+﻿@model ReviewVM
+
+<div class="card">
+    <div class="card-body">
+        @foreach (var review in Model.Reviews)
+        {
+            <div class="media mb-3">
+                <img class="mr-3 rounded-circle" src="~/images/ProfilePictures/@review.User.ProfilePicture.FileName" alt="user" width="64" height="64">
+                <div class="media-body">
+                    <h5 class="mt-0">@review.User.UserName</h5>
+                    <small class="text-muted">@review.CreatedAt.ToString("g")</small>
+                    @if (@review.IsLiked)
+                    {
+                        <p><i class="fa fa-thumbs-up text-success" aria-hidden="true"></i> Recommended</p>
+                    }
+                    else
+                    {
+                        <p><i class="fa fa-thumbs-down text-danger" aria-hidden="true"></i> Not recommended</p>
+                    }
+                    <p>@review.Comment</p>
+                </div>
+            </div>
+            <hr>
+        }
+    </div>
+</div>

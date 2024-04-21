@@ -23,13 +23,16 @@
                     .ThenInclude(ufg=>ufg.User)
                 .Include(g=>g.GameGenres)
                     .ThenInclude(gg=>gg.Genre)
-                .FirstOrDefaultAsync(g => g.Id == request.Id)??throw new GameNotFoundException("There is no game with such id!");
+                .Include(g => g.Reviews)
+                    .ThenInclude(r => r.User)
+                .FirstOrDefaultAsync(g => g.Id == request.Id, cancellationToken)??throw new GameNotFoundException("There is no game with such id!");
 
             var getGameDto = _mapper.Map<GetGameDto>(game);
             getGameDto.Images = game.Images.Select(i => new GameImage() { FileName = i.FileName, IsCoverImage = i.IsCoverImage }).ToList();
+            getGameDto.Reviews = game.Reviews.ToList();
             if(game.StockCount > 0)
                 getGameDto.InStock = true;
-            getGameDto.CoverImageFileName = game.Images.FirstOrDefault(i => i.IsCoverImage).FileName;
+            getGameDto.CoverImageFileName = game.Images.FirstOrDefault(i => i.IsCoverImage)!.FileName;
             return getGameDto;
         }
     }

@@ -1,0 +1,104 @@
+﻿@model UserProfileWithMessageStatusDto
+
+@section ChatStyles {
+    <link href="https://cdn.jsdelivr.net/npm/@@joeattardi/emoji-button@4/dist/emoji-button.css" rel="stylesheet">
+    <style>
+        .friend.selected {
+            background-color: #F46119; /* Change this to whatever color you want */
+        }
+
+
+        .new-message-icon {
+            color: #F46119;
+        }
+    </style>
+}
+<main class="page-main">
+
+    <h3 class="uk-text-lead">Chats</h3>
+    <div class="uk-grid uk-grid-small" data-uk-grid="">
+        <div class="uk-width-1-3@l uk-first-column">
+            <div class="chat-user-list">
+                <div class="chat-user-list__box">
+                    <div class="chat-user-list__head">
+                        <div class="user-item__avatar">
+                            <img src="~/images//ProfilePictures/@Model.ProfilePictureName" alt="profile">
+                            </div>
+                        <a asp-controller="Profile" asp-action="Index" class="ico_edit"></a>
+                        <a asp-controller="Profile" asp-action="Index" class="ico_more"></a>
+                    </div>
+                    <div class="chat-user-list__body">
+                        <ul id="friendList">
+                            @if (!Model.HasFriends)
+                            {
+                                <li class="no-friends-message" style="padding: 20px; background-color: #f8f9fa; text-align: center; border-radius: 5px;">
+                                    You don't have any friends yet. <a href="@Url.Action("Index", "Friends")" style="color: #F46119; text-decoration: none;">Find friends</a>
+                                </li>
+                            }
+                            @foreach (var friend in Model.Friends)
+                            {
+                                var profilePicture = string.IsNullOrEmpty(friend.ProfilePictureName) ? "default.png" : friend.ProfilePictureName;
+                                <li class="friend" data-username="@friend.UserName" data-profilepicture="@friend.ProfilePictureName" style="cursor: pointer;">
+                                    <div class="user-item">
+                                        <div class="user-item__avatar">
+                                            <img src="~/images/ProfilePictures/@friend.ProfilePictureName" alt="user">
+                                        </div>
+                                        <div class="user-item__desc">
+                                            <div class="user-item__name">@friend.UserName</div>
+                                        </div>
+                                        <span class="new-message" id="new-message-@friend.UserName">
+                                            @if (friend.HasUnreadMessages)
+                                            {
+                                                <i class="fas fa-exclamation-circle new-message-icon"></i>
+                                            }
+                                        </span>
+                                        <span class="unreadMessageCount" id="unreadMessageCount-@friend.UserName"></span>
+                                    </div>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @if(Model.HasFriends)
+        {
+            <div class="uk-width-2-3@l">
+                <div class="chat-messages-box">
+                    <div class="chat-messages-head">
+                        <div class="user-item">
+                            <div class="user-item__avatar"><img src="" alt="user"></div>
+                            <div class="user-item__desc">
+                                <div class="user-item__name"></div>
+                            </div>
+                        </div>
+                        <div><a class="ico_call" href="#!"></a><a class="ico_info-circle" href="#!"></a></div>
+                    </div>
+                    <div class="chat-messages-body" id="messagesList">
+                    </div>
+                    <div class="chat-messages-footer">
+                        <form action="#!">
+                            <div class="chat-messages-form">
+                                <div class="chat-messages-form-controls"><input class="chat-messages-input" type="text" placeholder="Type a message" id="messageInput"></div>
+                                <div class="chat-messages-form-btn">
+                                    <button type="submit" id="sendButton"><i class="fas fa-paper-plane"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</main>
+
+@section ChatScripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.7/signalr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@@joeattardi/emoji-button@4/dist/emoji-button.min.js"></script>
+    <script>
+        var currentUser = '@Model.UserName';
+    </script>
+    <script src="~/js/ChatScripts.js"></script>
+}
+
+

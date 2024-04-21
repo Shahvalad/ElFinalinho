@@ -1,20 +1,20 @@
-﻿@model GetGameDto
+﻿@model GameDetailsVM
 @{
     int count = 0;
-    int maxQuantity = Model.InStock ? Model.StockCount : 0;
+    int maxQuantity = Model.Game.InStock ? Model.Game.StockCount : 0;
 }
 
 <main class="page-main">
     <ul class="uk-breadcrumb">
         <li><a asp-action="Index"><span data-uk-icon="chevron-left" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" stroke="#000" stroke-width="1.03" points="13 16 7 10 13 4"></polyline></svg></span><span>Back to Store</span></a></li>
-        <li><span>@Model.Name</span></li>
+        <li><span>@Model.Game.Name</span></li>
     </ul>
-    <h3 class="uk-text-lead">@Model.Name</h3>
+    <h3 class="uk-text-lead">@Model.Game.Name</h3>
     <div class="uk-grid uk-grid-small uk-grid-stack" data-uk-grid="">
         <div class="uk-width-2-3@xl uk-first-column">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    @foreach(var image in Model.Images)
+                    @foreach(var image in Model.Game.Images)
                     {
                         <li data-target="#carouselExampleIndicators" data-slide-to="@count" class="@(count == 0 ? "active" : "")"></li>
                         count++;
@@ -22,7 +22,7 @@
                 </ol>
                 <div class="carousel-inner">
                     @{count = 0;}
-                    @foreach (var image in Model.Images)
+                    @foreach (var image in Model.Game.Images)
                     {
                         <div class="carousel-item @(count == 0 ? "active" : "")">
                             <img class="d-block w-100" src="~/Images/Games/@image.FileName" alt="@count slide" style="object-fit: cover; height: 500px;">
@@ -39,30 +39,72 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <p>Comments</p>
+            <br/>
             <div class="comments">
-                <div class="comment">
-                    <div class="comment__avatar"><img src="~/assets/img/user-1.png" alt="user"></div>
-                    <div class="comment__box">
-                        <div class="comment__title">John Doe</div>
-                        <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel erat sed elit ultrices sollicitudin. Phasellus auctor auctor purus. Fusce varius.</div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Reviews</h5>
+                    </div>
+                    <div class="card-body">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <form asp-controller="Reviews" asp-action="Create" method="post" class="form-horizontal">
+                                <input type="hidden" asp-for="NewReview.GameId" name="GameId" />
+                                <input type="hidden" asp-for="NewReview.UserId" name="UserId" />
+                                <div class="form-group">
+                                    <label asp-for="NewReview.Comment" class="col-sm-2 control-label">Your Review</label>
+                                    <div class="col-sm-10">
+                                        <textarea asp-for="NewReview.Comment" class="form-control" placeholder="Enter your review" name="Comment" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-outline-primary active" style="background-color: #F46119; border-color: #F46119; color: #ffffff;">
+                                                <input type="radio" name="IsLiked" id="option1" autocomplete="off" value="true" checked>
+                                                <i class="fa fa-thumbs-up"></i> Like
+                                            </label>
+                                            <label class="btn btn-outline-primary" style="background-color: #F46119; border-color: #F46119; color: #ffffff;">
+                                                <input type="radio" name="IsLiked" id="option2" autocomplete="off" value="false">
+                                                <i class="fa fa-thumbs-down"></i> Dislike
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-primary" style="background-color: #F46119; border-color: #F46119; color: #ffffff;">Submit Review</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        }
+                        else
+                        {
+                            <p>You must <a asp-controller="Account" asp-action="Login">log in</a> first to add a review.</p>
+                        }
+                        @await Html.PartialAsync("_ReviewsPartial", Model.PaginatedReviews)
+                        <br/>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                @for (var i = 1; i <= Model.PaginatedReviews.TotalPages; i++)
+                                {
+                                    <li class="page-item @(i == Model.PaginatedReviews.CurrentPage ? "active" : "")">
+                                        <a class="page-link" href="@Url.Action("Details", new { page = i })">@i</a>
+                                    </li>
+                                }
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-                <div class="comment">
-                    <div class="comment__avatar"><img src="~/assets/img/user-2.png" alt="user"></div>
-                    <div class="comment__box">
-                        <div class="comment__title">Jane Doe</div>
-                        <div class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel erat sed elit ultrices sollicitudin. Phasellus auctor auctor purus. Fusce varius.</div>
-                    </div>
-                </div>
-                </div>
+            </div>
         </div>
         <div class="uk-width-1-3@xl uk-grid-margin uk-first-column">
             <div class="game-profile-card">
                 <div class="game-profile-card__media">
-                    <img src="~/Images/Games/@Model.CoverImageFileName" alt="game-profile-card" style="height: 300px; object-fit: cover;">
+                    <img src="~/Images/Games/@Model.Game.CoverImageFileName" alt="game-profile-card" style="height: 300px; object-fit: cover;">
                 </div>                
-                <div class="game-profile-card__intro"><span>@Model.Description</span></div>
+                <div class="game-profile-card__intro"><span>@Model.Game.Description</span></div>
                 <ul class="game-profile-card__list">
                     <li>
                         <div>Reviews:</div>
@@ -74,22 +116,22 @@
                     </li>
                     <li>
                         <div>Publisher:</div>
-                        @if(Model.Publisher != null)
+                        @if(Model.Game.Publisher != null)
                         {
-                            <div>@Model.Publisher.Name</div>
+                            <div>@Model.Game.Publisher.Name</div>
                         }
                         else
                         {
-                            <div>@Model.Developer.Name</div>
+                            <div>@Model.Game.Developer.Name</div>
                         }
                     </li>
                     <li>
                         <div>Developer:</div>
-                        <div>@Model.Developer.Name</div>
+                        <div>@Model.Game.Developer.Name</div>
                     </li>
                 </ul>
                 <ul class="game-profile-card__type">
-                    @foreach(var genre in Model.GameGenres.Select(g=>g.Genre))
+                    @foreach(var genre in Model.Game.GameGenres.Select(g=>g.Genre))
                     {
                         <li>@genre.Name</li>
                     }
@@ -103,31 +145,31 @@
                 else{
                     <div class="game-profile-price__value">In Stock</div>
                 }
-                <div class="game-profile-price__value">$@Model.Price USD</div>
+                <div class="game-profile-price__value">$@Model.Game.Price USD</div>
                 <div class="button-group">
                     <form asp-controller="Cart" asp-action="AddToCart" method="post" class="d-flex align-items-center mb-2">
-                        <input type="hidden" asp-for="@Model.Id" name="GameId" />
-                        <button class="uk-button uk-button-danger uk-width-1-1" type="submit" @(Model.InStock ? "" : "disabled")>
+                        <input type="hidden" asp-for="@Model.Game.Id" name="GameId" />
+                        <button class="uk-button uk-button-danger uk-width-1-1" type="submit" @(Model.Game.InStock ? "" : "disabled")>
                             <span class="ico_shopping-cart"></span><span>Add to cart</span>
                         </button>
                         <input type="number" min="1" max="@maxQuantity" value="1" name="quantity" id="quantityInput" class="form-control mr-2" style="width: 60px;">
                     </form>
-                    <a asp-controller="CheckOut" asp-action="CheckOut" asp-route-id="@Model.Id" class="mb-2">
-                        <button class="uk-button uk-button-danger uk-width-1-1" type="button" @(Model.InStock ? "" : "disabled")>
+                    <a asp-controller="CheckOut" asp-action="CheckOut" asp-route-id="@Model.Game.Id" class="mb-2">
+                        <button class="uk-button uk-button-danger uk-width-1-1" type="button" @(Model.Game.InStock ? "" : "disabled")>
                             <span class="ico_shopping-cart"></span><span>Buy Now</span>
                         </button>
                     </a>
-                    @if(!Model.IsFavourite)
+                    @if(!Model.Game.IsFavourite)
                     {
-                        <a asp-controller="Favourites" asp-action="AddToFavourites" asp-route-gameId="@Model.Id">
-                            <button class="uk-button uk-button-primary uk-width-1-1" type="button" @(Model.IsFavourite ? "disabled" : "")>
+                        <a asp-controller="Favourites" asp-action="AddToFavourites" asp-route-gameId="@Model.Game.Id">
+                            <button class="uk-button uk-button-primary uk-width-1-1" type="button" @(Model.Game.IsFavourite ? "disabled" : "")>
                                 <span class="ico_add-square"></span><span>Add to Favourites</span>
                             </button>
                         </a>
                     }
                     else 
                     {
-                        <a asp-controller="Favourites" asp-action="RemoveFromFavourites" asp-route-gameId="@Model.Id">
+                        <a asp-controller="Favourites" asp-action="RemoveFromFavourites" asp-route-gameId="@Model.Game.Id">
                             <button class="uk-button uk-button-primary uk-width-1-1" type="button">
                                 <span class="ico_add-square"></span><span>Remove from Favourites</span>
                             </button>
@@ -138,6 +180,8 @@
         </div>
     </div>
 </main>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+@section StoreDetailsScripts{
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+}

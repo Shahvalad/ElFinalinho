@@ -1,62 +1,86 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using Projecto.Application.Common.Interfaces;
-using Projecto.Application.Services.KeyService;
-using Projecto.Domain.Exceptions;
-using Projecto.Domain.Models;
-using Stripe;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Projecto.Infrastructure.Services
+﻿namespace Projecto.Infrastructure.Services
 {
     public class KeyService : IKeyService
     {
         private readonly IDataContext _context;
+        private readonly IEmailService _emailService;
         private readonly UserManager<AppUser> _userManager;
-        public KeyService(IDataContext context, UserManager<AppUser> userManager)
+
+        public KeyService(IDataContext context, UserManager<AppUser> userManager, IEmailService emailService)
         {
             _context = context;
             _userManager = userManager;
+            _emailService = emailService;
         }
 
         public async Task<string> AssignKeyToUser(string username, int gameId)
         {
-            if(await _context.Games.FindAsync(gameId) == null)
+            var game = await GetGame(gameId);
+            var key = GetAvailableKeyForGame(gameId);
+            var user = await GetUser(username);
+
+            AssignKeyToUser(key, username);
+            UpdateGameStock(game);
+            await AddGameToUserGames(user, gameId);
+
+            await _context.SaveChangesAsync(cancellationToken: CancellationToken.None);
+            return key.Value;
+        }
+
+        private async Task<Game> GetGame(int gameId)
+        {
+            var game = await _context.Games.FindAsync(gameId);
+            if (game == null || game.StockCount == 0)
             {
-                throw new Exception("Game not found!");
+                throw new InsufficientStockException("No stock or game not found!");
             }
-            if(_context.Games.Find(gameId).StockCount==0)
+            return game;
+        }
+
+        private GameKey GetAvailableKeyForGame(int gameId)
+        {
+            var key = _context.GameKeys.Where(g => g.GameId == gameId)
+                .FirstOrDefault(k => k.IsAssigned == false);
+            if (key == null)
             {
-                throw new Exception("NO STOCK!");
+                throw new InsufficientStockException("No keys left for this game.");
             }
-            var key = _context.GameKeys.Where(g=>g.GameId==gameId).FirstOrDefault(k => k.IsAssigned == false);
-            if(key == null)
+            return key;
+        }
+
+
+        private async Task<AppUser> GetUser(string username)
+        {
+            var user = await _userManager.FindByNameAsync(username);
+            if (user == null)
             {
-                throw new Exception("No keys left for this game.");
+                throw new UserNotFoundException("User not found!");
             }
+            return user;
+        }
+
+        private void AssignKeyToUser(GameKey key, string username)
+        {
             key.IsAssigned = true;
             key.AssignedTo = username;
+        }
 
-            var game = await _context.Games.FindAsync(gameId) ?? throw new GameNotFoundException("There is no game with such id!");
+        private void UpdateGameStock(Game game)
+        {
             game.StockCount--;
             game.PurchaseCount++;
-            var user = await _userManager.FindByNameAsync(username);
-            var userGame = await _context.UserGames
+        }
+
+        private async Task AddGameToUserGames(AppUser user, int gameId)
+        {
+            var userOwnedGame = await _context.UserGames
                 .FirstOrDefaultAsync(ug => ug.UserId == user.Id && ug.GameId == gameId);
-            if (userGame == null)
+
+            if (userOwnedGame == null)
             {
-                userGame = new UserGame { GameId = gameId, UserId = user.Id };
-                await _context.UserGames.AddAsync(userGame);
+                userOwnedGame = new UserGame { GameId = gameId, UserId = user.Id };
+                await _context.UserGames.AddAsync(userOwnedGame);
             }
-
-
-            await _context.SaveChangesAsync(cancellationToken:CancellationToken.None);
-            return key.Value;
         }
     }
 }

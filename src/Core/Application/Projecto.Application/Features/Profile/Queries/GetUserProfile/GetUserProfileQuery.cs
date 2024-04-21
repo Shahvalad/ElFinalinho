@@ -1,0 +1,87 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Projecto.Application.Features.Profile.Queries.GetUserProfile
+{
+    public record GetUserProfileQuery(string UserId) : IRequest<Result<UserProfileDto>>;
+
+    public class GetUserProfileQueryHandler : IRequestHandler<GetUserProfileQuery, Result<UserProfileDto>>
+    {
+        private readonly IDataContext _context;
+        private readonly IMapper _mapper;
+        private readonly UserManager<AppUser> _userManager;
+
+        public GetUserProfileQueryHandler(IDataContext context, IMapper mapper, UserManager<AppUser> userManager)
+        {
+            _context = context;
+            _mapper = mapper;
+            _userManager = userManager;
+        }
+
+        public async Task<Result<UserProfileDto>> Handle(GetUserProfileQuery request,
+            CancellationToken cancellationToken)
+        {
+
+            var user = await _userManager.Users
+                .Include(u => u.ProfilePicture)
+                .FirstOrDefaultAsync(u => u.Id == request.UserId, cancellationToken);
+            if (user == null)
+            {
+                return Result<UserProfileDto>.Failure(new []{"FAIl"});
+            }
+            var userGames = await _context.UserGames
+                .Where(g => g.UserId == user.Id)
+                .Include(g => g.Game)
+                .Include(g => g.Game.Images)
+                .ToListAsync(cancellationToken);
+
+            var userFriendships = await _context.Friendships
+                .Where(f => f.RequesterId == request.UserId && f.IsAccepted ||
+                                    f.UserId == request.UserId && f.IsAccepted)
+                .ToListAsync(cancellationToken);
+
+            var userFriendIds = userFriendships
+                .Select(f => f.RequesterId == request.UserId ? f.UserId : f.RequesterId).ToList();
+
+            var userFriends = await _userManager.Users.Where(u => userFriendIds.Contains(u.Id))
+                .Select(u => new GetProfileDto
+                (
+                    u.UserName,
+                    u.FirstName,
+                    u.LastName,
+                    u.Bio,
+                    u.Email,
+                    u.ProfilePicture.FileName ?? "",
+                    u.MemberSince,
+                    new List<GetGameDto>()
+                )).ToListAsync(cancellationToken);
+
+            List<GetGameDto> games = userGames.Select(g => new GetGameDto
+            {
+                Id = g.Game.Id,
+                Name = g.Game.Name,
+                Description = g.Game.Description,
+                Developer = g.Game.Developer,
+                Publisher = g.Game.Publisher,
+                StockCount = g.Game.StockCount,
+                Images = g.Game.Images.Select(i => new GameImage()
+                    { FileName = i.FileName, IsCoverImage = i.IsCoverImage }).ToList(),
+                InStock = g.Game.StockCount > 0,
+                CoverImageFileName = g.Game.Images.FirstOrDefault(i => i.IsCoverImage)?.FileName
+            }).ToList();
+
+            return Result<UserProfileDto>.Success(new UserProfileDto
+            {
+                UserName = user.UserName,
+                Bio = user.Bio??"",
+                ProfilePictureName = user.ProfilePicture?.FileName ?? "",
+                MemberSince = user.MemberSince,
+                Games = games,
+                Friends = userFriends
+            });
+        }
+    }
+}

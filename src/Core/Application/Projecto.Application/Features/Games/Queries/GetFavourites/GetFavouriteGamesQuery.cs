@@ -24,10 +24,7 @@ namespace Projecto.Application.Features.Games.Queries.GetFavourites
         public async Task<IEnumerable<GetGameDto>> Handle(GetFavouriteGamesQuery request, CancellationToken cancellationToken)
         {
             var user = await GetUser(request.UserId);
-            if (user == null)
-            {
-                return Enumerable.Empty<GetGameDto>();
-            }
+            
             var userFavouriteGames = await GetUserFavouriteGames(user.Id);
             var gameDtos = _mapper.Map<IEnumerable<GetGameDto>>(userFavouriteGames);
 
@@ -36,15 +33,14 @@ namespace Projecto.Application.Features.Games.Queries.GetFavourites
                 gameDto.CoverImageFileName = _context.Games
                     .Include(g => g.Images)
                     .FirstOrDefault(g => g.Id == gameDto.Id)
-                    ?.Images.FirstOrDefault(i => i.IsCoverImage)?.FileName;
+                    ?.Images.FirstOrDefault(i => i.IsCoverImage)?.FileName!;
             }
             return gameDtos;
-
         }
 
         private async Task<AppUser> GetUser(string userId)
         {
-            return await _userManager.FindByIdAsync(userId);
+            return await _userManager.FindByIdAsync(userId) ?? throw new UserNotFoundException("No such user!");
         }
 
         private async Task<IEnumerable<Game>> GetUserFavouriteGames(string userId)

@@ -18,6 +18,7 @@ namespace Projecto.Application.Dtos.GameDtos
         public bool IsFavourite { get; set; }
         public List<GameImage>? Images { get; set; }
         public List<GameGenre> GameGenres { get; set; } = new List<GameGenre>();
+        public List<Review> Reviews { get; set; } = new List<Review>();
         public Publisher? Publisher { get; set; }
         public Developer Developer { get; set; } = null!;
         public string? Description { get; set; }

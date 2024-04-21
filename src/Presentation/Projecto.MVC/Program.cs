@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.SignalR;
 using Projecto.Application;
 using Projecto.Infrastructure;
 using Projecto.MVC.Areas.Admin.Services;
+using Projecto.MVC.Hubs;
 using Projecto.Persistence;
 using Stripe;
 namespace Projecto.MVC
@@ -18,6 +20,8 @@ namespace Projecto.MVC
             builder.Services.AddInfrastructure(builder.Configuration);
             builder.Services.AddScoped<IImageService, ImageService>();
             builder.Services.ConfigureServices();
+            builder.Services.AddSignalR();
+            builder.Services.AddSingleton<IUserIdProvider, CustomUserIdProvider>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -35,6 +39,7 @@ namespace Projecto.MVC
 
             app.UseRouting();
 
+            app.MapHub<ChatHub>("/chathub");
 
             app.UseAuthorization();
 

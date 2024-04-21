@@ -1,14 +1,15 @@
-﻿using Projecto.Application.Dtos.GameDtos;
-using Projecto.Application.Services.PaymentService;
-using Projecto.Domain.Models;
-using Stripe.Checkout;
-using System.Web.Mvc;
-
-namespace Projecto.Infrastructure.Services
+﻿namespace Projecto.Infrastructure.Services
 {
     public class PaymentService : IPaymentService
     {
-        public Session CreateStripeSession(List<CartItem> CartItems, string successUrl, string cancelUrl)
+
+        private readonly IEmailService _emailService;
+
+        public PaymentService(IEmailService emailService)
+        {
+            _emailService = emailService;
+        }
+        public async Task<Session> CreateStripeSession(List<CartItem> CartItems, string successUrl, string cancelUrl)
         {
             if (CartItems == null || !CartItems.Any())
             {
@@ -43,7 +44,8 @@ namespace Projecto.Infrastructure.Services
             }
 
             var service = new SessionService();
-            return service.Create(options);
+            Session session = service.Create(options);
+            return session;
         }
 
         

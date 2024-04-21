@@ -1,5 +1,4 @@
-﻿
-namespace Projecto.Persistence.Data
+﻿namespace Projecto.Persistence.Data
 {
     public class DataContext : IdentityDbContext<AppUser>, IDataContext
     {
@@ -18,6 +17,10 @@ namespace Projecto.Persistence.Data
         public DbSet<DeveloperImage> DeveloperImages { get; set; } = default!;
         public DbSet<AppUserProfilePicture> AppUserProfilePictures { get; set; } = default!;
         public DbSet<UserFavouriteGame> UserFavouriteGames { get; set; } = default!;
+        public DbSet<Review> Reviews { get; set; } = default!;
+        public DbSet<Friendship> Friendships { get; set; } = default!;
+        public DbSet<Message> Messages { get; set; } = default!;
+        public DbSet<Payment> Payments { get; set; } = default!;
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

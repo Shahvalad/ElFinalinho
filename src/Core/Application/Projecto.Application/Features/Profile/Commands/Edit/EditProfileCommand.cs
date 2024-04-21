@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Projecto.Application.Features.Profile.Commands.Edit
 {
-    public record EditProfileCommand(ClaimsPrincipal? User, EditProfileDto? EditProfileDto) : IRequest;
+    public record EditProfileCommand(ClaimsPrincipal User, EditProfileDto EditProfileDto) : IRequest;
     public class EditProfileCommandHandler : IRequestHandler<EditProfileCommand>
     {
         private readonly UserManager<AppUser> _userManager;
@@ -25,7 +25,6 @@ namespace Projecto.Application.Features.Profile.Commands.Edit
             existingUser.FirstName = request.EditProfileDto.FirstName;
             existingUser.LastName = request.EditProfileDto.LastName;
             existingUser.Bio = request.EditProfileDto.Bio;
-            existingUser.Email = request.EditProfileDto.Email;
             await _userManager.UpdateAsync(existingUser);
         }
     }

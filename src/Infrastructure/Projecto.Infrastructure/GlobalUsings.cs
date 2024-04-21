@@ -1,0 +1,13 @@
+﻿global using Microsoft.AspNetCore.Identity;
+global using Microsoft.EntityFrameworkCore;
+global using Projecto.Application.Common.Interfaces;
+global using Projecto.Application.Services.KeyService;
+global using Projecto.Domain.Exceptions;
+global using Projecto.Domain.Models;
+global using System.Text;
+global using Projecto.Application.Services.PaymentService;
+global using Stripe.Checkout;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Projecto.Infrastructure.Services;
+global using Stripe;

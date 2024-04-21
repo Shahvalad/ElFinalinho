@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Check Your Email";
+}
+
+<div class="container py-5" style="font-family: 'Roboto', sans-serif;">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white" style="background-color:#F46119 !important;">
+                    <i class="fas fa-envelope-open-text"></i> @ViewData["Title"]
+                </div>
+                <div class="card-body">
+                    <p class="lead">
+                        <i class="fas fa-info-circle" style="color:#F46119"></i>
+                        We've sent a confirmation email to the address you provided. Please check your email and click the confirmation link to complete your registration.
+                    </p>
+                    <p class="lead">
+                        <i class="fas fa-exclamation-triangle" style="color:#F46119"></i>
+                        If you don't see the email, please check your spam folder. If you still can't find it, you can
+                        <a href="@Url.Action("ResendConfirmationEmail", "Account")" style="color:#F46119;">
+                            <i class="fas fa-redo" style="color:#F46119">
+                            </i> request a new confirmation email
+                        </a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

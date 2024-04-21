@@ -10,3 +10,6 @@ global using Projecto.Application.Services.ImageService;
 global using Projecto.Application.Dtos.PublisherDtos;
 global using Projecto.Application.Dtos.GameDtos;
 global using Projecto.Application.Dtos.DeveloperDtos;
+global using Microsoft.AspNetCore.Identity;
+global using Projecto.Application.Dtos.ProfileDtos;
+global using Projecto.Application.Common.Models;

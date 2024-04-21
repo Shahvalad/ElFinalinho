@@ -1,0 +1,42 @@
+﻿.user-info__avatar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.user-info__avatar img {
+    width: 150%;
+    height: 150%;
+    object-fit: cover;
+}
+
+.user-info__avatar input[type="file"] {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .3s ease;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.user-info__avatar:hover input[type="file"] {
+    opacity: 1;
+}
+

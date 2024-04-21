@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Projecto.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9380ec07bd2f13f10bb6deb98a255e7d62cd644f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+470dd6e9fe68fa85ce4b5d2b66681535b7d19d24")]
 [assembly: System.Reflection.AssemblyProductAttribute("Projecto.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Projecto.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

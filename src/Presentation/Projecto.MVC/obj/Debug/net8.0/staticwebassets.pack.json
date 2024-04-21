@@ -1017,6 +1017,18 @@
       "PackagePath": "staticwebassets\\Admin\\assets\\libs\\x-editable\\bootstrap-editable.min.js"
     },
     {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Email\\GameKeysTemplate.html",
+      "PackagePath": "staticwebassets\\Email\\GameKeysTemplate.html"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Email\\ReceiptTemplate.html",
+      "PackagePath": "staticwebassets\\Email\\ReceiptTemplate.html"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Sounds\\NewMessage.mp3",
+      "PackagePath": "staticwebassets\\Sounds\\NewMessage.mp3"
+    },
+    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Uploads\\17288800-6430-4512-9799-3034e1f22895.xlsx",
       "PackagePath": "staticwebassets\\Uploads\\17288800-6430-4512-9799-3034e1f22895.xlsx"
     },
@@ -1749,12 +1761,68 @@
       "PackagePath": "staticwebassets\\css\\LayoutCustomCSS.css"
     },
     {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\css\\ViewProfilePage.css",
+      "PackagePath": "staticwebassets\\css\\ViewProfilePage.css"
+    },
+    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\10_819eb791.PNG",
+      "PackagePath": "staticwebassets\\images\\ProfilePictures\\10_819eb791.PNG"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\10_8a1ca793.PNG",
+      "PackagePath": "staticwebassets\\images\\ProfilePictures\\10_8a1ca793.PNG"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\9_201ed91e.PNG",
+      "PackagePath": "staticwebassets\\images\\ProfilePictures\\9_201ed91e.PNG"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\Activision.svg_0375d0c0.png",
+      "PackagePath": "staticwebassets\\images\\ProfilePictures\\Activision.svg_0375d0c0.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\Activision.svg_409852d1.png",
+      "PackagePath": "staticwebassets\\images\\ProfilePictures\\Activision.svg_409852d1.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\Activision.svg_969b0c28.png",
+      "PackagePath": "staticwebassets\\images\\ProfilePictures\\Activision.svg_969b0c28.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\Activision.svg_a0df8a1b.png",
+      "PackagePath": "staticwebassets\\images\\ProfilePictures\\Activision.svg_a0df8a1b.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\Dark Souls Remastered_1e2470af.PNG",
+      "PackagePath": "staticwebassets\\images\\ProfilePictures\\Dark Souls Remastered_1e2470af.PNG"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\god of war 1_3f3aa98f.jpg",
+      "PackagePath": "staticwebassets\\images\\ProfilePictures\\god of war 1_3f3aa98f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\god of war 1_7175e277.jpg",
+      "PackagePath": "staticwebassets\\images\\ProfilePictures\\god of war 1_7175e277.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\god of war 1_eff58683.jpg",
+      "PackagePath": "staticwebassets\\images\\ProfilePictures\\god of war 1_eff58683.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\judeau_1f254955.jpg",
+      "PackagePath": "staticwebassets\\images\\ProfilePictures\\judeau_1f254955.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\profile.png",
+      "PackagePath": "staticwebassets\\images\\ProfilePictures\\profile.png"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\developers\\a4218237573_10_5d72bf54.jpg",
@@ -1791,10 +1859,6 @@
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Dark Souls Remastered_d5a60c55.PNG",
       "PackagePath": "staticwebassets\\images\\games\\Dark Souls Remastered_d5a60c55.PNG"
-    },
-    {
-      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\NET20Roadmap_3255700f.png",
-      "PackagePath": "staticwebassets\\images\\games\\NET20Roadmap_3255700f.png"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\god of war 1_05c729fd.jpg",
@@ -1839,6 +1903,10 @@
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\publishers\\text.txt",
       "PackagePath": "staticwebassets\\images\\publishers\\text.txt"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\js\\ChatScripts.js",
+      "PackagePath": "staticwebassets\\js\\ChatScripts.js"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\js\\site.js",

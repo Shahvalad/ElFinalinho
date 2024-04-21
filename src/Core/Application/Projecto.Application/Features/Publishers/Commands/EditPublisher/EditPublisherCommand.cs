@@ -22,7 +22,7 @@
                             ??throw new PublisherNotFoundException("No publisher with such id!");
 
             publisher = _mapper.Map(request.PublisherDto, publisher);
-            if (request.PublisherDto.Logo is not null)
+            if (request.PublisherDto.Logo is not null && publisher.Logo is not null)
             {
                 var deleteResult = await _imageService.DeleteImage("Publishers", publisher.Logo.FileName);
                 if (!deleteResult)

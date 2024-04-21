@@ -9,10 +9,19 @@
                 </div>
                 <div class="widjet__body">
                     <div class="user-info">
-                        <div class="user-info__avatar"><img src="~/assets/img/profile.png" alt="profile"></div>
+                        <form id="uploadForm" method="post" asp-action="ChangeProfilePicture" asp-controller="Profile" enctype="multipart/form-data">
+                            <div class="user-info__avatar" style="position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                                <img src="@(string.IsNullOrEmpty(Model.ProfilePicture) ? Url.Content("~/Images/ProfilePictures/profile.png") : Url.Content($"~/Images/ProfilePictures/{Model.ProfilePicture}"))" alt="profile" id="profilePic" style="width: 100%; height: 100%; object-fit: cover;">
+                                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.5); color: #fff; text-align: center; opacity: 0; transition: opacity 0.3s ease;">
+                                    <input type="file" id="file" name="file" style="display: none;" onchange="document.getElementById('uploadForm').submit();" />
+                                    <label for="file" style="cursor: pointer; padding: 10px;">Change Picture</label>
+                                </div>
+                            </div>
+                        </form>
+
                         <div class="user-info__box">
-                            <div class="user-info__title">@Model.FirstName @Model.LastName</div>
-                            <div class="user-info__text">Egypt, @Model.RegistrationDate</div>
+                            <div class="user-info__title">@Model.Username</div>
+                            <div class="user-info__text">@Model.RegistrationDate.ToString("D")</div>
                         </div>
                     </div><a class="uk-button uk-button-danger" asp-action="Edit"><i class="ico_edit"></i><span class="uk-margin-small-left">Edit Profile</span></a>
                 </div>
@@ -27,7 +36,7 @@
                 <div class="widjet__head">
                     <h3 class="uk-text-lead">Games</h3><a href="~/#!">View All</a>
                 </div>
-                @foreach(var game in Model.Games)
+                @foreach (var game in Model.Games)
                 {
                     <div class="widjet__body">
                         <div class="widjet-game">
@@ -42,7 +51,6 @@
                         </div>
                     </div>
                 }
-
             </div>
         </div>
         <div class="uk-width-1-3@l">
@@ -56,7 +64,8 @@
                         <option value="Category 1">Category 1</option>
                         <option value="Category 2">Category 2</option>
                         <option value="Category 3">Category 3</option>
-                    </select><div class="nice-select js-select uk-flex-1" tabindex="0"><span class="current">Select a Category</span><ul class="list"><li data-value="" class="option selected">Select a Category</li><li data-value="Category 1" class="option">Category 1</li><li data-value="Category 2" class="option">Category 2</li><li data-value="Category 3" class="option">Category 3</li></ul></div><button class="uk-button uk-button-secondary" type="button">Next</button>
+                    </select>
+                    <div class="nice-select js-select uk-flex-1" tabindex="0"><span class="current">Select a Category</span><ul class="list"><li data-value="" class="option selected">Select a Category</li><li data-value="Category 1" class="option">Category 1</li><li data-value="Category 2" class="option">Category 2</li><li data-value="Category 3" class="option">Category 3</li></ul></div><button class="uk-button uk-button-secondary" type="button">Next</button>
                 </div>
             </div>
             <div class="widjet --badges">
@@ -87,3 +96,14 @@
         </div>
     </div>
 </main>
+@section ProfileButtonScript {
+    <script>
+        document.querySelector('.user-info__avatar').addEventListener('mouseover', function () {
+            this.querySelector('div').style.opacity = 1;
+        });
+
+        document.querySelector('.user-info__avatar').addEventListener('mouseout', function () {
+            this.querySelector('div').style.opacity = 0;
+        });
+    </script>
+}

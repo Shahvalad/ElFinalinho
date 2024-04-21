@@ -1330,3 +1330,14 @@ C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC
 C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\Projecto.Infrastructure.dll
 C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\Projecto.Infrastructure.pdb
 C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\ExcelDataReader.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\AngleSharp.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\AngleSharp.Css.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\HtmlSanitizer.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\PagedList.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\PagedList.Mvc.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\Microsoft.Owin.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\Microsoft.Owin.Security.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\Owin.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\SendGrid.dll
+C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC\bin\Debug\net8.0\StarkbankEcdsa.dll

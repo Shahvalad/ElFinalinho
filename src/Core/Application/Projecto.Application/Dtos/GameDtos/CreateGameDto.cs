@@ -5,11 +5,14 @@ namespace Projecto.Application.Dtos.GameDtos
 {
     public class CreateGameDto
     {
+        [Required]
         public string Name { get; set; } = null!;
+        [Required]
         public decimal Price { get; set; }
 
         [Display(Name = "Cover Image")]
-        public IFormFile CoverImage { get; set; }
+        [Required]
+        public required IFormFile CoverImage { get; set; }
         public string? CoverImageFileName { get; set; }
         public ICollection<IFormFile>? Images { get; set; }
         public List<string> ImageFileNames { get; set; } = new List<string>();
@@ -19,6 +22,7 @@ namespace Projecto.Application.Dtos.GameDtos
         public int? PublisherId { get; set; }
 
         [Display(Name = "Developer")]
+        [Required]
         public int DeveloperId { get; set; }
 
         [Display(Name = "Genres")]

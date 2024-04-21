@@ -1,0 +1,15 @@
+﻿@model List<Projecto.Application.Dtos.MessageDtos.MessageDto>
+@foreach (var message in Model)
+{
+    <div class="messages-item @(message.IsSent ? "--friend-message" : "--your-message")">
+        @if(!message.IsSent)
+        {
+            <div class="user-item__avatar">
+                <img src="~/images/ProfilePictures/@message.UserProfilePictureName" alt="user">
+            </div>
+        }
+        <div class="messages-item__text">
+            @message.Text
+        </div>
+    </div>
+}

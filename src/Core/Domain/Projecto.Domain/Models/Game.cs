@@ -21,10 +21,11 @@
         public int DeveloperId { get; set; }
         public Developer Developer { get; set; } = null!;
 
-        public List<GameGenre> GameGenres { get; set; } = new List<GameGenre>();
+        public List<GameGenre>? GameGenres { get; set; } = new List<GameGenre>();
 
         public List<UserGame> UserGames { get; set; } = new List<UserGame>();
         public List<UserFavouriteGame> UserFavouriteGames { get; set; } = new List<UserFavouriteGame>();
+        public List<Review> Reviews { get; set; } = new List<Review>();
 
     }
 }

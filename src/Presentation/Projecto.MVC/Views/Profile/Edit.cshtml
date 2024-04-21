@@ -1,30 +1,31 @@
 ﻿@model EditProfileDto
-@{
-}
 
 <div class="page-main">
-<form asp-action="Edit" method="post">
-    <div asp-validation-summary="ModelOnly"></div>
-    <div class="form-group">
-        <label asp-for="FirstName">First Name</label>
-        <input asp-for="FirstName" class="form-control" placeholder="Enter first name">
-        <span  asp-validation-for="FirstName"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="LastName">Last Name</label>
-        <input asp-for="LastName" class="form-control" placeholder="Last Name">
-        <span  asp-validation-for="LastName"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Email">Email address</label>
-        <input asp-for="Email" type="email" class="form-control" placeholder="Enter email">
-        <span  asp-validation-for="Email"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Bio">Bio</label>
-        <input asp-for="Bio" class="form-control" placeholder="Bio">
-        <span  asp-validation-for="Bio"></span>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+    <form asp-action="Edit" method="post" class="uk-form-stacked">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="uk-margin">
+            <label asp-for="FirstName" class="uk-form-label">First Name</label>
+            <div class="uk-form-controls">
+                <input asp-for="FirstName" class="uk-input" type="text" placeholder="Enter first name">
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="uk-margin">
+            <label asp-for="LastName" class="uk-form-label">Last Name</label>
+            <div class="uk-form-controls">
+                <input asp-for="LastName" class="uk-input" type="text" placeholder="Enter last name">
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="uk-margin">
+            <label asp-for="Bio" class="uk-form-label">Bio</label>
+            <div class="uk-form-controls">
+                <textarea asp-for="Bio" class="uk-textarea" rows="5" placeholder="Enter bio"></textarea>
+                <span asp-validation-for="Bio" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="uk-margin">
+            <button type="submit" class="uk-button uk-button-primary">Submit</button>
+        </div>
+    </form>
 </div>

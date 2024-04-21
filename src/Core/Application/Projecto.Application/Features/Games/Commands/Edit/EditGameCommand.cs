@@ -45,7 +45,8 @@
             game.Description = updateGameDto.Description;
             game.Price = updateGameDto.Price;
 
-            game.Developer = await _context.Developers.FindAsync(updateGameDto.DeveloperId);
+            game.Developer = await _context.Developers.FindAsync(updateGameDto.DeveloperId) ?? 
+                             throw new DeveloperNotFoundException("No such developer");
             game.GameGenres = updateGameDto.SelectedGenres?.Select(genreId => new GameGenre { GenreId = genreId }).ToList();
 
             var existingImages = await _context.GameImages
@@ -67,9 +68,9 @@
                 var existingCoverImageName = game.Images.Where(im => im.IsCoverImage == true).Select(im => im.FileName)
                     .FirstOrDefault();
 
-                await _imageService.DeleteImage("Games", existingCoverImageName);
+                if (existingCoverImageName != null) await _imageService.DeleteImage("Games", existingCoverImageName);
 
-                game.Images.Remove(game.Images.FirstOrDefault(im => im.IsCoverImage == true && im.GameId == id));
+                game.Images.Remove(game.Images.FirstOrDefault(im => im.IsCoverImage == true && im.GameId == id) ?? throw new ImageDeletionException("Error while deleting image!"));
                 if (existingCoverImage == null)
                 {
                     game.Images.Add(new GameImage { FileName = updateGameDto.CoverImageFileName, IsCoverImage = true });

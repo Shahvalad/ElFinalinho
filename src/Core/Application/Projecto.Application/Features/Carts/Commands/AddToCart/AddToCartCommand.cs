@@ -10,7 +10,7 @@ namespace Projecto.Application.Features.Carts.Commands.AddToCart
     public class AddToCartCommand : IRequest
     {
         public int GameId { get; set; }
-        public Cart CurrentCart { get; set; }
+        public Cart CurrentCart { get; set; } = null!;
         public int Quantity { get; set; }
     }
     public class AddToCartCommandHandler : IRequestHandler<AddToCartCommand>
@@ -23,23 +23,19 @@ namespace Projecto.Application.Features.Carts.Commands.AddToCart
         public async Task Handle(AddToCartCommand request, CancellationToken cancellationToken)
         {
             var game = await _context.Games.FindAsync(request.GameId) ?? throw new GameNotFoundException("No game with such id!");
-            if (request.CurrentCart == null)
-            {
-                request.CurrentCart = new Cart();
-            }
-
+            request.CurrentCart ??= new Cart();
             var cartItem = FindCartItem(request.CurrentCart, game.Id);
 
-            if (cartItem != null)
-            {
-                UpdateCartItemQuantity(game, cartItem, request.Quantity);
-            }
-            else
+            if (cartItem == null)
             {
                 AddNewCartItem(game, request.CurrentCart, request.Quantity);
             }
+            else
+            {
+                UpdateCartItemQuantity(game, cartItem, request.Quantity);
+            }
         }
-        private CartItem FindCartItem(Cart cart, int gameId)
+        private CartItem? FindCartItem(Cart cart, int gameId)
         {
             return cart.CartItems.SingleOrDefault(x => x.Game.Id == gameId);
         }
@@ -51,9 +47,10 @@ namespace Projecto.Application.Features.Carts.Commands.AddToCart
             }
             else
             {
-                cartItem.Quantity++;
+                cartItem.Quantity += quantity;
             }
         }
+
         private void AddNewCartItem(Game game, Cart cart, int quantity)
         {
             if (game.StockCount < quantity)

@@ -9,7 +9,7 @@ namespace Projecto.Application.Features.Carts.Commands.RemoveFromCart
     public class RemoveFromCartCommand : IRequest
     {
         public int GameId { get; set; }
-        public Cart CurrentCart { get; set; }
+        public Cart CurrentCart { get; set; } = null!;
     }
 
     public class RemoveFromCartCommandHandler : IRequestHandler<RemoveFromCartCommand>

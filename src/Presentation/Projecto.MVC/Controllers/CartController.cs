@@ -6,7 +6,6 @@ namespace Projecto.MVC.Controllers
     public class CartController : Controller
     {
         private readonly ISender _sender;
-
         public CartController(ISender sender)
         {
             _sender = sender;

@@ -1,8 +1,9 @@
-﻿using Projecto.Application.Features.Games.Queries.GetByName;
+﻿using Projecto.Application.Dtos.ReviewDtos;
+using Projecto.Application.Features.Games.Queries.GetByName;
 using Projecto.Application.Features.Games.Queries.GetGameWithUserFavouriteStatus;
+using Projecto.Application.Features.Reviews.Queries.GetAll;
 using System.Security.Claims;
 
-//TO DO : IF THERE IS NO STOCK OF THE GAME, THEN THE USER SHOULD NOT BE ABLE TO ADD IT TO THE CART OR BUY IT
 namespace Projecto.MVC.Controllers
 {
     public class StoreController : Controller
@@ -17,14 +18,38 @@ namespace Projecto.MVC.Controllers
         public async Task<IActionResult> Index()
         {
             var games = await _sender.Send(new GetGamesQuery());
-            return View(games);
+            return View(games.ToList());
         }
 
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(int id, int page = 1)
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var game = await _sender.Send(new GetGameWithUserFavouriteStatus(id, userId));
-            return View(game);
+            string userId = null;
+
+            if (User.Identity.IsAuthenticated)
+            {
+                userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            }
+
+            var game = await _sender.Send(new GetGameQuery(id));
+            if (userId != null)
+            {
+                game = await _sender.Send(new GetGameWithUserFavouriteStatus(id, userId));
+            }
+
+            var paginatedReviewsDto = await _sender.Send(new GetReviewsQuery(id, page));
+
+            var viewModel = new GameDetailsVM
+            {
+                Game = game,
+                NewReview = userId != null ? new ReviewCreateDto(true, "", userId, id) : null,
+                PaginatedReviews = new ReviewVM
+                {
+                    Reviews = paginatedReviewsDto.Reviews,
+                    CurrentPage = paginatedReviewsDto.CurrentPage,
+                    TotalPages = paginatedReviewsDto.TotalPages,
+                }
+            };
+            return View(viewModel);
         }
 
         [HttpGet]

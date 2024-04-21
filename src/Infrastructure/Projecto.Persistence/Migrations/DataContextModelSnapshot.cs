@@ -326,6 +326,34 @@ namespace Projecto.Persistence.Migrations
                     b.ToTable("DeveloperImages");
                 });
 
+            modelBuilder.Entity("Projecto.Domain.Models.Friendship", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsAccepted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("RequesterId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RequesterId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Friendships");
+                });
+
             modelBuilder.Entity("Projecto.Domain.Models.Game", b =>
                 {
                     b.Property<int>("Id")
@@ -498,6 +526,78 @@ namespace Projecto.Persistence.Migrations
                     b.ToTable("Genres");
                 });
 
+            modelBuilder.Entity("Projecto.Domain.Models.Message", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsRead")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("RecipientUsername")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SenderUsername")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Timestamp")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Messages");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.Payment", b =>
+                {
+                    b.Property<int>("PaymentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PaymentId"));
+
+                    b.Property<long?>("Amount")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("PaymentDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("PaymentMethodCountry")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PaymentMethodLast4")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PaymentStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SessionId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("PaymentId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Payments");
+                });
+
             modelBuilder.Entity("Projecto.Domain.Models.Publisher", b =>
                 {
                     b.Property<int>("Id")
@@ -562,6 +662,74 @@ namespace Projecto.Persistence.Migrations
                     b.ToTable("PublisherImages");
                 });
 
+            modelBuilder.Entity("Projecto.Domain.Models.Review", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Comment")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("GameId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsLiked")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GameId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Reviews");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.UserFavouriteGame", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("GameId")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserId", "GameId");
+
+                    b.HasIndex("GameId");
+
+                    b.ToTable("UserFavouriteGames", (string)null);
+                });
+
             modelBuilder.Entity("Projecto.Domain.Models.UserGame", b =>
                 {
                     b.Property<string>("UserId")
@@ -575,21 +743,6 @@ namespace Projecto.Persistence.Migrations
                     b.HasIndex("GameId");
 
                     b.ToTable("UserGames");
-                });
-
-            modelBuilder.Entity("Projecto.Domain.UserFavouriteGame", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<int>("GameId")
-                        .HasColumnType("int");
-
-                    b.HasKey("UserId", "GameId");
-
-                    b.HasIndex("GameId");
-
-                    b.ToTable("UserFavouriteGames");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -665,6 +818,25 @@ namespace Projecto.Persistence.Migrations
                     b.Navigation("Developer");
                 });
 
+            modelBuilder.Entity("Projecto.Domain.Models.Friendship", b =>
+                {
+                    b.HasOne("Projecto.Domain.Models.AppUser", "Requester")
+                        .WithMany("SentFriendRequests")
+                        .HasForeignKey("RequesterId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("Projecto.Domain.Models.AppUser", "User")
+                        .WithMany("ReceivedFriendRequests")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Requester");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Projecto.Domain.Models.Game", b =>
                 {
                     b.HasOne("Projecto.Domain.Models.Developer", "Developer")
@@ -723,6 +895,17 @@ namespace Projecto.Persistence.Migrations
                     b.Navigation("Game");
                 });
 
+            modelBuilder.Entity("Projecto.Domain.Models.Payment", b =>
+                {
+                    b.HasOne("Projecto.Domain.Models.AppUser", "User")
+                        .WithMany("Payments")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Projecto.Domain.Models.PublisherImage", b =>
                 {
                     b.HasOne("Projecto.Domain.Models.Publisher", "Publisher")
@@ -732,6 +915,44 @@ namespace Projecto.Persistence.Migrations
                         .IsRequired();
 
                     b.Navigation("Publisher");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.Review", b =>
+                {
+                    b.HasOne("Projecto.Domain.Models.Game", "Game")
+                        .WithMany("Reviews")
+                        .HasForeignKey("GameId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Projecto.Domain.Models.AppUser", "User")
+                        .WithMany("Reviews")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Game");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.UserFavouriteGame", b =>
+                {
+                    b.HasOne("Projecto.Domain.Models.Game", "Game")
+                        .WithMany("UserFavouriteGames")
+                        .HasForeignKey("GameId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Projecto.Domain.Models.AppUser", "User")
+                        .WithMany("UserFavouriteGames")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Game");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Projecto.Domain.Models.UserGame", b =>
@@ -753,28 +974,17 @@ namespace Projecto.Persistence.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Projecto.Domain.UserFavouriteGame", b =>
-                {
-                    b.HasOne("Projecto.Domain.Models.Game", "Game")
-                        .WithMany("UserFavouriteGames")
-                        .HasForeignKey("GameId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Projecto.Domain.Models.AppUser", "User")
-                        .WithMany("UserFavouriteGames")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Game");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("Projecto.Domain.Models.AppUser", b =>
                 {
+                    b.Navigation("Payments");
+
                     b.Navigation("ProfilePicture");
+
+                    b.Navigation("ReceivedFriendRequests");
+
+                    b.Navigation("Reviews");
+
+                    b.Navigation("SentFriendRequests");
 
                     b.Navigation("UserFavouriteGames");
 
@@ -795,6 +1005,8 @@ namespace Projecto.Persistence.Migrations
                     b.Navigation("GameKeys");
 
                     b.Navigation("Images");
+
+                    b.Navigation("Reviews");
 
                     b.Navigation("UserFavouriteGames");
 
