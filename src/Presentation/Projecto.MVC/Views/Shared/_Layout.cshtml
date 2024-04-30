@@ -55,8 +55,6 @@
                         </div>
                     </div>
                     <div class="page-header__action">
-                        <a class="action-btn" href="~/#!"><i class="ico_message"></i><span></span></a>
-                        <a class="action-btn" href="~/#!"><i class="ico_notification"></i><span></span></a>
                         <a asp-controller="Cart" asp-action="Index" class="action-btn">
                             <i class="fas fa-shopping-cart"></i>
                         </a>                        
@@ -67,7 +65,7 @@
                                     <img src="~/assets/img/profile.png" alt="profile" class="profile-img" onclick="toggleDropdown()">
                                     <div class="dropdown-content" id="dropdownContent">
                                         <a asp-controller="Profile" asp-action="Index">Profile</a>
-                                        <a href="~/08_wallet.html">Wallet</a>
+                                        <a asp-controller="Wallet" asp-action="Index">Wallet</a>
                                         <a href="~/Account/Logout">Logout</a>
                                     </div>
                                 </div>
@@ -100,11 +98,8 @@
                         <li><a asp-controller="Wallet" asp-action="Index"><i class="ico_wallet"></i><span>Wallet</span></a></li>
                         <li class="uk-nav-header">Main</li>
                         <li><a asp-controller="Store" asp-action="Index"><i class="ico_store"></i><span>Store</span></a></li>
-                        <li><a asp-controller="Markets"><i class="ico_market"></i><span>Market</span></a></li>
-                        <li><a asp-controller="Community"><i class="ico_community"></i><span>Community</span></a></li>
-                        <li class="uk-nav-header">Support</li>
-                        <li><a href="~/#modal-report" data-uk-toggle><i class="ico_report"></i><span>Report</span></a></li>
-                        <li><a href="~/#modal-help" data-uk-toggle><i class="ico_help"></i><span>Help</span></a></li>
+                        <li><a asp-controller="Markets" asp-action="Index"><i class="ico_market"></i><span>Market</span></a></li>
+                        <li><a asp-controller="Community" asp-action="Index"><i class="ico_community"></i><span>Community</span></a></li>
                     </ul>
                 </div>
             </aside>
@@ -180,6 +175,7 @@
     @await RenderSectionAsync("SellYourItemScripts", required:false)
     @await RenderSectionAsync("HomeScripts", required:false)
     @await RenderSectionAsync("AddCommunityPostScripts", required:false)
+    @await RenderSectionAsync("AddCommunityPostScripts2", required: false)
     <script>
         function toggleDropdown() {
             var dropdownContent = document.getElementById("dropdownContent");

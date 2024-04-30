@@ -9,6 +9,9 @@
             width: 100px; 
             height: 145px; 
         }
+        .user-post{
+            width: 100% !important
+        }
     </style>
 }
 <main class="page-main">
@@ -46,6 +49,13 @@
                     <div class="widjet__body"><span>@Model.User.Bio</span></div>
                 </div>
             }
+            <div class="widjet --body">
+                @if(Model.DisplayedPost != null)
+                {
+                    <img class="user-post" src="~/images//CommunityPosts/@Model.DisplayedPost.CommunityPostImage.FileName" />
+                }
+            </div>
+
             <div class="widjet --activity">
                 <div class="widjet__head">
                     <h3 class="uk-text-lead">Games</h3><a href="~/#!">View All</a>

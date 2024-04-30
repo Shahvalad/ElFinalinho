@@ -47,6 +47,7 @@
                     policy.RequireAuthenticatedUser();
                 });
             });
+
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, UserClaimsPrincipalFactory<AppUser>>();
             services.AddControllersWithViews();
         }

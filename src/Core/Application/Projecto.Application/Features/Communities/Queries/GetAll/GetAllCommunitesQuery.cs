@@ -16,7 +16,8 @@ namespace Projecto.Application.Features.Communities.Queries.GetAll
             var communities = await _context.Communities
                 .AsNoTracking()
                 .Include(c => c.Image)
-                .Select(c => new CommunityDto(c.Id, c.Name, c.Threads, c.Image.FileName))
+                .Include(c=>c.Posts)
+                .Select(c => new CommunityDto(c.Id, c.Name, c.Posts.Count(), c.Image.FileName))
                 .ToListAsync(cancellationToken);
             return communities;
         }

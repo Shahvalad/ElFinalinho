@@ -28,24 +28,37 @@
     </style>
 }
 
-<main class="page-main">
+<main class="container mt-5">
     @using (Html.BeginForm("SetDisplayedPost", "Profile", FormMethod.Post))
     {
-        <div class="post-grid">
+        <div class="row">
             @foreach (var post in Model)
             {
-                <div class="post-grid__item">
-                    <img src="~/Images/CommunityPosts/@post.Image" />
-                    <div class="switch">
-                        <label>
-                            Display on profile:
-                            <input type="checkbox" name="postId" value="@post.Id">
-                            <span class="slider round"></span>
-                        </label>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="~/Images/CommunityPosts/@post.Image" />
+                        <div class="card-body">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="@("customSwitch" + post.Id)" name="postId" value="@post.Id">
+                                <label class="custom-control-label" for="@("customSwitch" + post.Id)">Display on profile</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             }
-            <button type="submit" class="btn btn-primary">Apply Changes</button>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-sm">Apply Changes</button>
+            </div>
         </div>
     }
 </main>
+@section AddCommunityPostScripts2{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.custom-control-input').on('change', function () {
+                $('.custom-control-input').not(this).prop('checked', false);
+            });
+        });
+    </script>
+}

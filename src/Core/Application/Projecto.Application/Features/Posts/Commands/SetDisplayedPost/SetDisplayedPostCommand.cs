@@ -26,7 +26,7 @@ namespace Projecto.Application.Features.Posts.Commands.SetDisplayedPost
                 throw new UserNotFoundException("No user with such id!");
             }
             user.DisplayedPostId = request.PostId;
-            _context.Entry(user).State = EntityState.Modified; // Explicitly mark the entity as modified
+            _context.Entry(user).State = EntityState.Modified; 
             await _context.SaveChangesAsync(cancellationToken);
         }
     }

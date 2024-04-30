@@ -1797,6 +1797,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\CommunityPosts\\14616_b055ce8f.gif",
+      "PackagePath": "staticwebassets\\images\\CommunityPosts\\14616_b055ce8f.gif"
+    },
+    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\CommunityPosts\\20220413_135117.jpg_4bd1fe33.webp",
       "PackagePath": "staticwebassets\\images\\CommunityPosts\\20220413_135117.jpg_4bd1fe33.webp"
     },
@@ -1807,6 +1811,10 @@
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\CommunityPosts\\20220413_135117.jpg_afef2502.webp",
       "PackagePath": "staticwebassets\\images\\CommunityPosts\\20220413_135117.jpg_afef2502.webp"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\CommunityPosts\\DS-gif-Dark-Souls-фэндомы-Pixel-Art-3144858_5bed6ce2.gif",
+      "PackagePath": "staticwebassets\\images\\CommunityPosts\\DS-gif-Dark-Souls-фэндомы-Pixel-Art-3144858_5bed6ce2.gif"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\10_819eb791.PNG",
@@ -2025,6 +2033,10 @@
       "PackagePath": "staticwebassets\\images\\games\\GodOfWar_0116e86b.jfif"
     },
     {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\HollowKnight_dcc9d77f.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\HollowKnight_dcc9d77f.jpg"
+    },
+    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Rdr2_8f2cc437.jpg",
       "PackagePath": "staticwebassets\\images\\games\\Rdr2_8f2cc437.jpg"
     },
@@ -2091,6 +2103,14 @@
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\ss_849ec8dcc6f8df1c0b2c509584c9fc9e51f88cfa.1920x1080_bbd93f45.jpg",
       "PackagePath": "staticwebassets\\images\\games\\ss_849ec8dcc6f8df1c0b2c509584c9fc9e51f88cfa.1920x1080_bbd93f45.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\ss_9287ad02c8484cbcaed8dc10d61e3bcbe85313e1.1920x1080_490e4c07.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\ss_9287ad02c8484cbcaed8dc10d61e3bcbe85313e1.1920x1080_490e4c07.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\ss_a81e4231cc8d55f58b51a4a938898af46503cae5.1920x1080_f07d58bf.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\ss_a81e4231cc8d55f58b51a4a938898af46503cae5.1920x1080_f07d58bf.jpg"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\test.txt",
