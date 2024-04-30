@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Projecto.Application.Dtos.TarotCardDtos;
+using Stripe;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -56,7 +58,9 @@ namespace Projecto.Application.Features.Profile.Queries.GetUserProfile
                     u.Email,
                     u.ProfilePicture.FileName ?? "",
                     u.MemberSince,
-                    new List<GetGameDto>()
+                    new List<GetGameDto>(),
+                    new List<UserTarotCard>() 
+
                 )).ToListAsync(cancellationToken);
 
             List<GetGameDto> games = userGames.Select(g => new GetGameDto

@@ -14,7 +14,10 @@
 
         public async Task<GetDeveloperDto> Handle(GetDeveloperQuery request, CancellationToken cancellationToken)
         {
-            var developer = await _context.Developers.Include(d => d.Logo).FirstOrDefaultAsync(m => m.Id == request.Id, cancellationToken)
+            var developer = await _context.Developers
+                .AsNoTracking()
+                .Include(d => d.Logo)
+                .FirstOrDefaultAsync(m => m.Id == request.Id, cancellationToken)
                 ?? throw new DeveloperNotFoundException("There is no developer with such id!");
             return _mapper.Map<GetDeveloperDto>(developer);
         }

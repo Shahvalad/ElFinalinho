@@ -2,6 +2,8 @@
 using Projecto.Application.Features.Games.Queries.GetByName;
 using Projecto.Application.Features.Games.Queries.GetGameWithUserFavouriteStatus;
 using Projecto.Application.Features.Reviews.Queries.GetAll;
+using Projecto.Application.Features.Reviews.Queries.GetAverageRating;
+using Projecto.Application.Features.Reviews.Queries.GetCount;
 using System.Security.Claims;
 
 namespace Projecto.MVC.Controllers
@@ -31,6 +33,7 @@ namespace Projecto.MVC.Controllers
             }
 
             var game = await _sender.Send(new GetGameQuery(id));
+
             if (userId != null)
             {
                 game = await _sender.Send(new GetGameWithUserFavouriteStatus(id, userId));
@@ -47,7 +50,9 @@ namespace Projecto.MVC.Controllers
                     Reviews = paginatedReviewsDto.Reviews,
                     CurrentPage = paginatedReviewsDto.CurrentPage,
                     TotalPages = paginatedReviewsDto.TotalPages,
-                }
+                },
+                AverageRating = await _sender.Send(new GetAverageGameRatingQuery(id)),
+                ReviewsCount = await _sender.Send(new GetAllReviewsCount(id))
             };
             return View(viewModel);
         }

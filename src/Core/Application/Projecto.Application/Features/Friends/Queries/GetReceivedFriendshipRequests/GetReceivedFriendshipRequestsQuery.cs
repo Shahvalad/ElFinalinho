@@ -24,12 +24,13 @@ namespace Projecto.Application.Features.Friends.Queries.GetReceivedFriendshipReq
 
         public async Task<Result<List<GetFriendRequestDto>>> Handle(GetReceivedFriendshipRequestsQuery request, CancellationToken cancellationToken)
         {
-            var user = await _userManager.Users.Include(u => u.ReceivedFriendRequests)
+            var user = await _userManager.Users
+                .AsNoTracking()
+                .Include(u => u.ReceivedFriendRequests)
                 .SingleOrDefaultAsync(u => u.Id == request.UserId, cancellationToken);
-            if (user == null)
-            {
+
+            if (user is null)
                 return Result<List<GetFriendRequestDto>>.Failure(new string[] { "No such user!" });
-            }
 
             var requesterUsers = user.ReceivedFriendRequests
                 .Where(x => !x.IsAccepted)
@@ -39,6 +40,7 @@ namespace Projecto.Application.Features.Friends.Queries.GetReceivedFriendshipReq
             var getFriendRequestsDto = requesterUsers
                 .Select(profile => new GetFriendRequestDto(
                     _context.Friendships
+                        .AsNoTracking()
                         .Where(f => f.UserId == request.UserId && !f.IsAccepted)
                         .Select(f => f.Id)
                         .FirstOrDefault(),

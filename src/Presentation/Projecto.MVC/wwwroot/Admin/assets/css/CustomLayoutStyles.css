@@ -1,0 +1,6 @@
+﻿.courier-font {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px; /* This will make the text appear wider */
+}

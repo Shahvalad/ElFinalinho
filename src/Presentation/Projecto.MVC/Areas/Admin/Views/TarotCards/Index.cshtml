@@ -1,0 +1,52 @@
+﻿@model List<TarotCard>
+@* //TODO : ADD PAGINATION *@
+<div class="container-fluid">
+    <br />
+    <h1>List of Tarot Cards</h1>
+    <p>
+        <a class="btn btn-outline-dark" asp-action="Create">Create New</a>
+    </p>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @if (item.Image is not null)
+                            {
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img src="~/Images/TarotCards/@item.Image" alt="Cover Image" class="img-fluid rounded" style="max-width: 100px; max-height: 100px;">
+                                    </div>
+                            }
+                        </td>
+                        <td>
+                            <strong>@Html.DisplayFor(modelItem => item.Name)</strong>
+                        </td>
+                        <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                        <td>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-cogs"></i> Actions
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                                    <a class="dropdown-item" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                                    <a class="dropdown-item" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

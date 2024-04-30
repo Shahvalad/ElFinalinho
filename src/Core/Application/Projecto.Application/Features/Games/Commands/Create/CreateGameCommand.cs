@@ -42,6 +42,13 @@
                 throw new GameNotFoundException("There is no game with such id!");
             game.StockCount = game.GameKeys.Count();
             await _context.Games.AddAsync(game);
+            var community = new Community
+            {   
+                Name = game.Name, 
+                Image = new CommunityImage {FileName = game.Images.FirstOrDefault(i => i.IsCoverImage)?.FileName ?? "default.jpg"},
+                Game = game
+            };
+            await _context.Communities.AddAsync(community);
             await _context.SaveChangesAsync(cancellationToken);
             return game.Id;
         }

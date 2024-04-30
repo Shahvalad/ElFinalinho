@@ -25,7 +25,8 @@
                     .ThenInclude(gg=>gg.Genre)
                 .Include(g => g.Reviews)
                     .ThenInclude(r => r.User)
-                .FirstOrDefaultAsync(g => g.Id == request.Id, cancellationToken)??throw new GameNotFoundException("There is no game with such id!");
+                .FirstOrDefaultAsync(g => g.Id == request.Id, cancellationToken)
+                ??throw new GameNotFoundException("There is no game with such id!");
 
             var getGameDto = _mapper.Map<GetGameDto>(game);
             getGameDto.Images = game.Images.Select(i => new GameImage() { FileName = i.FileName, IsCoverImage = i.IsCoverImage }).ToList();

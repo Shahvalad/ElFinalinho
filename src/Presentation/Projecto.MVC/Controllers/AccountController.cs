@@ -1,16 +1,23 @@
-﻿using Projecto.Application.Common.Interfaces;
+﻿using Microsoft.AspNetCore.Identity;
+using Projecto.Application.Common.Interfaces;
+using Projecto.Application.Common.Models;
+using Projecto.Application.Features.Users.Commands.ConfirmEmail;
+using Projecto.Application.Features.Users.Commands.Login;
+using Projecto.Application.Features.Users.Commands.Logout;
+using Projecto.Application.Features.Users.Commands.Register;
+using Projecto.Infrastructure.Services;
 
 namespace Projecto.MVC.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly SignInManager<AppUser> _signInManager;
+        private readonly ISender _sender;
         private readonly UserManager<AppUser> _userManager;
         private readonly IEmailService _emailService;
-        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IEmailService emailService)
+        public AccountController(ISender sender, UserManager<AppUser> userManager, IEmailService emailService)
         {
+            _sender = sender;
             _userManager = userManager;
-            _signInManager = signInManager;
             _emailService = emailService;
         }
 
@@ -24,23 +31,18 @@ namespace Projecto.MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await _userManager.FindByNameAsync(model.Username);
-                if (user != null)
+                var result = await _sender.Send(new UserLoginCommand (model.Username, model.Password, model.RememberMe));
+
+                switch (result.Status)
                 {
-                    if (!await _userManager.IsEmailConfirmedAsync(user))
-                    {
-                        // If the user's email is not confirmed, redirect them to a view that instructs them to confirm their email
-                        return RedirectToAction("CheckEmail", "Account");
-                    }
-
-                    var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberMe, false);
-
-                    if (result.Succeeded)
-                    {
+                    case LoginStatus.Success:
                         return RedirectToAction("Index", "Home");
-                    }
+                    case LoginStatus.EmailNotConfirmed:
+                        return RedirectToAction("CheckEmail", "Account");
+                    case LoginStatus.Failure:
+                        ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                        break;
                 }
-                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
             }
             return View();
         }
@@ -59,6 +61,7 @@ namespace Projecto.MVC.Controllers
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
+                    await _userManager.AddToRoleAsync(user, "User");
                     var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     var confirmationLink = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, token = token }, Request.Scheme);
                     var subject = "Confirm your email";
@@ -74,25 +77,26 @@ namespace Projecto.MVC.Controllers
 
             return View();
         }
+
         public async Task<IActionResult> ConfirmEmail(string userId, string token)
         {
-            var user = await _userManager.FindByIdAsync(userId);
-            if (user == null)
-                return NotFound();
+            var result = await _sender.Send(new UserConfirmEmailCommand(userId,token));
 
-            var result = await _userManager.ConfirmEmailAsync(user, token);
             if (result.Succeeded)
+            {
                 return RedirectToAction("Index", "Home");
+            }
 
-            return BadRequest();
+            return BadRequest(result.Errors);
         }
+
         public IActionResult CheckEmail()
         {
             return View();
         }
         public async Task<IActionResult> Logout()
         {
-            await _signInManager.SignOutAsync();
+            await _sender.Send(new UserLogoutCommand());
             return RedirectToAction("Index", "Home");
         }
     }

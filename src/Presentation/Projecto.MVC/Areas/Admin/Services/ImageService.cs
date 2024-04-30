@@ -12,11 +12,11 @@ namespace Projecto.MVC.Areas.Admin.Services
 
         public async Task<string> CreateImageAsync(string folder, IFormFile file)
         {
-            const int maxFileSize = 2 * 1024 * 1024; // 2MB in bytes
+            const int maxFileSize = 3 * 1024 * 1024; // 2MB in bytes
 
             if (file.Length > maxFileSize)
             {
-                throw new Exception("File size exceeded 2MB.");
+                throw new Exception("File size exceeded 3MB.");
             }
 
             var uniqueImageName = GetUniqueFileName(file.FileName);

@@ -46,6 +46,7 @@ namespace Projecto.Application.Features.Games.Queries.GetFavourites
         private async Task<IEnumerable<Game>> GetUserFavouriteGames(string userId)
         {
             return await _context.UserFavouriteGames
+                   .AsNoTracking()
                    .Include(ufg => ufg.Game)
                    .ThenInclude(g => g.Images)
                    .Where(ufg => ufg.UserId == userId)

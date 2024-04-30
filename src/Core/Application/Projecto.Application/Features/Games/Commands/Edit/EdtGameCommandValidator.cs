@@ -14,19 +14,19 @@
                 .WithMessage("Logo must not exceed 2MB.");
 
             RuleFor(x => x.UpdateGameDto.Description)
-                .MaximumLength(200)
-                .WithMessage("Description must not exceed 200 characters.");
+                .MaximumLength(350)
+                .WithMessage("Description must not exceed 350 characters.");
 
             RuleFor(x => x.UpdateGameDto.Name)
                 .NotEmpty()
                 .WithMessage("Name is required!")
                 .NotNull()
                 .WithMessage("Name is required!")
-                .MaximumLength(25);
+                .MaximumLength(50);
 
             RuleFor(x => x.UpdateGameDto.Price)
                 .NotEmpty().WithMessage("Price is required!")
-                .GreaterThan(0).WithMessage("Price must be greater than zero!");
+                .GreaterThan(1).WithMessage("Price must be at least 1 USD!");
 
             RuleFor(x => x.UpdateGameDto.DeveloperId)
                 .NotEmpty().WithMessage("Game cannot be created without developer!")

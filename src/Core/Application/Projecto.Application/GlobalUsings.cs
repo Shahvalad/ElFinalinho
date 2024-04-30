@@ -13,3 +13,4 @@ global using Projecto.Application.Dtos.DeveloperDtos;
 global using Microsoft.AspNetCore.Identity;
 global using Projecto.Application.Dtos.ProfileDtos;
 global using Projecto.Application.Common.Models;
+global using Projecto.Application.Dtos.CommunityDtos;

@@ -1,0 +1,85 @@
+﻿@model PaymentsForChartDto
+@{
+    var years = Enumerable.Range(DateTime.Now.Year - 10, 11).Reverse();
+    var selectedYear = DateTime.Now.Year;
+    var selectList = new SelectList(years, selectedYear);
+    var labels = Model.Payments.Select(x => x.Date.ToString("MMMM yyyy")).ToArray();
+    var data = Model.Payments.Select(x => x.Count).ToArray();
+}
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="mb-0">Admin Dashboard</h5>
+    </div>
+    <div class="card-body">
+        <div class="card mb-3">
+            <div class="card-header">
+                <h6>User Statistics</h6>
+            </div>
+            <div class="card-body">
+                <p>Total number of users: @Model.TotalUsers</p>
+                <p>Users registered this year: @Model.UsersRegisteredThisYear</p>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-header">
+                <h6>Payment Statistics</h6>
+            </div>
+            <div class="card-body">
+                <p>Total amount of payments: @Model.TotalAmount$</p>
+            </div>
+        </div>
+
+        <div style="width: 300px; height: 150px;">
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <table class="table mt-4">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Number of Payments</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var payment in Model.Payments)
+                {
+                    <tr>
+                        <td>@payment.Date.ToString("MMMM yyyy")</td>
+                        <td>@payment.Count</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section DashboardScripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Json.Serialize(labels)),
+                datasets: [{
+                    label: '# of Payments',
+                    data: @Html.Raw(Json.Serialize(data)),
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+}

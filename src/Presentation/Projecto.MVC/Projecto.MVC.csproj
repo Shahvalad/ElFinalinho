@@ -231,8 +231,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\Images\CommunityPosts\" />
     <Folder Include="wwwroot\Images\Games\" />
     <Folder Include="wwwroot\Images\Developers\" />
+    <Folder Include="wwwroot\Images\TarotCards\" />
     <Folder Include="wwwroot\Images\Publishers\" />
     <Folder Include="wwwroot\Uploads\" />
   </ItemGroup>

@@ -1,0 +1,57 @@
+﻿@model List<GetTarotCardDto>
+@{
+    ViewData["Title"] = "View All Tarot Cards";
+}
+@section ViewAllBadgesStyles {
+    <style>
+        .tarot-cards-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            .tarot-cards-table th, .tarot-cards-table td {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            .tarot-cards-table th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
+
+        .badge-image {
+            width: 100%; /* This will make the image take the full width of its container */
+            height: auto;
+        }
+
+        .tarot-cards-table td:first-child {
+            width: 150px; /* Adjust this value to fit your needs */
+        }
+    </style>
+}
+<main class="page-main">
+    <table class="tarot-cards-table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Rarity</th>
+                <th>Sell</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var tarotCard in Model)
+            {
+                <tr>
+                    <td><img class="badge-image" src="~/Images/TarotCards/@tarotCard.Image" alt="badge"></td>
+                    <td>@tarotCard.Name</td>
+                    <td>@tarotCard.Rarity</td>
+                    <td><a class="btn btn-outline-dark" asp-action="SellYourItem" asp-route-id="@tarotCard.Id">Sell</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</main>

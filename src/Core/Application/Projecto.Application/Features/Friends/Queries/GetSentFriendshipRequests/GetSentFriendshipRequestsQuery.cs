@@ -29,10 +29,8 @@ namespace Projecto.Application.Features.Friends.Queries.GetSentFriendshipRequest
             CancellationToken cancellationToken)
         {
             var user = await _userManager.FindByIdAsync(request.UserId);
-            if (user == null)
-            {
+            if (user is null)
                 return Result<List<GetProfileDto>>.Failure(new string[] { "No such user!" });
-            }
 
             var profiles = user.SentFriendRequests
                 .Where(x => !x.IsAccepted)

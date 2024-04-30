@@ -1,0 +1,21 @@
+﻿#imagePreview {
+    display: none;
+    max-width: 100%;
+    height: auto; /* Ensure the aspect ratio is maintained */
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-file-input {
+    cursor: pointer;
+}
+
+.custom-file-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+

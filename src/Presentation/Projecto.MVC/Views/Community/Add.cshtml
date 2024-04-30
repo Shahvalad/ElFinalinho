@@ -1,0 +1,78 @@
+﻿@model CreateCommunityPostDto
+@section AddCommunityStyles {
+    <style>
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+            .form-group label {
+                font-weight: bold;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .form-group input[type="text"],
+            .form-group input[type="file"] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+        .form-check-input {
+            margin-right: 10px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+                border-color: #0056b3;
+            }
+
+        .submit-button {
+            text-align: right;
+        }
+
+        .button-orange{
+            background-color: #F46119;
+        }
+
+            .button-orange:hover {
+                background-color: #D54B15;
+            }
+        </style>
+}
+}
+<main class="page-main">
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title" name="Title" required />
+        </div>
+
+        <div class="form-group">
+            <label for="image">Image</label>
+            <input type="file" class="form-control-file" id="image" name="Image" required />
+        </div>
+
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="isSpoiler" name="isSpoiler">
+            <label class="custom-control-label" for="isSpoiler">Is Spoiler?</label>
+        </div>
+        <br />
+
+        <div class="form-group submit-button">
+            <button type="submit" class="btn btn-primary button-orange">Submit</button>
+        </div>
+    </form>
+
+</main>

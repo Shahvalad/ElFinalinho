@@ -1,4 +1,7 @@
-﻿using Projecto.Application.Common.Interfaces;
+﻿using Microsoft.Extensions.Options;
+using Projecto.Application.Common.Interfaces;
+using Projecto.Application.Common.Options;
+using Projecto.Application.Services.TarotCardService;
 using Stripe;
 using System.Security.Claims;
 
@@ -14,7 +17,9 @@ namespace Projecto.MVC.Controllers
         private readonly IEmailService _emailService;
         private readonly IDataContext _context;
         private readonly UserManager<AppUser> _userManager;
-        public CheckOutController(ISender sender, IPaymentService paymentService, IKeyService keyService, IMapper mapper, IEmailService emailService, IDataContext context, UserManager<AppUser> userManager)
+        private readonly ITarotCardService _tarotCardService;
+        private readonly string _domain;
+        public CheckOutController(ISender sender, IPaymentService paymentService, IKeyService keyService, IMapper mapper, IEmailService emailService, IDataContext context, UserManager<AppUser> userManager, IOptions<WebsiteOptions> websiteOptions, ITarotCardService tarotCardService)
         {
             _sender = sender;
             _paymentService = paymentService;
@@ -23,7 +28,10 @@ namespace Projecto.MVC.Controllers
             _emailService = emailService;
             _context = context;
             _userManager = userManager;
+            _domain = websiteOptions.Value.Domain;
+            _tarotCardService = tarotCardService;
         }
+
 
         public async Task<IActionResult> CheckOut(int id)
         {
@@ -33,45 +41,16 @@ namespace Projecto.MVC.Controllers
             {
                 new CartItem { Game = game, Quantity = 1 }
             };
-            var domain = "https://localhost:7118/";
-            var session = await _paymentService.CreateStripeSession(cartItems, domain + "CheckOut/OrderConfirmation", domain + "CheckOut/OrderCancelled");
-            TempData["Session"] = session.Id;
-            var gameIds = new List<int>();
-            foreach (var cartItem in cartItems)
-            {
-                while (cartItem.Quantity > 0)
-                {
-                    gameIds.Add(cartItem.Game.Id);
-                    cartItem.Quantity--;
-                }
-            }
-            HttpContext.Session.SetString("GameIds", JsonConvert.SerializeObject(gameIds));
-            Response.Headers.Add("location", session.Url);
-            return new StatusCodeResult(303);
+            return await ProcessCheckout(cartItems);
         }
+
         public async Task<IActionResult> CheckOutFromCart(List<CartItem> CartItems)
         {
             var currentCartItemsJson = HttpContext.Session.GetString("Cart");
             var currentCartItems = currentCartItemsJson != null
                 ? JsonConvert.DeserializeObject<List<CartItem>>(currentCartItemsJson)
                 : new List<CartItem>();
-            var domain = "https://localhost:7118/";
-            var session = await _paymentService.CreateStripeSession(currentCartItems, domain + "CheckOut/OrderConfirmation", domain + "CheckOut/OrderCancelled");
-            TempData["Session"] = session.Id;
-
-            // Store game IDs in the session
-            var gameIds = new List<int>();
-            foreach (var cartItem in currentCartItems)
-            {
-                while(cartItem.Quantity > 0)
-                {
-                    gameIds.Add(cartItem.Game.Id);
-                    cartItem.Quantity--;
-                }
-            }
-            HttpContext.Session.SetString("GameIds", JsonConvert.SerializeObject(gameIds));
-            Response.Headers.Add("location", session.Url);
-            return new StatusCodeResult(303);
+            return await ProcessCheckout(currentCartItems);
         }
 
         public IActionResult OrderConfirmation()
@@ -99,19 +78,22 @@ namespace Projecto.MVC.Controllers
             var sessionOptions = new SessionGetOptions();
             sessionOptions.AddExpand("line_items");
             Session session = service.Get(TempData["Session"].ToString(), sessionOptions);
-            
+
             var gameKeys = new List<GameKey>();
 
-            var gameIdsJson = HttpContext.Session.GetString("GameIds");
-            var gameIds = gameIdsJson != null
-                ? JsonConvert.DeserializeObject<List<int>>(gameIdsJson)
-                : new List<int>();
+            var cartItemsJson = HttpContext.Session.GetString("CartItems");
+            var cartItems = cartItemsJson != null
+                ? JsonConvert.DeserializeObject<List<CartItem>>(cartItemsJson)
+                : new List<CartItem>();
 
-            foreach (var gameId in gameIds)
+            foreach (var cartItem in cartItems)
             {
-                var game = await _sender.Send(new GetGameQuery(gameId));
-                var gameKey = await _keyService.AssignKeyToUser(User.Identity.Name, gameId);
-                gameKeys.Add(new GameKey { Value = gameKey, GameId = gameId, Game = _mapper.Map<Game>(game) });
+                var game = await _sender.Send(new GetGameQuery(cartItem.Game.Id));
+                for (var i = 0; i < cartItem.Quantity; i++)
+                {
+                    var gameKey = await _keyService.AssignKeyToUser(User.Identity.Name, cartItem.Game.Id);
+                    gameKeys.Add(new GameKey { Value = gameKey, GameId = cartItem.Game.Id, Game = _mapper.Map<Game>(game) });
+                }
             }
 
             var orderConfirmedVM = new OrderConfirmedVM
@@ -143,16 +125,32 @@ namespace Projecto.MVC.Controllers
 
                 await _context.Payments.AddAsync(payment);
                 await _context.SaveChangesAsync(CancellationToken.None);
+                if (session.AmountTotal / 100 > 30)
+                {
+                    var droppedCard = await _tarotCardService.AssignRandomCardToUser(user.Id);
+                    orderConfirmedVM.DroppedCard = droppedCard;
+                }
             }
-            // Send email after successful payment
-            var cartItems = gameKeys.Select(gk => new CartItem { Game = gk.Game, Quantity = 1 }).ToList();
-            await _emailService.SendReceiptEmailAsync(user.Email,session.Id.Substring(10,20),cartItems);
+            var cartItemsForEmail = gameKeys.Select(gk => new CartItem { Game = gk.Game, Quantity = 1 }).ToList();
+            await _emailService.SendReceiptEmailAsync(user.Email, session.Id.Substring(10, 20), cartItemsForEmail);
             await _emailService.SendGameKeysEmailAsync(user.Email, gameKeys);
             return View(orderConfirmedVM);
         }
+
+
+        private async Task<IActionResult> ProcessCheckout(List<CartItem> cartItems)
+        {
+            var session = await _paymentService.CreateStripeSession(cartItems, _domain + "CheckOut/OrderConfirmation", _domain + "CheckOut/OrderCancelled");
+            TempData["Session"] = session.Id;
+            HttpContext.Session.SetString("CartItems", JsonConvert.SerializeObject(cartItems));
+            Response.Headers.Add("location", session.Url);
+            return new StatusCodeResult(303);
+        }
+
         private string GetUserId()
         {
             return User.FindFirstValue(ClaimTypes.NameIdentifier);
         }
+        
     }
 }

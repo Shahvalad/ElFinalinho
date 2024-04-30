@@ -3,6 +3,8 @@
 namespace fin.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Policy = "AdminOrModeratorPolicy")]
+
     public class GenresController : Controller
     {
         private readonly ISender _sender;

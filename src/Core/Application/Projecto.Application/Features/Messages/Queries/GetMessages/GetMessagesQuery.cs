@@ -22,10 +22,10 @@ namespace Projecto.Application.Features.Messages.Queries.GetMessages
 
         public async Task<List<MessageDto>> Handle(GetMessagesQuery request, CancellationToken cancellationToken)
         {
-            var recipient = await _userManager.Users.Include(u => u.ProfilePicture)
+            var recipient = await _userManager.Users.AsNoTracking().Include(u => u.ProfilePicture)
                 .FirstOrDefaultAsync(u => u.UserName == request.recipientUsername, cancellationToken);
 
-            var messages = await _context.Messages
+            var messages = await _context.Messages.AsNoTracking()
                 .Where(m => (m.SenderUsername == request.senderUsername && m.RecipientUsername == request.recipientUsername)
                             || (m.SenderUsername == request.recipientUsername && m.RecipientUsername == request.senderUsername)).ToListAsync();
 

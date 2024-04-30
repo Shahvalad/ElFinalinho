@@ -1,0 +1,144 @@
+﻿@model List<UserTarotCard>
+
+@{
+    ViewData["Title"] = "Edit Badges";
+}
+@section EditBadgesStyles {
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .page-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 10px; 
+        }
+
+            .card-container img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            margin-top: 10px;
+        }
+
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                transition: .4s;
+                border-radius: 50%;
+            }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+            input:checked + .slider:before {
+                transform: translateX(26px);
+            }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .btn:hover {
+                background-color: #1e88e5;
+            }
+
+        .cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+    </style>
+}
+<main class="page-main">
+    <h1>@ViewData["Title"]</h1>
+
+    <form asp-action="EditBadges" method="post">
+        <div class="cards">
+            @for (var i = 0; i < Model.Count; i++)
+            {
+                <div class="card-container">
+                    <img src="~/Images/TarotCards/@Model[i].TarotCard.Image" alt="badge">
+                    <label>@Model[i].TarotCard.Name</label>
+                    <label class="switch">
+                        <input type="hidden" name="[@i].Id" value="@Model[i].Id" />
+                        <input type="checkbox" class="card-checkbox" asp-for="@Model[i].IsDisplayedOnProfile">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            }
+        </div>
+        <button class="btn" type="submit">Save changes</button>
+    </form>
+</main>
+
+@section EditBadgesScripts {
+    <script>
+        window.onload = function () {
+            var checkboxes = document.querySelectorAll('.card-checkbox');
+            checkboxes.forEach(function (checkbox) {
+                checkbox.addEventListener('change', function () {
+                    var checkedCheckboxes = document.querySelectorAll('.card-checkbox:checked');
+                    if (checkedCheckboxes.length > 4) {
+                        alert('You can only display a maximum of 4 cards on your profile.');
+                        this.checked = false;
+                    }
+                });
+            });
+        }
+    </script>
+}

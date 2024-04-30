@@ -1,4 +1,6 @@
-﻿namespace Projecto.Application.Common.Interfaces
+﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
+
+namespace Projecto.Application.Common.Interfaces
 {
     public interface IDataContext
     {
@@ -18,7 +20,19 @@
         DbSet<Friendship> Friendships { get; }
         DbSet<Message> Messages { get; }
         DbSet<Payment> Payments { get; }
+        DbSet<Community> Communities { get; }
+        DbSet<CommunityImage> CommunityImages { get; }
+        DbSet<CommunityPost> CommunityPosts { get; }
+        DbSet<CommunityPostImage> CommunityPostImages { get; }
+        DbSet<UserLikesPost> UserLikesPosts { get; }
+        DbSet<TarotCard> TarotCards { get;}
+        DbSet<UserTarotCard> UserTarotCards { get;}
+        DbSet<MarketItem> MarketItems { get; }
+        DbSet<Listing> Listings { get; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
+        ChangeTracker ChangeTracker { get; }
+        EntityEntry Entry(object entity);
+
 
     }
 }

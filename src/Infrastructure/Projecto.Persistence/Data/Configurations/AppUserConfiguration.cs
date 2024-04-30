@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,12 +15,20 @@ namespace Projecto.Persistence.Data.Configurations
             builder.HasMany(u => u.SentFriendRequests)
                 .WithOne(f => f.Requester)
                 .HasForeignKey(f => f.RequesterId)
-                .OnDelete(DeleteBehavior.NoAction); 
+                .OnDelete(DeleteBehavior.NoAction);
 
             builder.HasMany(u => u.ReceivedFriendRequests)
                 .WithOne(f => f.User)
                 .HasForeignKey(f => f.UserId)
                 .OnDelete(DeleteBehavior.NoAction);
+
+            builder.HasMany(u => u.LikedPosts)
+                .WithOne(ulp => ulp.User)
+                .HasForeignKey(ulp => ulp.UserId);
+
+            builder.HasMany(u => u.Posts)
+            .WithOne(p => p.User)
+            .HasForeignKey(p => p.UserId);
         }
     }
 }

@@ -1,5 +1,16 @@
-﻿@model GetProfileDto
+﻿@model ProfileViewModel
+@section ViewProfileStyles {
+    <style>
+        .user-info__avatar div {
+            opacity: 0;
+        }
 
+        .badge-image {
+            width: 100px; 
+            height: 145px; 
+        }
+    </style>
+}
 <main class="page-main">
     <div class="uk-grid" data-uk-grid="">
         <div class="uk-width-2-3@l uk-first-column">
@@ -11,7 +22,7 @@
                     <div class="user-info">
                         <form id="uploadForm" method="post" asp-action="ChangeProfilePicture" asp-controller="Profile" enctype="multipart/form-data">
                             <div class="user-info__avatar" style="position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden;">
-                                <img src="@(string.IsNullOrEmpty(Model.ProfilePicture) ? Url.Content("~/Images/ProfilePictures/profile.png") : Url.Content($"~/Images/ProfilePictures/{Model.ProfilePicture}"))" alt="profile" id="profilePic" style="width: 100%; height: 100%; object-fit: cover;">
+                                <img src="@(string.IsNullOrEmpty(Model.User.ProfilePicture) ? Url.Content("~/Images/ProfilePictures/profile.png") : Url.Content($"~/Images/ProfilePictures/{Model.User.ProfilePicture}"))" alt="profile" id="profilePic" style="width: 100%; height: 100%; object-fit: cover;">
                                 <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.5); color: #fff; text-align: center; opacity: 0; transition: opacity 0.3s ease;">
                                     <input type="file" id="file" name="file" style="display: none;" onchange="document.getElementById('uploadForm').submit();" />
                                     <label for="file" style="cursor: pointer; padding: 10px;">Change Picture</label>
@@ -20,23 +31,26 @@
                         </form>
 
                         <div class="user-info__box">
-                            <div class="user-info__title">@Model.Username</div>
-                            <div class="user-info__text">@Model.RegistrationDate.ToString("D")</div>
+                            <div class="user-info__title">@Model.User.Username</div>
+                            <div class="user-info__text">@Model.User.RegistrationDate.ToString("D")</div>
                         </div>
                     </div><a class="uk-button uk-button-danger" asp-action="Edit"><i class="ico_edit"></i><span class="uk-margin-small-left">Edit Profile</span></a>
                 </div>
             </div>
-            <div class="widjet --bio">
-                <div class="widjet__head">
-                    <h3 class="uk-text-lead">Bio</h3>
+            @if (!String.IsNullOrEmpty(Model.User.Bio))
+            {
+                <div class="widjet --bio">
+                    <div class="widjet__head">
+                        <h3 class="uk-text-lead">Bio</h3>
+                    </div>
+                    <div class="widjet__body"><span>@Model.User.Bio</span></div>
                 </div>
-                <div class="widjet__body"><span>@Model.Bio</span></div>
-            </div>
+            }
             <div class="widjet --activity">
                 <div class="widjet__head">
                     <h3 class="uk-text-lead">Games</h3><a href="~/#!">View All</a>
                 </div>
-                @foreach (var game in Model.Games)
+                @foreach (var game in Model.User.Games)
                 {
                     <div class="widjet__body">
                         <div class="widjet-game">
@@ -54,45 +68,25 @@
             </div>
         </div>
         <div class="uk-width-1-3@l">
-            <div class="widjet --upload">
-                <div class="widjet__head">
-                    <h3 class="uk-text-lead">Upload Item</h3>
-                </div>
-                <div class="widjet__body">
-                    <select class="js-select uk-flex-1" style="display: none;">
-                        <option value="">Select a Category</option>
-                        <option value="Category 1">Category 1</option>
-                        <option value="Category 2">Category 2</option>
-                        <option value="Category 3">Category 3</option>
-                    </select>
-                    <div class="nice-select js-select uk-flex-1" tabindex="0"><span class="current">Select a Category</span><ul class="list"><li data-value="" class="option selected">Select a Category</li><li data-value="Category 1" class="option">Category 1</li><li data-value="Category 2" class="option">Category 2</li><li data-value="Category 3" class="option">Category 3</li></ul></div><button class="uk-button uk-button-secondary" type="button">Next</button>
-                </div>
-            </div>
             <div class="widjet --badges">
                 <div class="widjet__head">
-                    <h3 class="uk-text-lead">Badges</h3><a href="~/#!">View All</a>
+                    <h3 class="uk-text-lead">Badges</h3>
+                    <div>
+                        <a asp-controller="Profile" asp-action="ViewAllBadges">View All</a>
+                        <span> | </span>
+                        <a asp-action="EditBadges"> Edit</a>
+                    </div>
                 </div>
                 <div class="widjet__body">
                     <ul class="badges-list">
-                        <li><img src="~/assets/img/badge-1.png" alt="badge"></li>
-                        <li><img src="~/assets/img/badge-2.png" alt="badge"></li>
-                        <li><img src="~/assets/img/badge-3.png" alt="badge"></li>
+                        @foreach (var tarotCard in Model.User.TarotCards)
+                        {
+                            <li><img class="badge-image" src="~/Images/TarotCards/@tarotCard.TarotCard.Image" alt="badge"></li>
+                        }
                     </ul>
                 </div>
             </div>
-            <div class="widjet --games">
-                <div class="widjet__head">
-                    <h3 class="uk-text-lead">Games</h3><a href="~/#!">View All</a>
-                </div>
-                <div class="widjet__body">
-                    <ul class="games-list">
-                        <li><img src="~/assets/img/game-1.png" alt="game"></li>
-                        <li><img src="~/assets/img/game-2.png" alt="game"></li>
-                        <li><img src="~/assets/img/game-3.png" alt="game"></li>
-                        <li><img src="~/assets/img/game-4.png" alt="game"></li>
-                    </ul>
-                </div>
-            </div>
+            
         </div>
     </div>
 </main>

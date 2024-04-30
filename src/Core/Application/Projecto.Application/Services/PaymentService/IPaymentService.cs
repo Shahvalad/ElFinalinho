@@ -4,5 +4,6 @@ namespace Projecto.Application.Services.PaymentService
     public interface IPaymentService
     {
         Task<Session> CreateStripeSession(List<CartItem> CartItems, string successUrl, string cancelUrl);
+        Task<Session> CreateStripeSessionForListing(Listing listing, string successUrl, string cancelUrl);
     }
 }

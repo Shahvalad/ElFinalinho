@@ -15,7 +15,9 @@
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
     <PackageReference Include="Stripe.net" Version="43.21.0" />
   </ItemGroup>
 
@@ -24,9 +26,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Dtos\ListingDtos\" />
+    <Folder Include="Features\AdminDashboardUser\Queries\" />
     <Folder Include="Features\Carts\Queries\" />
     <Folder Include="Features\Chats\Queries\" />
     <Folder Include="Features\Friends\Queries\GetWithMessageStatus\" />
+    <Folder Include="Features\Games\Queries\GetAllGamesOfUser\" />
+    <Folder Include="Features\MarketItems\Commands\Create\" />
+    <Folder Include="Features\MarketItems\Commands\Cancel\" />
+    <Folder Include="Features\Payments\Commands\" />
   </ItemGroup>
 
 </Project>

@@ -17,10 +17,12 @@
         {
             var genre = new Genre();
             if (request.IsTracking)
-            {
-                genre = await _context.Genres.FirstOrDefaultAsync(m => m.Id == request.Id, cancellationToken) ?? throw new GenreNotFoundException("There is no genre with such id!");
-            }
-            genre = await _context.Genres.AsNoTracking().FirstOrDefaultAsync(m => m.Id == request.Id, cancellationToken) ?? throw new GenreNotFoundException("There is no genre with such id!");
+                genre = await _context.Genres.AsNoTracking().FirstOrDefaultAsync(m => m.Id == request.Id, cancellationToken) 
+                    ?? throw new GenreNotFoundException("There is no genre with such id!");
+
+            genre = await _context.Genres.FirstOrDefaultAsync(m => m.Id == request.Id, cancellationToken) 
+                ?? throw new GenreNotFoundException("There is no genre with such id!");
+
             return _mapper.Map<GetGenreDto>(genre);
         }
     }

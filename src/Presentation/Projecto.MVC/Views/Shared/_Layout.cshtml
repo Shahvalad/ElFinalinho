@@ -21,6 +21,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     @await RenderSectionAsync("ChatStyles", required: false)
+    @await RenderSectionAsync("GetCommunityDetailsStyles", required: false)
+    @await RenderSectionAsync("AddCommunityStyles", required: false)
+    @await RenderSectionAsync("OrderConfirmedStyles",required: false)
+    @await RenderSectionAsync("ViewProfileStyles", required: false)
+    @await RenderSectionAsync("ViewAllBadgesStyles", required:false)
+    @await RenderSectionAsync("EditBadgesStyles", required:false)
+    @await RenderSectionAsync("MarketStyles", required:false)
+    @await RenderSectionAsync("SellYourItemStyles", required:false)
+    @await RenderSectionAsync("ViewMarketItemStyles", required:false)
+    @await RenderSectionAsync("HomeStylings", required:false)
+    @await RenderSectionAsync("AddCommunityPostStyles", required: false)
 </head>
 
 <body class="page-home">
@@ -83,7 +94,7 @@
                         <li class="uk-active"><a asp-controller="Home" asp-action="Index"><i class="ico_home"></i><span>Home</span></a></li>
                         <li class="uk-nav-header">Account</li>
                         <li><a asp-controller="Profile" asp-action="Index"><i class="ico_profile"></i><span>Profile</span></a></li>
-                        <li><a asp-controller="Favourites" asp-action="Index"><i class="ico_favourites"></i><span>Favourites</span><span class="count">15</span></a></li>
+                        <li><a asp-controller="Favourites" asp-action="Index"><i class="ico_favourites"></i><span>Favourites</span></a></li>
                         <li><a asp-controller="Chats" asp-action="Index"><i class="ico_chats"></i><span>Chats</span></a></li>
                         <li><a asp-controller="Friends" asp-action="Index"><i class="ico_friends"></i><span>Friends</span></a></li>
                         <li><a asp-controller="Wallet" asp-action="Index"><i class="ico_wallet"></i><span>Wallet</span></a></li>
@@ -162,8 +173,13 @@
     @await RenderSectionAsync("ProfileButtonScript", required:false)
     @await RenderSectionAsync("ChatScripts", required: false)
     @await RenderSectionAsync("StoreDetailsScripts", required: false)
-
-
+    @await RenderSectionAsync("GetCommunityDetailsScripts", required: false)
+    @await RenderSectionAsync("OrderConfirmedScripts", required:false)
+    @await RenderSectionAsync("EditBadgesScripts", required:false)
+    @await RenderSectionAsync("CommunityPageScripts", required: false)
+    @await RenderSectionAsync("SellYourItemScripts", required:false)
+    @await RenderSectionAsync("HomeScripts", required:false)
+    @await RenderSectionAsync("AddCommunityPostScripts", required:false)
     <script>
         function toggleDropdown() {
             var dropdownContent = document.getElementById("dropdownContent");

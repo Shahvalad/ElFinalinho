@@ -1,0 +1,69 @@
+﻿@model MarketItem
+@section ViewMarketItemStyles{
+    <style>
+        .listing {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+            .listing img {
+                width: 100px;
+                height: auto;
+                margin-right: 20px;
+            }
+
+            .listing .detail {
+                margin-right: 330px; 
+                padding: 10px;
+                background-color: #f9f9f9;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            }
+
+        .test {
+            max-width: 500px; /* Adjust as needed */
+            max-height: 500px; /* Adjust as needed */
+            width: auto;
+            height: auto;
+        }
+    </style>
+}
+<main class="page-main">
+    <h2>@Model.TarotCard.Name</h2>
+    <img class="test" src="~/Images/TarotCards/@Model.TarotCard.Image" alt="image">
+    <p>@Model.TarotCard.Description</p>
+    <p>Starting Price: @Model.StartingPrice</p>
+    <p>Listings: @Model.Quantity</p>
+
+    <h3>Listings</h3>
+    @if(Model.Listings.Count == 0)
+    {
+        <p>No listings available</p>
+    }
+    else
+    {
+        @foreach (var listing in Model.Listings)
+        {
+            <div class="listing">
+                <div class="user-item__avatar">
+                    <img src="~/images/ProfilePictures/@listing.User.ProfilePicture.FileName" alt="profile">
+                </div>
+                <div class="detail">
+                    <h4>@listing.User.UserName</h4>
+                </div>
+                <div class="detail">
+                    <p>@listing.MarketItem.TarotCard.Name</p>
+                </div>
+                <div class="detail">
+                    <p>Price: @listing.Price</p>
+                </div>
+                <div>
+                    <a class="btn btn-outline-dark" asp-action="BuyItem" asp-route-id="@listing.Id">Buy</a>
+                </div>
+            </div>
+        }
+    }
+</main>

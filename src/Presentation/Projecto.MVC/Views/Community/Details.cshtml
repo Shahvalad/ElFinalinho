@@ -1,0 +1,117 @@
+﻿@model CommunityWithPostsDto
+
+@section GetCommunityDetailsStyles {
+     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" >
+    </head>
+    <style>
+        .game-name {
+            font-size: 2.5em;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            text-decoration: underline; /* Add an underline */
+            text-decoration-color: #F46119; /* Change the underline color to orange */
+            text-underline-offset: 15px; /* Add some space between the text and the underline */
+        }
+        .add-button {
+            background-color: #F46119;
+            color: white !important;
+        }
+
+        .card-img-container {
+            position: relative;
+        }
+
+        .card-img-top {
+            margin-bottom: 0;
+        }
+
+        .card-title {
+            position: absolute;
+            bottom: 0 !important; /* Adjust this value based on the height of your avatar */
+            left: 0;
+            width: 100%;
+            color: white;
+            background: rgba(0,0,0,0.35); /* Adjust the alpha value to make the background more transparent */
+            padding: 10px;
+            box-sizing: border-box;
+            display: none;
+            margin-bottom: 0rem;
+            text-align: center; /* Center the text */
+            font-family: 'Roboto'!important, sans-serif!important; /* Use the Roboto font */
+            font-style: italic; /* Make the text italic */
+        }
+
+        .card-img-container:hover .card-title {
+            display: block;
+        }
+
+        .user-item__avatar {
+            display: flex; /* Use flexbox layout */
+            align-items: center; /* Center items vertically */
+        }
+
+            .user-item__avatar img {
+                flex-shrink: 0; /* Prevent the image from shrinking */
+                margin-right: 10px; /* Add some space between the image and the username */
+            }
+
+            .user-item__avatar span {
+                font-weight: 600; /* Make the username less bold */
+            }
+
+        .card-body {
+            position: relative; /* Add this to allow absolute positioning within the card body */
+        }
+
+        .likes-count {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 1.2em; /* Increase the font size */
+            font-weight: bold; /* Make the text bold */
+            color: #F46119; /* Change the text color to orange */
+            background-color: #fff; /* Add a white background */
+            padding: 5px; /* Add some padding */
+            border-radius: 5px; /* Round the corners */
+        }
+
+    </style>
+}
+
+<main class="page-main">
+    <h1 class="game-name">@Model.Name</h1>
+    <div class="text-right">
+        <a asp-action="Add" asp-route-id="@Model.Id" class="btn btn-warning add-button">Add your work to this community</a>
+    </div>
+    <div class="row">
+        @foreach (var post in Model.Posts)
+        {
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img class="card-img-top" src="~/Images/CommunityPosts/@post.CommunityPostImage.FileName" alt="Post Image" />
+                        <h5 class="card-title">@post.Title</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="likes-count"><i class="fas fa-thumbs-up"></i> @post.LikesCount</p>
+                        <div class="like-dislike-buttons" style="display: flex;">
+                            <form asp-action="LikePost" asp-route-postId="@post.Id" asp-route-communityId="@Model.Id" method="post">
+                                <button type="submit" class="btn btn-light"><i class="fas fa-thumbs-up"></i></button>
+                            </form>
+                            <form asp-action="DislikePost" asp-route-postId="@post.Id" asp-route-communityId="@Model.Id" method="post">
+                                <button type="submit" class="btn btn-light"><i class="fas fa-thumbs-down"></i></button>
+                            </form>
+                        </div>
+                        <hr />
+                        <div class="user-item__avatar">
+                            <img src="~/images/ProfilePictures/@post.User.ProfilePicture.FileName" alt="user">
+                            <span>@post.User.UserName</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</main>

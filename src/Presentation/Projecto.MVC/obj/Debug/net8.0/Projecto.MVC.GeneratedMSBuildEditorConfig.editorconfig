@@ -26,6 +26,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Шахвалад\Source\Repos\ElFinalinho\src\Presentation\Projecto.MVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Areas/Admin/Views/Accounts/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudHNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Areas/Admin/Views/Accounts/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudHNcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Areas/Admin/Views/Dashboards/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Areas/Admin/Views/Developers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGV2ZWxvcGVyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -110,6 +122,38 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHVibGlzaGVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Areas/Admin/Views/TarotCards/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGFyb3RDYXJkc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Areas/Admin/Views/TarotCards/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGFyb3RDYXJkc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Areas/Admin/Views/TarotCards/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGFyb3RDYXJkc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Areas/Admin/Views/TarotCards/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGFyb3RDYXJkc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Areas/Admin/Views/TarotCards/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGFyb3RDYXJkc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Areas/Admin/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Areas/Admin/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Areas/Admin/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -146,6 +190,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tPdXRcT3JkZXJDb25maXJtZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/Community/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbXVuaXR5XEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/Community/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbXVuaXR5XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/Community/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbXVuaXR5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -170,8 +222,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/Markets/SellYourItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0c1xTZWxsWW91ckl0ZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/Markets/ViewMarketItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0c1xWaWV3TWFya2V0SXRlbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/Markets/ViewYourItems.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0c1xWaWV3WW91ckl0ZW1zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/Profile/AddCommunityPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxBZGRDb21tdW5pdHlQb3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/Profile/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/Profile/EditBadges.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxFZGl0QmFkZ2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/Profile/GetAllGames.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxHZXRBbGxHYW1lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/Profile/Index.cshtml]
@@ -180,6 +256,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/Profile/UserProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxVc2VyUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/Profile/ViewAllBadges.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxWaWV3QWxsQmFkZ2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/Shared/_ChatPartial.cshtml]
@@ -204,6 +284,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/Store/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcmVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/Wallet/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsbGV0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Шахвалад/Source/Repos/ElFinalinho/src/Presentation/Projecto.MVC/Views/_ViewImports.cshtml]

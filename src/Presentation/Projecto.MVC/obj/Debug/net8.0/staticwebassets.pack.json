@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\Projecto.MVC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Admin\\assets\\css\\CreateTarotCardPage.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\css\\CreateTarotCardPage.css"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Admin\\assets\\css\\CustomLayoutStyles.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\css\\CustomLayoutStyles.css"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Admin\\assets\\css\\EditTarotCardPage.css",
+      "PackagePath": "staticwebassets\\Admin\\assets\\css\\EditTarotCardPage.css"
+    },
+    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Admin\\assets\\css\\app-dark-rtl.css",
       "PackagePath": "staticwebassets\\Admin\\assets\\css\\app-dark-rtl.css"
     },
@@ -467,6 +479,14 @@
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Admin\\assets\\images\\users\\user-9.jpg",
       "PackagePath": "staticwebassets\\Admin\\assets\\images\\users\\user-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Admin\\assets\\js\\CreateTarotCardPage.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\js\\CreateTarotCardPage.js"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Admin\\assets\\js\\EditTarotCardPage.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\js\\EditTarotCardPage.js"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\Admin\\assets\\js\\app.js",
@@ -1761,6 +1781,10 @@
       "PackagePath": "staticwebassets\\css\\LayoutCustomCSS.css"
     },
     {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\css\\OrderConfirmedPage.css",
+      "PackagePath": "staticwebassets\\css\\OrderConfirmedPage.css"
+    },
+    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\css\\ViewProfilePage.css",
       "PackagePath": "staticwebassets\\css\\ViewProfilePage.css"
     },
@@ -1773,12 +1797,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\CommunityPosts\\20220413_135117.jpg_4bd1fe33.webp",
+      "PackagePath": "staticwebassets\\images\\CommunityPosts\\20220413_135117.jpg_4bd1fe33.webp"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\CommunityPosts\\20220413_135117.jpg_9117d0c5.webp",
+      "PackagePath": "staticwebassets\\images\\CommunityPosts\\20220413_135117.jpg_9117d0c5.webp"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\CommunityPosts\\20220413_135117.jpg_afef2502.webp",
+      "PackagePath": "staticwebassets\\images\\CommunityPosts\\20220413_135117.jpg_afef2502.webp"
+    },
+    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\10_819eb791.PNG",
       "PackagePath": "staticwebassets\\images\\ProfilePictures\\10_819eb791.PNG"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\10_8a1ca793.PNG",
       "PackagePath": "staticwebassets\\images\\ProfilePictures\\10_8a1ca793.PNG"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\22_fb278a71.PNG",
+      "PackagePath": "staticwebassets\\images\\ProfilePictures\\22_fb278a71.PNG"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\ProfilePictures\\9_201ed91e.PNG",
@@ -1825,6 +1865,90 @@
       "PackagePath": "staticwebassets\\images\\ProfilePictures\\profile.png"
     },
     {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\Death 13_728905c2.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\Death 13_728905c2.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\Judgement 20_1dd9a71c.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\Judgement 20_1dd9a71c.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\Justice 11_a6447607.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\Justice 11_a6447607.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\Strength 8_15779bda.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\Strength 8_15779bda.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\Temperance 14_663cf632.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\Temperance 14_663cf632.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\The Chariot 7_96bda54e.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\The Chariot 7_96bda54e.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\The Devil 15_8866ebb8.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\The Devil 15_8866ebb8.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\The Emperor 4_fa2cf7c2.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\The Emperor 4_fa2cf7c2.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\The Empress 3_f8841935.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\The Empress 3_f8841935.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\The Hanged Man 12_0859adcf.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\The Hanged Man 12_0859adcf.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\The Hermit 9_190a3f2a.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\The Hermit 9_190a3f2a.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\The Hierophant 5_431ab2eb.jpg",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\The Hierophant 5_431ab2eb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\The High Priestess 2_19218e8f.jpg",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\The High Priestess 2_19218e8f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\The Lover 6_285f8800.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\The Lover 6_285f8800.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\The Magician 1_2cf0841f.jpg",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\The Magician 1_2cf0841f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\The Moon 18_3b3b73ea.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\The Moon 18_3b3b73ea.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\The Star 17_575e9f39.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\The Star 17_575e9f39.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\The Sun 19_c15db97c.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\The Sun 19_c15db97c.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\The Tower 16_c87bb40e.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\The Tower 16_c87bb40e.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\The World 21_c77dbcec.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\The World 21_c77dbcec.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\TarotCards\\Wheel of Fortune 10_289c9219.png",
+      "PackagePath": "staticwebassets\\images\\TarotCards\\Wheel of Fortune 10_289c9219.png"
+    },
+    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\developers\\a4218237573_10_5d72bf54.jpg",
       "PackagePath": "staticwebassets\\images\\developers\\a4218237573_10_5d72bf54.jpg"
     },
@@ -1837,8 +1961,40 @@
       "PackagePath": "staticwebassets\\images\\developers\\text.txt"
     },
     {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\1426027145-7_398b8808.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\1426027145-7_398b8808.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\2jpg_216d95ff.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\2jpg_216d95ff.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\46k75ixapbb81_239e135b.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\46k75ixapbb81_239e135b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\571388d0dd0895b52d8b47c4_d5f2723a.webp",
+      "PackagePath": "staticwebassets\\images\\games\\571388d0dd0895b52d8b47c4_d5f2723a.webp"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\6029t2uitge41_cff66720.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\6029t2uitge41_cff66720.jpg"
+    },
+    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Activision.svg_e51d783c.png",
       "PackagePath": "staticwebassets\\images\\games\\Activision.svg_e51d783c.png"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\AnorLondo_98e7d2fc.webp",
+      "PackagePath": "staticwebassets\\images\\games\\AnorLondo_98e7d2fc.webp"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Dark Souls 2_1_26860c75.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\Dark Souls 2_1_26860c75.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Dark Souls 2jpg_8886a2be.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\Dark Souls 2jpg_8886a2be.jpg"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Dark Souls Remastered_017f3ee3.PNG",
@@ -1853,12 +2009,40 @@
       "PackagePath": "staticwebassets\\images\\games\\Dark Souls Remastered_4c236c32.PNG"
     },
     {
-      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Dark Souls Remastered_715d538e.PNG",
-      "PackagePath": "staticwebassets\\images\\games\\Dark Souls Remastered_715d538e.PNG"
-    },
-    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Dark Souls Remastered_d5a60c55.PNG",
       "PackagePath": "staticwebassets\\images\\games\\Dark Souls Remastered_d5a60c55.PNG"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\DarkSouls2_2jpg_86aa3fc8.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\DarkSouls2_2jpg_86aa3fc8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Dark_souls_3jpg_c2b09f42.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\Dark_souls_3jpg_c2b09f42.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\GodOfWar_0116e86b.jfif",
+      "PackagePath": "staticwebassets\\images\\games\\GodOfWar_0116e86b.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Rdr2_8f2cc437.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\Rdr2_8f2cc437.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Sekiro_a34496cf.jpeg",
+      "PackagePath": "staticwebassets\\images\\games\\Sekiro_a34496cf.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\Witcher3_12313920.webp",
+      "PackagePath": "staticwebassets\\images\\games\\Witcher3_12313920.webp"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\a4218237573_65_67443871.jfif",
+      "PackagePath": "staticwebassets\\images\\games\\a4218237573_65_67443871.jfif"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\dRxQDdzpWZSjp2cy3rfte_ec39a02c.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\dRxQDdzpWZSjp2cy3rfte_ec39a02c.jpg"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\god of war 1_05c729fd.jpg",
@@ -1873,16 +2057,40 @@
       "PackagePath": "staticwebassets\\images\\games\\god of war 1_3fdf934e.jpg"
     },
     {
-      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\god of war 1_6b6c6396.jpg",
-      "PackagePath": "staticwebassets\\images\\games\\god of war 1_6b6c6396.jpg"
-    },
-    {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\god of war 1_6dcead32.jpg",
       "PackagePath": "staticwebassets\\images\\games\\god of war 1_6dcead32.jpg"
     },
     {
-      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\god of war 1_a9d25aac.jpg",
-      "PackagePath": "staticwebassets\\images\\games\\god of war 1_a9d25aac.jpg"
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\god-of-war-1_1972549c.webp",
+      "PackagePath": "staticwebassets\\images\\games\\god-of-war-1_1972549c.webp"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\ii0wygisevz61_c80f3666.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\ii0wygisevz61_c80f3666.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\image_bloodborne-25416-2994_0003_29e01d0d.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\image_bloodborne-25416-2994_0003_29e01d0d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\ss_15f0e9982621aed44900215ad283811af0779b1d.1920x1080_449d5242.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\ss_15f0e9982621aed44900215ad283811af0779b1d.1920x1080_449d5242.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\ss_3a71463e4ccaf28c5c27f6cf8d32a3a125f45404.1920x1080_0ea5e055.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\ss_3a71463e4ccaf28c5c27f6cf8d32a3a125f45404.1920x1080_0ea5e055.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\ss_4ce07ae360b166f0f650e9a895a3b4b7bf15e34f.1920x1080_bf58008c.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\ss_4ce07ae360b166f0f650e9a895a3b4b7bf15e34f.1920x1080_bf58008c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\ss_5710298af2318afd9aa72449ef29ac4a2ef64d8e.1920x1080_fe3dbec7.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\ss_5710298af2318afd9aa72449ef29ac4a2ef64d8e.1920x1080_fe3dbec7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\ss_849ec8dcc6f8df1c0b2c509584c9fc9e51f88cfa.1920x1080_bbd93f45.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\ss_849ec8dcc6f8df1c0b2c509584c9fc9e51f88cfa.1920x1080_bbd93f45.jpg"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\images\\games\\test.txt",
@@ -1907,6 +2115,10 @@
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\js\\ChatScripts.js",
       "PackagePath": "staticwebassets\\js\\ChatScripts.js"
+    },
+    {
+      "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\js\\OrderConfirmedScripts.js",
+      "PackagePath": "staticwebassets\\js\\OrderConfirmedScripts.js"
     },
     {
       "Id": "C:\\Users\\Шахвалад\\Source\\Repos\\ElFinalinho\\src\\Presentation\\Projecto.MVC\\wwwroot\\js\\site.js",

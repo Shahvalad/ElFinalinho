@@ -21,6 +21,7 @@ namespace Projecto.Application.Features.Messages.Queries.GetUnreadMessageCount
         public async Task<int> Handle(GetUnreadMessageCountQuery request, CancellationToken cancellationToken)
         {
             var unreadMessageCount = await _context.Messages
+                .AsNoTracking()
                 .Where(m => m.RecipientUsername == request.recipientName && !m.IsRead)
                 .CountAsync(cancellationToken);
             return unreadMessageCount;

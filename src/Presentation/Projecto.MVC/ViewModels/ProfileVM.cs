@@ -7,6 +7,6 @@
         public string Bio { get; set; }
         public DateTime RegistrationDate { get; set; }
         public List<Game> Games { get; set; } = new List<Game>();
-
+        public CommunityPost DisplayedPost { get; set; }
     }
 }

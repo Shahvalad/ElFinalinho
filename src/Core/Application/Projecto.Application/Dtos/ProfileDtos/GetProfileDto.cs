@@ -1,4 +1,6 @@
-﻿namespace Projecto.Application.Dtos.ProfileDtos
+﻿using Projecto.Application.Dtos.TarotCardDtos;
+
+namespace Projecto.Application.Dtos.ProfileDtos
 {
     public record GetProfileDto(string Username,
                                 string? FirstName,
@@ -7,5 +9,6 @@
                                 string Email,
                                 string? ProfilePicture,
                                 DateTime RegistrationDate,
-                                List<GetGameDto> Games);
+                                List<GetGameDto> Games,
+                                List<UserTarotCard> TarotCards);
 }

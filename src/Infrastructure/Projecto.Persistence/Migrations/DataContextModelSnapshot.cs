@@ -173,6 +173,9 @@ namespace Projecto.Persistence.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("DisplayedPostId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -182,6 +185,15 @@ namespace Projecto.Persistence.Migrations
 
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsAdmin")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsBanned")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsModerator")
+                        .HasColumnType("bit");
 
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
@@ -227,6 +239,8 @@ namespace Projecto.Persistence.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("DisplayedPostId");
+
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
 
@@ -260,6 +274,153 @@ namespace Projecto.Persistence.Migrations
                         .IsUnique();
 
                     b.ToTable("AppUserProfilePictures");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.Community", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("GameId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Threads")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GameId")
+                        .IsUnique();
+
+                    b.ToTable("Communities");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.CommunityImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CommunityId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CommunityId")
+                        .IsUnique();
+
+                    b.ToTable("CommunityImages");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.CommunityPost", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CommunityId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("LikesCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<bool>("isSpoiler")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CommunityId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("CommunityPosts");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.CommunityPostImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CommunityPostId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CommunityPostId")
+                        .IsUnique();
+
+                    b.ToTable("CommunityPostImages");
                 });
 
             modelBuilder.Entity("Projecto.Domain.Models.Developer", b =>
@@ -526,6 +687,92 @@ namespace Projecto.Persistence.Migrations
                     b.ToTable("Genres");
                 });
 
+            modelBuilder.Entity("Projecto.Domain.Models.Listing", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("MarketItemId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("TarotCardId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MarketItemId");
+
+                    b.HasIndex("TarotCardId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Listings");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.MarketItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("StartingPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("TarotCardId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TarotCardId");
+
+                    b.ToTable("MarketItems");
+                });
+
             modelBuilder.Entity("Projecto.Domain.Models.Message", b =>
                 {
                     b.Property<int>("Id")
@@ -715,6 +962,40 @@ namespace Projecto.Persistence.Migrations
                     b.ToTable("Reviews");
                 });
 
+            modelBuilder.Entity("Projecto.Domain.Models.TarotCard", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("DropRate")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Rarity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TarotCards");
+                });
+
             modelBuilder.Entity("Projecto.Domain.Models.UserFavouriteGame", b =>
                 {
                     b.Property<string>("UserId")
@@ -743,6 +1024,48 @@ namespace Projecto.Persistence.Migrations
                     b.HasIndex("GameId");
 
                     b.ToTable("UserGames");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.UserLikesPost", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("PostId")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserId", "PostId");
+
+                    b.HasIndex("PostId");
+
+                    b.ToTable("UserLikesPosts");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.UserTarotCard", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsDisplayedOnProfile")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("TarotCardId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TarotCardId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserTarotCards");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -796,6 +1119,15 @@ namespace Projecto.Persistence.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Projecto.Domain.Models.AppUser", b =>
+                {
+                    b.HasOne("Projecto.Domain.Models.CommunityPost", "DisplayedPost")
+                        .WithMany()
+                        .HasForeignKey("DisplayedPostId");
+
+                    b.Navigation("DisplayedPost");
+                });
+
             modelBuilder.Entity("Projecto.Domain.Models.AppUserProfilePicture", b =>
                 {
                     b.HasOne("Projecto.Domain.Models.AppUser", "User")
@@ -805,6 +1137,58 @@ namespace Projecto.Persistence.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.Community", b =>
+                {
+                    b.HasOne("Projecto.Domain.Models.Game", "Game")
+                        .WithOne("Community")
+                        .HasForeignKey("Projecto.Domain.Models.Community", "GameId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Game");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.CommunityImage", b =>
+                {
+                    b.HasOne("Projecto.Domain.Models.Community", "Community")
+                        .WithOne("Image")
+                        .HasForeignKey("Projecto.Domain.Models.CommunityImage", "CommunityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Community");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.CommunityPost", b =>
+                {
+                    b.HasOne("Projecto.Domain.Models.Community", "Community")
+                        .WithMany("Posts")
+                        .HasForeignKey("CommunityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Projecto.Domain.Models.AppUser", "User")
+                        .WithMany("Posts")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Community");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.CommunityPostImage", b =>
+                {
+                    b.HasOne("Projecto.Domain.Models.CommunityPost", "CommunityPost")
+                        .WithOne("CommunityPostImage")
+                        .HasForeignKey("Projecto.Domain.Models.CommunityPostImage", "CommunityPostId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("CommunityPost");
                 });
 
             modelBuilder.Entity("Projecto.Domain.Models.DeveloperImage", b =>
@@ -895,6 +1279,40 @@ namespace Projecto.Persistence.Migrations
                     b.Navigation("Game");
                 });
 
+            modelBuilder.Entity("Projecto.Domain.Models.Listing", b =>
+                {
+                    b.HasOne("Projecto.Domain.Models.MarketItem", "MarketItem")
+                        .WithMany("Listings")
+                        .HasForeignKey("MarketItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Projecto.Domain.Models.TarotCard", null)
+                        .WithMany("Listings")
+                        .HasForeignKey("TarotCardId");
+
+                    b.HasOne("Projecto.Domain.Models.AppUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MarketItem");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.MarketItem", b =>
+                {
+                    b.HasOne("Projecto.Domain.Models.TarotCard", "TarotCard")
+                        .WithMany()
+                        .HasForeignKey("TarotCardId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TarotCard");
+                });
+
             modelBuilder.Entity("Projecto.Domain.Models.Payment", b =>
                 {
                     b.HasOne("Projecto.Domain.Models.AppUser", "User")
@@ -974,9 +1392,51 @@ namespace Projecto.Persistence.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Projecto.Domain.Models.UserLikesPost", b =>
+                {
+                    b.HasOne("Projecto.Domain.Models.CommunityPost", "Post")
+                        .WithMany("LikedByUsers")
+                        .HasForeignKey("PostId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("Projecto.Domain.Models.AppUser", "User")
+                        .WithMany("LikedPosts")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Post");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.UserTarotCard", b =>
+                {
+                    b.HasOne("Projecto.Domain.Models.TarotCard", "TarotCard")
+                        .WithMany("UserTarotCards")
+                        .HasForeignKey("TarotCardId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Projecto.Domain.Models.AppUser", "User")
+                        .WithMany("UserTarotCards")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TarotCard");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Projecto.Domain.Models.AppUser", b =>
                 {
+                    b.Navigation("LikedPosts");
+
                     b.Navigation("Payments");
+
+                    b.Navigation("Posts");
 
                     b.Navigation("ProfilePicture");
 
@@ -989,6 +1449,24 @@ namespace Projecto.Persistence.Migrations
                     b.Navigation("UserFavouriteGames");
 
                     b.Navigation("UserGames");
+
+                    b.Navigation("UserTarotCards");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.Community", b =>
+                {
+                    b.Navigation("Image")
+                        .IsRequired();
+
+                    b.Navigation("Posts");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.CommunityPost", b =>
+                {
+                    b.Navigation("CommunityPostImage")
+                        .IsRequired();
+
+                    b.Navigation("LikedByUsers");
                 });
 
             modelBuilder.Entity("Projecto.Domain.Models.Developer", b =>
@@ -1000,6 +1478,9 @@ namespace Projecto.Persistence.Migrations
 
             modelBuilder.Entity("Projecto.Domain.Models.Game", b =>
                 {
+                    b.Navigation("Community")
+                        .IsRequired();
+
                     b.Navigation("GameGenres");
 
                     b.Navigation("GameKeys");
@@ -1018,11 +1499,23 @@ namespace Projecto.Persistence.Migrations
                     b.Navigation("GameGenres");
                 });
 
+            modelBuilder.Entity("Projecto.Domain.Models.MarketItem", b =>
+                {
+                    b.Navigation("Listings");
+                });
+
             modelBuilder.Entity("Projecto.Domain.Models.Publisher", b =>
                 {
                     b.Navigation("Games");
 
                     b.Navigation("Logo");
+                });
+
+            modelBuilder.Entity("Projecto.Domain.Models.TarotCard", b =>
+                {
+                    b.Navigation("Listings");
+
+                    b.Navigation("UserTarotCards");
                 });
 #pragma warning restore 612, 618
         }

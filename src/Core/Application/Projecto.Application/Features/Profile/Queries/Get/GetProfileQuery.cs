@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Projecto.Application.Dtos.ProfileDtos;
+using Projecto.Application.Dtos.TarotCardDtos;
 using System.Security.Claims;
 
 namespace Projecto.Application.Features.Profile.Queries.Get
@@ -18,8 +19,12 @@ namespace Projecto.Application.Features.Profile.Queries.Get
 
         public async Task<GetProfileDto> Handle(GetProfileQuery request, CancellationToken cancellationToken)
         {
-            var user = await _userManager.Users.Include(u => u.ProfilePicture)
+            var user = await _userManager.Users
+                .Include(u => u.ProfilePicture)
+                .Include(u => u.UserTarotCards)
+                    .ThenInclude(tc => tc.TarotCard)
                 .FirstOrDefaultAsync(u => u.UserName == request.User.Identity.Name, cancellationToken);
+
             var userGames = await _context.UserGames
                 .Where(g => g.UserId == user.Id)
                 .Include(g => g.Game)
@@ -39,6 +44,12 @@ namespace Projecto.Application.Features.Profile.Queries.Get
                 CoverImageFileName = g.Game.Images.FirstOrDefault(i => i.IsCoverImage)!.FileName
             }).ToList();
 
+
+            var usersTarotCards = await _context.UserTarotCards
+                .Where(utc => utc.UserId == user.Id && utc.IsDisplayedOnProfile)
+                .Include(utc => utc.TarotCard)
+                .ToListAsync(cancellationToken);
+
             return new GetProfileDto(
                 user.UserName,
                 user.FirstName,
@@ -47,7 +58,8 @@ namespace Projecto.Application.Features.Profile.Queries.Get
                 user.Email,
                 user.ProfilePicture?.FileName ?? "",
                 user.MemberSince,
-                games);
+                games,
+                usersTarotCards);
         }
     }
 }

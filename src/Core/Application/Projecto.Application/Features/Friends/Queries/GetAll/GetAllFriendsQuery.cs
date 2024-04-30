@@ -21,12 +21,14 @@ namespace Projecto.Application.Features.Friends.Queries.GetAll
         public async Task<Result<List<GetFriendDto>>> Handle(GetAllFriendsQuery request, CancellationToken cancellationToken)
         {
             var friends = await _context.Friendships
+                .AsNoTracking()
                 .Where(f => f.UserId == request.UserId && f.IsAccepted || f.RequesterId == request.UserId && f.IsAccepted)
                 .ToListAsync(cancellationToken);
 
             var userIds = friends.Select(f => f.UserId == request.UserId ? f.RequesterId : f.UserId).ToList();
 
             var users = await _userManager.Users
+                .AsNoTracking()
                 .Where(u => userIds.Contains(u.Id))
                 .Include(u => u.ProfilePicture)
                 .ToListAsync(cancellationToken);

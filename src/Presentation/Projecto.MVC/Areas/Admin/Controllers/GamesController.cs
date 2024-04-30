@@ -5,6 +5,8 @@ using Projecto.Application.Features.Games.Commands.AddKeys;
 namespace Projecto.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Policy = "AdminOrModeratorPolicy")]
+
     public class GamesController : Controller
     {
         private readonly ISender _sender;
@@ -50,17 +52,25 @@ namespace Projecto.MVC.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(CreateGameDto gameDto)
         {
-            if (!ModelState.IsValid)
+            var validator = new CreateGameCommandValidator();
+            var validationResult = validator.Validate(new CreateGameCommand(gameDto));
+
+            if (!validationResult.IsValid)
             {
+                foreach (var error in validationResult.Errors)
+                {
+                    ModelState.AddModelError(error.PropertyName, error.ErrorMessage);
+                }
                 ViewData["DeveloperId"] = new SelectList(await _sender.Send(new GetDevelopersQuery()), "Id", "Name");
                 ViewData["PublisherId"] = new SelectList(await _sender.Send(new GetPublishersQuery()), "Id", "Name");
                 ViewBag.Genres = new SelectList(await _sender.Send(new GetGenresQuery()), "Id", "Name");
                 return View(gameDto);
             }
-            var command = new CreateGameCommand(gameDto);
-            await _sender.Send(command);
+
+            var gameId = await _sender.Send(new CreateGameCommand(gameDto));
             return RedirectToAction("Index");
         }
+
 
         public async Task<IActionResult> Edit(int? Id)
         {
@@ -85,20 +95,23 @@ namespace Projecto.MVC.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int? id, UpdateGameDto gameDto)
         {
-            if (id is null)
+            var validator = new EdtGameCommandValidator();
+            var validationResult = validator.Validate(new EditGameCommand(id, gameDto));
+
+            if (!validationResult.IsValid)
             {
-                return NotFound();
-            }
-            if (!ModelState.IsValid)
-            {
+                foreach (var error in validationResult.Errors)
+                {
+                    ModelState.AddModelError(error.PropertyName, error.ErrorMessage);
+                }
                 ViewData["DeveloperId"] = new SelectList(await _sender.Send(new GetDevelopersQuery()), "Id", "Name");
                 ViewData["PublisherId"] = new SelectList(await _sender.Send(new GetPublishersQuery()), "Id", "Name");
                 ViewBag.Genres = new SelectList(await _sender.Send(new GetGenresQuery()), "Id", "Name");
                 return View(gameDto);
             }
-            var command = new EditGameCommand(id, gameDto);
-            await _sender.Send(command);
-            return RedirectToAction(nameof(Index));
+
+            await _sender.Send(new EditGameCommand(id, gameDto));
+            return RedirectToAction("Index");
         }
 
         public async Task<IActionResult> Delete(int? id)

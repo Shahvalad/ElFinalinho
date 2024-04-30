@@ -1,0 +1,71 @@
+﻿@model UpdateTarotCardDto
+@{
+    ViewData["Title"] = "Edit";
+}
+@section EditTarotCardPageStyles {
+    <link href="~/Admin/assets/css/EditTarotCardPage.css" rel="stylesheet" />
+}
+
+
+<br />
+
+<div class="container-fluid">
+    <h1>Create</h1>
+
+    <h4>Tarot card</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Edit" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Rarity" class="control-label"></label>
+                    <select asp-for="Rarity" class="form-control">
+                        <option value="">Select Rarity</option>
+                        <option value="Common">Common</option>
+                        <option value="Rare">Rare</option>
+                        <option value="Epic">Epic</option>
+                        <option value="Legendary">Legendary</option>
+                    </select>
+                    <span asp-validation-for="Rarity" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DropRate" class="control-label"></label>
+                    <input asp-for="DropRate" type="number" class="form-control" min="0" max="1" step="0.000001" value="0.000001" />
+                    <span asp-validation-for="DropRate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Image" class="control-label">Tarot Card Image</label>
+                    <div class="custom-file">
+                        <input asp-for="Image" type="file" class="custom-file-input" id="publisherLogoInput" accept="image/*">
+                        <label class="custom-file-label" for="publisherLogoInput">Choose file</label>
+                    </div>
+                    <span asp-validation-for="Image" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Edit" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <img id="imagePreview" src="#" alt="Image Preview" style="display: none; height: 200px; width: auto; margin-top: 10px; border: 1px solid #ddd; border-radius: 4px; padding: 5px;" />
+        </div>
+    </div>
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>
+@section EditTarotCardPageScripts {
+    <script src="~/Admin/assets/js/EditTarotCardPage.js"></script>
+}
+

@@ -1,5 +1,47 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model List<CommunityDto>
+
+<main class="page-main">
+    <div class="uk-grid uk-grid-stack" data-uk-grid="">
+        <div class="uk-width-2-3@l uk-first-column">
+            <div class="widjet --filters">
+                <div class="widjet__head">
+                    <h3 class="uk-text-lead">Community</h3>
+                </div>
+                <div class="widjet__body">
+                    <div class="uk-grid uk-child-width-1-4@xl uk-child-width-1-2@s uk-flex-middle uk-grid-small" data-uk-grid="">
+                        <div class="uk-width-1-1 uk-first-column">
+                            <div class="search">
+                                <form asp-action="SearchCommunity" method="get">
+                                    <div class="search__input">
+                                        <i class="ico_search"></i>
+                                        <input type="search" name="search" placeholder="Search">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div id="searchResults">
+            @foreach(var community in Model)
+            {
+                <div class="game-card --horizontal --small">
+                    <div class="game-card__box">
+                        <div class="game-card__media">
+                            <a asp-action="Details" asp-route-id="@community.Id">
+                                <img src="~/images/games/@community.ImageName" alt="@community.Name">
+                            </a>
+                        </div>
+                        <div class="game-card__info">
+                            <a asp-action="Details" asp-route-id="@community.Id" class="game-card__title">@community.Name</a>
+                            <div class="game-card__discussion">discussion threads<b>@community.ThreadsCount</b></div>
+                        </div>
+                        <div class="game-card__more"><a href="10_game-profile.html"><i class="ico_more"></i></a></div>
+                    </div>
+                </div>
+            }
+            </div>
+        </div>
+    </div>
+</main>

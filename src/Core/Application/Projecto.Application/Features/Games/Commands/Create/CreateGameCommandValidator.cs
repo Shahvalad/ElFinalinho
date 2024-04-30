@@ -13,7 +13,7 @@
                 .WithMessage("Logo must not exceed 2MB.");
 
             RuleFor(x=>x.CreateGameDto.Description)
-                .MaximumLength(200)
+                .MaximumLength(350)
                 .WithMessage("Description must not exceed 200 characters.");
 
             RuleFor(x=>x.CreateGameDto.Name)
@@ -21,8 +21,8 @@
                 .WithMessage("Name is required!")
                 .NotNull()
                 .WithMessage("Name is required!")
-                .MaximumLength(25)
-                .WithMessage("Name must be at least 25 character long!")
+                .MaximumLength(50)
+                .WithMessage("Name must not exceed 50 characters!")
                 .MinimumLength(1)
                 .WithMessage("Name must be at least 1 character long!");
 

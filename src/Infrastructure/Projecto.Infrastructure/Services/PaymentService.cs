@@ -26,7 +26,7 @@
 
             foreach (var cartItem in CartItems)
             {
-                
+
                 var sessionItem = new SessionLineItemOptions
                 {
                     PriceData = new SessionLineItemPriceDataOptions
@@ -48,6 +48,33 @@
             return session;
         }
 
-        
+        public async Task<Session> CreateStripeSessionForListing(Listing listing, string successUrl, string cancelUrl)
+        {
+            var options = new SessionCreateOptions
+            {
+                SuccessUrl = successUrl,
+                CancelUrl = cancelUrl,
+                LineItems = new List<SessionLineItemOptions>
+                {
+                    new SessionLineItemOptions
+                    {
+                        PriceData = new SessionLineItemPriceDataOptions
+                        {
+                            Currency = "usd",
+                            ProductData = new SessionLineItemPriceDataProductDataOptions
+                            {
+                                Name = listing.MarketItem.TarotCard.Name
+                            },
+                            UnitAmount = (long)(listing.Price * 100)
+                        },
+                        Quantity = 1
+                    }
+                },
+                Mode = "payment"
+            };
+            var service = new SessionService();
+            Session session = await service.CreateAsync(options);
+            return session;
+        }
     }
 }

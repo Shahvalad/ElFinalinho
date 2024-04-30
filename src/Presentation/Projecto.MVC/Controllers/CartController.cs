@@ -3,6 +3,7 @@ using Projecto.Application.Features.Carts.Commands.RemoveFromCart;
 
 namespace Projecto.MVC.Controllers
 {
+    [Authorize]
     public class CartController : Controller
     {
         private readonly ISender _sender;

@@ -32,20 +32,12 @@
             <div class="uk-grid uk-grid-small uk-child-width-1-2@s uk-flex-middle uk-width-1-1" data-uk-grid>
                 <div class="logo-big">
                     <img src="~/assets/img/logo-big.png" alt="logo">
-                    <span>TeamHost</span>
-                    <h1>Join now and play mighty games!</h1>
+                    <span>HollowedKeys</span>
+                    <h1>Join now and buy cheapest keys!</h1>
                 </div>
                 <div>
                     <div class="form-login">
-                        <div class="form-login__social">
-                            <ul class="social">
-                                <li><a href="~/http://www.google.com"><img src="~/assets/img/google.svg" alt="google"></a></li>
-                                <li><a href="~/http://www.facebook.com"><img src="~/assets/img/facebook.svg" alt="facebook"></a></li>
-                                <li><a href="~/http://www.twitter.com"><img src="~/assets/img/twitter.svg" alt="twitter"></a></li>
-                            </ul>
-                        </div>
                         <div class="form-login__box">
-                            <div class="uk-heading-line uk-text-center"><span>or with Email</span></div>
                             <form asp-action="Register" method="post">
                                 <div asp-validation-summary="ModelOnly"></div>
                                 <div class="uk-margin">
@@ -65,7 +57,7 @@
                                 </div>
                                 <div class="uk-margin">
                                     <label asp-for="ConfirmPassword"></label>
-                                    <input asp-for="ConfirmPassword" class="uk-input" placeholder="Password">
+                                    <input type="password" asp-for="ConfirmPassword" class="uk-input" placeholder="Password">
                                     <span  asp-validation-for="ConfirmPassword"></span>
                                 </div>
                                 <div class="uk-margin">

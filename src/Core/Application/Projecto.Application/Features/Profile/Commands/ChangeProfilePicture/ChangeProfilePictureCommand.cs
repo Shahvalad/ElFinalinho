@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+using Projecto.Application.Dtos.TarotCardDtos;
 
 namespace Projecto.Application.Features.Profile.Commands.ChangeProfilePicture
 {
@@ -87,7 +88,8 @@ namespace Projecto.Application.Features.Profile.Commands.ChangeProfilePicture
                 user.Email,
                 newProfilePictureName,
                 user.MemberSince,
-                new List<GetGameDto>()
+                new List<GetGameDto>(),
+                new List<UserTarotCard>()
             );
         }
 

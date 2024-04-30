@@ -1,2 +1,3 @@
-to add migrations
- dotnet ef migrations add AddedSeveralTables --startup-project ./Projecto.MVC --project ../Infrastructure/Projecto.Persistence
+	- to add migrations - 
+    dotnet ef migrations add UpdatedCommunityPostsTable --startup-project ./Projecto.MVC --project ../Infrastructure/Projecto.Persistence
+	    dotnet ef migrations remove --startup-project ./Projecto.MVC --project ../Infrastructure/Projecto.Persistence

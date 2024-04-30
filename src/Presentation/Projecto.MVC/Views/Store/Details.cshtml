@@ -108,7 +108,7 @@
                 <ul class="game-profile-card__list">
                     <li>
                         <div>Reviews:</div>
-                        <div class="game-card__rating"><span>4.7</span><i class="ico_star"></i><span class="rating-vote">(433)</span></div>
+                        <div class="game-card__rating"><span>@Model.AverageRating</span><i class="ico_star"></i><span class="rating-vote">(@Model.ReviewsCount)</span></div>
                     </li>
                     <li>
                         <div>Release date:</div>
@@ -138,7 +138,11 @@
                 </ul>
             </div>
             <div class="game-profile-price">
-                @if (maxQuantity < 10)
+                @if (maxQuantity == 0)
+                {
+                    <div class="game-profile-price__value">Out of stock</div>
+                }
+                else if (maxQuantity < 10)
                 {
                     <div class="game-profile-price__value">Only @maxQuantity left in stock</div>
                 }

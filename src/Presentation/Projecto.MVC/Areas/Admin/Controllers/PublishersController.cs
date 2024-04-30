@@ -3,6 +3,8 @@
 namespace Projecto.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Policy = "AdminOrModeratorPolicy")]
+
     public class PublishersController : Controller
     {
         private readonly ISender _sender;

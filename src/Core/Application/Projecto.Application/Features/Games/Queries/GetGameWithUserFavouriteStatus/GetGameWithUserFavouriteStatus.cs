@@ -34,7 +34,7 @@ namespace Projecto.Application.Features.Games.Queries.GetGameWithUserFavouriteSt
                     .FirstOrDefaultAsync(g=>g.Id==request.Id, cancellationToken)??throw new GameNotFoundException("There is no game with such id!");
 
             var gameDto = _mapper.Map<GetGameDto>(game);
-            gameDto.Images = game.Images.Select(i => new GameImage() { FileName = i.FileName, IsCoverImage = i.IsCoverImage }).ToList();
+            gameDto.Images = game.Images.Where(i=>i.IsCoverImage==false).Select(i => new GameImage() { FileName = i.FileName, IsCoverImage = false }).ToList();
             if (game.StockCount > 0)
                 gameDto.InStock = true;
             gameDto.Reviews = game.Reviews.OrderByDescending(r => r.CreatedAt).ToList();

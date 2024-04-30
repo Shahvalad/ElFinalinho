@@ -1,0 +1,51 @@
+﻿@model List<GetPostDto>
+
+@section AddCommunityPostStyles {
+    <style>
+        .post-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .post-grid__item {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+            .post-grid__item img {
+                width: 100%;
+                height: auto;
+            }
+
+            .post-grid__item .switch {
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+            }
+    </style>
+}
+
+<main class="page-main">
+    @using (Html.BeginForm("SetDisplayedPost", "Profile", FormMethod.Post))
+    {
+        <div class="post-grid">
+            @foreach (var post in Model)
+            {
+                <div class="post-grid__item">
+                    <img src="~/Images/CommunityPosts/@post.Image" />
+                    <div class="switch">
+                        <label>
+                            Display on profile:
+                            <input type="checkbox" name="postId" value="@post.Id">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            }
+            <button type="submit" class="btn btn-primary">Apply Changes</button>
+        </div>
+    }
+</main>

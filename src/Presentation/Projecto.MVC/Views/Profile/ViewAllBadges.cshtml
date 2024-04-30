@@ -1,0 +1,53 @@
+﻿@model List<GetTarotCardDto>
+@{
+    ViewData["Title"] = "View All Tarot Cards";
+}
+@section ViewAllBadgesStyles {
+    <style>
+        .tarot-cards-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            .tarot-cards-table th, .tarot-cards-table td {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            .tarot-cards-table th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
+
+        .badge-image {
+            width: 50px;
+            height: auto;
+        }
+    </style>
+}
+<main class="page-main">
+    <table class="tarot-cards-table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Rarity</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var tarotCard in Model)
+            {
+                <tr>
+                    <td><img class="badge-image" src="~/Images/TarotCards/@tarotCard.Image" alt="badge"></td>
+                    <td>@tarotCard.Name</td>
+                    <td>@tarotCard.Description</td>
+                    <td>@tarotCard.Rarity</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</main>

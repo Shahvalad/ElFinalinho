@@ -21,9 +21,15 @@
     <link href="~/Admin/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="~/Admin/assets/css/app.min.css" id="app-stylesheet" rel="stylesheet" type="text/css" />
+    <!--Custom Css-->
+    <link href="~/Admin/assets/css/CustomLayoutStyles.css" rel="stylesheet" type="text/css" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+    @await RenderSectionAsync("CreateTarotCardPageStyles", required: false)
+    @await RenderSectionAsync("EditTarotCardPageStyles", required: false)
+    @await RenderSectionAsync("ListUsersStyles", required: false)
+   
 </head>
 
 <body data-layout="horizontal" data-topbar="dark">
@@ -165,9 +171,8 @@
 
                         <li class="dropdown notification-list">
                             <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="~/Admin/#" role="button" aria-haspopup="false" aria-expanded="false">
-                                <img src="~/Admin/assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
                                 <span class="pro-user-name ml-1">
-                                    Nowak <i class="mdi mdi-chevron-down"></i>
+                                    @User.Identity.Name <i class="mdi mdi-chevron-down"></i>
                                 </span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
@@ -197,11 +202,13 @@
                                 <div class="dropdown-divider"></div>
 
                                 <!-- item-->
-                                <a href="~/Admin/javascript:void(0);" class="dropdown-item notify-item">
+                                <a href="javascript:void(0);" class="dropdown-item notify-item" onclick="document.getElementById('logoutForm').submit();">
                                     <i class="fe-log-out"></i>
                                     <span>Logout</span>
                                 </a>
 
+                                <form id="logoutForm" asp-action="Logout" asp-controller="Accounts" method="post" style="display: none;">
+                                </form>
                             </div>
                         </li>
 
@@ -217,10 +224,12 @@
                     <div class="logo-box">
                         <a href="~/Admin/index.html" class="logo logo-light">
                             <span class="logo-lg">
-                                <img src="~/Admin/assets/images/logo-light.png" alt="" height="16">
+                                @* <img src="~/Admin/assets/images/logo-light.png" alt="" height="16"> *@
+                                <span class="courier-font">Hollowed Keys</span>
                             </span>
                             <span class="logo-sm">
-                                <img src="~/Admin/assets/images/logo-sm.png" alt="" height="24">
+                                @* <img src="~/Admin/assets/images/logo-sm.png" alt="" height="24"> *@
+                                <span class="courier-font">HK</span>
                             </span>
                         </a>
                         <a href="~/Admin/index.html" class="logo logo-dark">
@@ -244,284 +253,22 @@
                         <!-- Navigation Menu-->
                         <ul class="navigation-menu">
                             <li>
-                                <a class="mdi mdi-invert-colors" asp-controller="Games" asp-action="Index">Games</a>
+                                <a asp-controller="Dashboards" asp-action="Index"><i class="fas fa-table mdi-invert-colors"></i> Dashboard</a>
                             </li>
                             <li>
-                                <a class="mdi mdi-invert-colors" asp-controller="Genres" asp-action="Index">Genres</a>
+                                <a asp-controller="Users" asp-action="Index"><i class="fas fa-user mdi-invert-colors"></i> Users</a>
                             </li>
                             <li>
-                                <a class="mdi mdi-invert-colors" asp-controller="Publishers" asp-action="Index">Publishers</a>
+                                <a asp-controller="Games" asp-action="Index"><i class="fas fa-gamepad mdi-invert-colors"></i> Games</a>
                             </li>
-                            <li class="has-submenu">
-                                <a href="~/Admin/index.html"><i class="mdi mdi-view-dashboard"></i>Dashboard</a>
+                            <li>
+                                <a asp-controller="Genres" asp-action="Index"><i class="fas fa-bahai mdi-invert-colors"></i> Genres</a>
                             </li>
-
-                            <li class="has-submenu">
-                                
-                                <a href="~/Admin/#"> <i class="mdi mdi-invert-colors"></i>User Interface  <div class="arrow-down"></div></a>
-                                <ul class="submenu megamenu">
-                                    <li>
-                                        <ul>
-                                            <li>
-                                                <a href="~/Admin/ui-buttons.html">Buttons</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/ui-cards.html">Cards</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/ui-draggable-cards.html">Draggable Cards</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/ui-checkbox-radio.html">Checkboxs-Radios</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/ui-material-icons.html">Material Design</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/ui-font-awesome-icons.html">Font Awesome 5</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ul>
-                                            <li>
-                                                <a href="~/Admin/ui-dripicons.html">Dripicons</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/ui-themify-icons.html">Themify Icons</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/ui-feather-icons.html">Feather Icons</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/ui-modals.html">Modals</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/ui-notification.html">Notification</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/ui-range-slider.html">Range Slider</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ul>
-                                            <li>
-                                                <a href="~/Admin/ui-components.html">Components</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/ui-sweetalert.html">Sweet Alert</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/ui-treeview.html">Tree view</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/ui-widgets.html">Widgets</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/ui-typography.html">Typography</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                            <li>
+                                <a asp-controller="Publishers" asp-action="Index"><i class="fas fa-book-reader mdi-invert-colors"></i> Publishers</a>
                             </li>
-
-                            <li class="has-submenu">
-                                <a href="~/Admin/#">
-                                    <i class="mdi mdi-lifebuoy"></i>Components <div class="arrow-down"></div>
-                                </a>
-                                <ul class="submenu">
-                                    <li class="has-submenu">
-                                        <a href="~/Admin/#">Forms <div class="arrow-down"></div></a>
-                                        <ul class="submenu">
-                                            <li>
-                                                <a href="~/Admin/form-elements.html">General Elements</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/form-advanced.html">Advanced Form</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/form-validation.html">Form Validation</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/form-wizard.html">Form Wizard</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/form-fileupload.html">Form Uploads</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/form-quilljs.html">Quilljs Editor</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/form-xeditable.html">X-editable</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="has-submenu">
-                                        <a href="~/Admin/#">Tables <div class="arrow-down"></div></a>
-                                        <ul class="submenu">
-                                            <li>
-                                                <a href="~/Admin/tables-basic.html">Basic Tables</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/tables-datatable.html">Data Tables</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/tables-responsive.html">Responsive Table</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/tables-editable.html">Editable Table</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/tables-tablesaw.html">Tablesaw Table</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="~/Admin/apps-chat.html">Chat</a>
-                                    </li>
-                                    <li>
-                                        <a href="~/Admin/calendar.html">Calendar</a>
-                                    </li>
-                                    <li>
-                                        <a href="~/Admin/inbox.html">Mail</a>
-                                    </li>
-
-                                </ul>
-                            </li>
-
-                            <li class="has-submenu">
-                                <a href="~/Admin/#"> <i class="mdi mdi-chart-donut-variant"></i>Charts <div class="arrow-down"></div></a>
-                                <ul class="submenu">
-                                    <li>
-                                        <a href="~/Admin/charts-flot.html">Flot Charts</a>
-                                    </li>
-                                    <li>
-                                        <a href="~/Admin/charts-morris.html">Morris Charts</a>
-                                    </li>
-                                    <li>
-                                        <a href="~/Admin/charts-chartist.html">Chartist Charts</a>
-                                    </li>
-                                    <li>
-                                        <a href="~/Admin/charts-chartjs.html">Chartjs Charts</a>
-                                    </li>
-                                    <li>
-                                        <a href="~/Admin/charts-other.html">Other Charts</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="has-submenu">
-                                <a href="~/Admin/#"> <i class="mdi mdi-cards-outline"></i>Pages <div class="arrow-down"></div></a>
-                                <ul class="submenu megamenu">
-                                    <li>
-                                        <ul>
-                                            <li>
-                                                <a href="~/Admin/pages-starter.html">Starter Page</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/pages-login.html">Login</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/pages-register.html">Register</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/pages-recoverpw.html">Recover Password</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/pages-lock-screen.html">Lock Screen</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/pages-confirm-mail.html">Confirm Mail</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/pages-404.html">Error 404</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/pages-500.html">Error 500</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ul>
-                                            <li>
-                                                <a href="~/Admin/extras-projects.html">Projects</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/extras-tour.html">Tour</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/extras-taskboard.html">Taskboard</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/extras-taskdetail.html">Task Detail</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/extras-profile.html">Profile</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/extras-maps.html">Maps</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/extras-contact.html">Contact list</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/extras-pricing.html">Pricing</a>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ul>
-                                            <li>
-                                                <a href="~/Admin/extras-timeline.html">Timeline</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/extras-invoice.html">Invoice</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/extras-faq.html">FAQs</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/extras-gallery.html">Gallery</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/extras-email-templates.html">Email Templates</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/extras-maintenance.html">Maintenance</a>
-                                            </li>
-                                            <li>
-                                                <a href="~/Admin/extras-comingsoon.html">Coming Soon</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="has-submenu">
-                                <a href="~/Admin/#"> <i class="mdi mdi-card-bulleted-settings-outline"></i>Layouts <div class="arrow-down"></div></a>
-                                <ul class="submenu">
-                                    <li><a href="~/Admin/layouts-vertical.html">Vertical</a></li>
-                                    <li>
-                                        <a href="~/Admin/layouts-menubar-dark.html">Menubar Dark</a>
-                                    </li>
-                                    <li>
-                                        <a href="~/Admin/layouts-center-menu.html">Center Menu</a>
-                                    </li>
-                                    <li>
-                                        <a href="~/Admin/layouts-menu-drop-dark.html">Menu Drop Dark</a>
-                                    </li>
-                                    <li>
-                                        <a href="~/Admin/layouts-preloader.html">Preloader</a>
-                                    </li>
-                                    <li>
-                                        <a href="~/Admin/layouts-normal-header.html">Unsticky Header</a>
-                                    </li>
-                                    <li>
-                                        <a href="~/Admin/layouts-boxed.html">Boxed</a>
-                                    </li>
-                                </ul>
+                            <li>
+                                <a asp-controller="TarotCards" asp-action="Index"><i class=" far fa-caret-square-up mdi-invert-colors"></i> Tarot Cards</a>
                             </li>
 
                         </ul>
@@ -588,5 +335,8 @@
     <script src="~/Admin/assets/js/app.min.js"></script>
     @await RenderSectionAsync("ScriptForGameCreating", required:false)
     @await RenderSectionAsync("ScriptForGameUpdating", required:false)
+    @await RenderSectionAsync("CreateTarotCardPageScripts", required: false)
+    @await RenderSectionAsync("EditTarotCardPageScripts", required: false)
+    @await RenderSectionAsync("DashboardScripts", required: false)
 </body>
 </html>
