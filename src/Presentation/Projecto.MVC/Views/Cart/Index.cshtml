@@ -1,4 +1,4 @@
-﻿@model Cart
+﻿@model CartVM
 
 @{
     ViewData["Title"] = "Shopping Cart";
@@ -20,7 +20,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model.CartItems)
+            @foreach (var item in Model.Cart.CartItems)
             {
                 <tr>
                     <td>@item.Game.Name</td>
@@ -39,12 +39,16 @@
         <tfoot>
             <tr>
                 <td colspan="2" class="text-right"><strong>Total</strong></td>
-                <td><strong>@Model.TotalPrice</strong></td>
+                <td><strong>@Model.Cart.TotalPrice</strong></td>
             </tr>
         </tfoot>
     </table>
-
-    <div class="d-flex justify-content-end">
-        <a class="btn btn-primary btn-lg" asp-controller="CheckOut" asp-action="CheckOutFromCart">Proceed to Checkout</a>
-    </div>
+    @if (Model.CartHasItems)
+    {
+        <div class="d-flex justify-content-end">
+            <a class="btn btn-secondary btn-lg mr-2" asp-controller="CheckOut" asp-action="PayFromWallet"
+               disabled="@(Model.UserBalance < Model.Cart.TotalPrice ? "disabled" : null)">Pay from Wallet</a>
+            <a class="btn btn-primary btn-lg" asp-controller="CheckOut" asp-action="CheckOutFromCart">Proceed to Checkout</a>
+        </div>
+    }
 </div>

@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Security.Claims;
 using Projecto.Application.Features.Games.Queries.GetPopulars;
 using Projecto.Application.Features.Games.Queries.GetRandomGamesQuery;
@@ -27,6 +28,11 @@ namespace Projecto.MVC.Controllers
                 RecommendedGames = recommendedGames
             };
             return View(homeVM);
+        }
+
+        public IActionResult Error()
+        {
+            return View();
         }
 
         private string GetUserId()

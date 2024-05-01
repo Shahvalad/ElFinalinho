@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.Options;
 using Projecto.Application.Common.Interfaces;
 using Projecto.Application.Common.Options;
+using Projecto.Application.Features.Users.Commands.UpdateBalance;
+using Projecto.Application.Features.Users.Queries.GetBalance;
 using Projecto.Application.Services.TarotCardService;
 using Stripe;
 using System.Security.Claims;
@@ -136,8 +138,36 @@ namespace Projecto.MVC.Controllers
             await _emailService.SendGameKeysEmailAsync(user.Email, gameKeys);
             return View(orderConfirmedVM);
         }
+        public async Task<IActionResult> PayFromWallet()
+        {
+            var userBalance = await _sender.Send(new GetUserBalanceQuery(GetUserId()));
 
+            var currentCartItemsJson = HttpContext.Session.GetString("Cart");
+            var currentCartItems = currentCartItemsJson != null
+                ? JsonConvert.DeserializeObject<List<CartItem>>(currentCartItemsJson)
+                : new List<CartItem>();
+            var currentCart = new Cart { CartItems = currentCartItems };
 
+            if (userBalance < currentCart.TotalPrice)
+            {
+                TempData["Error"] = "You don't have enough balance to pay for these items.";
+                return RedirectToAction("Index", "Cart");
+            }
+
+            var updateUserBalanceCommand = new UpdateUserBalanceCommand(GetUserId(), userBalance - currentCart.TotalPrice);
+            await _sender.Send(updateUserBalanceCommand);
+
+            HttpContext.Session.Remove("Cart");
+
+            var gameKeys = await ProcessOrder(currentCartItems);
+
+            return View("DisplayGameKeys", gameKeys);
+        }
+
+        public IActionResult DisplayGameKeys(List<GameKey> gameKeys)
+        {
+            return View(gameKeys);
+        }
         private async Task<IActionResult> ProcessCheckout(List<CartItem> cartItems)
         {
             var session = await _paymentService.CreateStripeSession(cartItems, _domain + "CheckOut/OrderConfirmation", _domain + "CheckOut/OrderCancelled");
@@ -151,6 +181,28 @@ namespace Projecto.MVC.Controllers
         {
             return User.FindFirstValue(ClaimTypes.NameIdentifier);
         }
-        
+
+        private  async Task<List<GameKey>> ProcessOrder(List<CartItem> cartItems)
+        {
+            var gameKeys = new List<GameKey>();
+
+            foreach (var cartItem in cartItems)
+            {
+                var game = await _sender.Send(new GetGameQuery(cartItem.Game.Id));
+                for (var i = 0; i < cartItem.Quantity; i++)
+                {
+                    var gameKey = await _keyService.AssignKeyToUser(User.Identity.Name, cartItem.Game.Id);
+                    gameKeys.Add(new GameKey { Value = gameKey, GameId = cartItem.Game.Id, Game = _mapper.Map<Game>(game) });
+                }
+            }
+
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+            var cartItemsForEmail = gameKeys.Select(gk => new CartItem { Game = gk.Game, Quantity = 1 }).ToList();
+            await _emailService.SendReceiptEmailAsync(user.Email, "Order ID", cartItemsForEmail);
+            await _emailService.SendGameKeysEmailAsync(user.Email, gameKeys);
+            return gameKeys;
+            
+        }
+
     }
 }

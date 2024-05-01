@@ -1,5 +1,7 @@
 ﻿using Projecto.Application.Features.Carts.Commands.AddToCart;
 using Projecto.Application.Features.Carts.Commands.RemoveFromCart;
+using Projecto.Application.Features.Users.Queries.GetBalance;
+using System.Security.Claims;
 
 namespace Projecto.MVC.Controllers
 {
@@ -12,14 +14,16 @@ namespace Projecto.MVC.Controllers
             _sender = sender;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             var currentCartItemsJson = HttpContext.Session.GetString("Cart");
             var currentCartItems = currentCartItemsJson != null
                 ? JsonConvert.DeserializeObject<List<CartItem>>(currentCartItemsJson)
                 : new List<CartItem>();
             var CurrentCart = new Cart { CartItems = currentCartItems };
-            return View(CurrentCart);
+            var userBalance = await _sender.Send(new GetUserBalanceQuery(GetUserId()));
+            var cartVM = new CartVM { Cart = CurrentCart, UserBalance = userBalance };
+            return View(cartVM);
         }
 
         public async Task<IActionResult> AddToCart(int GameId, int quantity)
@@ -46,5 +50,10 @@ namespace Projecto.MVC.Controllers
             return RedirectToAction("Index");
         }
 
+
+        private string GetUserId()
+        {
+            return User.FindFirstValue(ClaimTypes.NameIdentifier);
+        }
     }
 }
